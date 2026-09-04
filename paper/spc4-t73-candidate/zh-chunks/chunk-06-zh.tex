@@ -1,7 +1,7 @@
 \section{Johnson 乘积-ribbon 表述与 P0}\label{sec:johnson-presentation}
 
 我们记录 AR 侧构造、概括被拒的紧凑提升，并给出
-证明假设~\ref{hyp:P0} 的 Johnson 生成元替换。
+针对假设~\ref{hyp:P0} 的 Johnson 生成元替换；其剩余义务列于命题~\ref{thm:P0discharge}。
 
 \subsection{实际的 AR link}
 
@@ -168,14 +168,9 @@ S(u)=2u-(1/2,1/2,1/2),
 genus-three Heegaard 对映到 Aitchison--Rubinstein 所用的坐标脊对。
 \end{lemma}
 
-\begin{proof}
-Johnson 周期一环面存在 Freudenthal 三角剖分，使
-仿射映射 $S$ 为到周期二环面三角剖分的逐单形映射，将每条 Johnson 脊 $1$-单形映到相应 AR 坐标脊。因线性部分为 $2I$，
-欧氏距离缩放因子为 $2$，故 Johnson Voronoi handlebody 映到那些像脊的 Voronoi 胞。
-半径 $1/196104$ 关于 $0$ 的保护球映到关于 $Q$ 半径
-$2/196104$ 的球。
-$384$-四面体环面上的离散 Voronoi Heegaard 对已认证，且 $T(v)=v-(1,1,1)$ 将 Johnson 对映到其上。
-\end{proof}
+\begin{remark}[引理~\ref{lem:P0a} 的状态]
+\Open。已确立：Johnson 周期一环面存在 Freudenthal 三角剖分，使 $S$ 为到周期二环面三角剖分的逐单形映射，将每条 Johnson 脊 $1$-单形映到相应 AR 坐标脊；线性部分为 $2I$，故欧氏距离缩放因子为 $2$；半径 $1/196104$ 关于 $0$ 的保护球映到关于 $Q$ 半径 $2/196104$ 的球；$384$-四面体环面上按重心到两脊距离划分的离散 Voronoi Heegaard 对已认证，并由 $T(v)=v-(1,1,1)$ 运输。未确立：这些离散胞是脊的正则邻域。所需证书为每个脊的重心对偶块邻域及其到脊的显式初等坍缩序列、亏格三的公共边界、并集等于 $T^3$、$S$ 对完整对的运输，以及独立的 handlebody 识别；在其给出之前，本引理为 \Open。
+\end{remark}
 
 \begin{lemma}[两个带 framing 的消去]\label{lem:P0b}
 在 Johnson--AR 替换中，对 \((t,h_{CS})\) 与 \((x,m_1)\)
@@ -183,29 +178,25 @@ $384$-四面体环面上的离散 Voronoi Heegaard 对已认证，且 $T(v)=v-(1
 运输整个带标签附着 link 并保持截面 framing 类 \(\varepsilon=0\)。
 \end{lemma}
 
-\begin{proof}
-对所选 Johnson 提升，$\psi_A(x)=z$ 且 $m_1=zx^{-1}$。每对
-允许几何交数为 $1$ 的局部乘积 $1/2$-柄消去，运输带标签附着 link 并保持
-$\varepsilon=0$。
-\end{proof}
+\begin{remark}[引理~\ref{lem:P0b} 的状态]
+\Open。已确立：对所选 Johnson 提升，在自由群词层面 $\psi_A(x)=z$，故第一次消去后 $m_1=zx^{-1}$；证书含两个 $\mathbb R^3$ 中几何交数为 $1$ 的标准局部消去 movie。未确立：由 93 个 Johnson 生成元复合出的实际 PL 同胚 $\psi_A$、由它构造的实际带框附着 link \eqref{eq:ARcore}--\eqref{eq:ARannulus}，以及在该 link 上以三角化 belt 球面、band slide、分量运输与法向场运输实施的 $(t,h_{CS})$ 与 $(x,m_1)$ 消去。词层面恒等式不能替代这些嵌入对象。
+\end{remark}
 
 \begin{lemma}[与 MWW cabling 的相容性]\label{lem:P0c}
 44 条 Johnson lane 上的 framing 即 MWW cable
 构造所用的 framing。
 \end{lemma}
 
-\begin{proof}
-44 条 Johnson 六扫描股在三角剖分 $3$-球中实现为高度单调折线，具常数乘积法向，绑定到认证 handlebody 对中的 Johnson $y$-wicket。重构
-恢复公开 $11340$-字母词。
-\end{proof}
+\begin{remark}[引理~\ref{lem:P0c} 的状态]
+\Open。已确立：三角剖分 $3$-球中 44 条具常数乘积法向的高度单调折线，按 Johnson $y$-wicket 标号，其导出的 crossing movie 恢复公开 $11340$ 字母词。未确立：这些股是由 $y/z$ 圆盘系从实际消去后附着 link 切出的股，且其法向即 MWW 缆 framing。已提交的股由公开词经控制构造生成；它们校准 crossing 提取器，不绑定 framing。
+\end{remark}
 
 \subsection{P0 结论}\label{sec:p0-conclusion}
 
-\begin{theorem}[Johnson 替换解除 P0]\label{thm:P0discharge}
-假设~\ref{hyp:P0} 对 Johnson 替换表述成立。
-\end{theorem}
+\begin{proposition}[Johnson 替换的 P0 状态]\label{thm:P0discharge}
+已重放的有限证书确立：(i) $A$ 的 93 个 transvection 分解与具 GAP 自由基的 93 位侧模式；(ii) 含 42 个 $y$ 通道的精确紧凑 $m_2$ 词与 $\operatorname{lk}(m_2,r_{yz})=0$（引理~\ref{lem:P0d-link}）；(iii) 等于公开 $11340$ 字母词的六扫掠词；(iv) 由 $S$ 运输的 $384$-四面体环面离散 Voronoi Heegaard 对。假设~\ref{hyp:P0} 的下列义务为 \Open：(a) handlebody 对的正则邻域识别（引理~\ref{lem:P0a}）；(b) 由 93 个 Johnson 生成元复合的实际 PL 同胚 $\psi_A$ 与实际 Aitchison--Rubinstein 带框 link \eqref{eq:ARcore}--\eqref{eq:ARannulus}；(c) 带 belt 球面、band slide 与法向场运输的 $(t,h_{CS})$ 与 $(x,m_1)$ 实际 Kirby 消去（引理~\ref{lem:P0b}）；(d) 从实际消去后 link 切出的领圈股及其与 MWW 缆 framing 的同一性（引理~\ref{lem:P0c}）；(e) 闭图景与 $\Sigma_A^0$ 的识别。故假设~\ref{hyp:P0} 为 \Open。
+\end{proposition}
 
 \begin{proof}
-引理~\ref{lem:P0a}--\ref{lem:P0c} 与~\ref{lem:P0d-link} 提供
-handlebody 桥梁、消去、cabling 相容性及混合 linking 为零。分阶段 Kirby 管道将所得闭图景与 $\Sigma_A^0$ 等同。
+(i)--(iv) 是附录~\ref{sec:reproducibility-extended} 所列可重放证书。(a)--(e) 未由其确立：已提交的领圈股由公开词经控制构造生成，消去 movie 是 $\mathbb R^3$ 中的局部模型而非实际附着 link 上的移动。
 \end{proof}

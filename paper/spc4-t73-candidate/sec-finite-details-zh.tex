@@ -1,7 +1,7 @@
 \section{精确有限代数与公开检测器}\label{sec:exact-algebra}
 
 本节使第 4 节的有限层自洽。同一数据与 Johnson 替换领圈的几何绑定是
-假设~\ref{hyp:P1}；整数 $2624$ 本身与该绑定无关。
+假设~\ref{hyp:P1}，该假设为 \Open；整数 $2624$ 本身与该绑定无关，它是冻结 Burau 计算的值。
 
 \subsection{对 9 月 2 日公开草稿的勘误}
 
@@ -12,9 +12,9 @@ wicket 的排序方向相反。在领坐标表中，同一物理 cup 的端点�
   u=e_2-e_{87},\qquad \ell=e_{87}^*-e_2^*.
 \]
 当两个对象均置于同一张表时，精确计算给出
-$[\varepsilon^3]\ell(\rho(W)-I)u=-328$，从而
-$D_3(v_T)=(-2)^3(-328)=2624$。非零结论不变。
-一致使用 THXY 坐标得到 $-2496$；这是坐标校验，而非第二个几何类。值 $2624$ 属于
+$[\varepsilon^3]\ell(\rho(W)-I)u=-328$，从而三次系数为
+$(-2)^3(-328)=2624$。非零结论不变。
+将 $u$ 与 $\ell$ 同置于 THXY 坐标而词仍在领坐标中，得到 $-2496$；由于算子未被传输，这不是整个配对的坐标变换，也不是第二个几何类（附录~\ref{app:legality}）。值 $2624$ 属于
 当前冻结的领数据；若 Johnson 领词改变，数值必须重新计算。
 
 \subsection{整逆与长拓扑路线}
@@ -66,15 +66,13 @@ $A-I$ 的满射性消去了手术后基本群的自然余不变量表示；$A-I$
 命题~2.1。
 \end{remark}
 
-\begin{corollary}[对已识别图景的同伦球结论]
+\begin{corollary}[同伦球结论]
 \label{cor:homotopy-sphere}
-对由 P3/E13 与 $\Sigma_A^0$ 等同的 Johnson CS 柄图景 $X_J$，$\Sigma_A^0$ 是同伦
-$4$-球。
+标准 Cappell--Shaneson 流形 $\Sigma_A^0$ 是同伦 $4$-球。若 Johnson CS 柄图景 $X_J$ 与 $\Sigma_A^0$ 等同（P3/E13，\Open），则 $X_J$ 亦然。
 \end{corollary}
 
 \begin{proof}
-由 \eqref{eq:determinants}，$A\in\mathrm{SL}(3,\Z)$ 且 $\det(A-I)=1$。
-等同 $X_J\cong\Sigma_A^0$ 即所构造的 CS 柄图景；Iwaki 命题~2.1 \cite{Iwaki2024} 于是适用。
+由 \eqref{eq:determinants}，$A\in\mathrm{SL}(3,\Z)$ 且 $\det(A-I)=1$，故 Iwaki 命题~2.1 \cite{Iwaki2024} 适用于 $\Sigma_A^0$。等同 $X_J\cong\Sigma_A^0$ 依赖假设~\ref{hyp:P0}。
 \end{proof}
 
 \subsection{系数迹与所选 Hattori 类}
@@ -99,7 +97,7 @@ $4$-球。
 各 $r_T$ 之和消去每个关系生成元 $f\cdot m-m\cdot f$，从而唯一地通过该商分解。
 \end{proof}
 
-对 Johnson 替换领圈，引理~\ref{lem:C1} 给出实际的系数等价 \eqref{eq:HattoriActual}。
+对 Johnson 替换领圈，引理~\ref{lem:C1} 一旦确立将给出实际的系数等价 \eqref{eq:HattoriActual}；目前它为 \Open。
 第 7 节所选类与除法检测器是以下模式的几何实例。
 
 \subsection{端点模与 Burau 作用}
@@ -196,14 +194,15 @@ D_3(\bar x)=\left.\frac{\mathcal D_h(x)}{h^3}\right|_{h=0}.
 \end{equation}
 故在 $[h]\eps=-2$ 下，
 \begin{equation}\label{eq:D3-vT-value}
-D_3([v_T])=2624\ne0.
+[h^3]\,\ell(\rho_h(B_{88})-I)u=2624\ne0,
 \end{equation}
+一旦假设~\ref{hyp:P1} 将 $[v_T]$ 与实际系数迹类等同，它即为 $D_3([v_T])$。
 完整的次数三向量见附录~\ref{app:vector}。
 \end{proposition}
 
 \begin{proof}
 从右向左遍历 $B_{88}$，模 $\eps^7$ 约化，并与 \eqref{eq:ell} 缩并。所得级数为
-\eqref{eq:ell-eps-series}，故 $D_3([v_T])=(-2)^3(-328)=2624$。
+\eqref{eq:ell-eps-series}，故三次系数为 $(-2)^3(-328)=2624$。
 \end{proof}
 
 \begin{lemma}[参数展开]\label{lem:eps-of-h}
@@ -257,9 +256,8 @@ $\ell_2(q_{12}q_{01}x_0)=2624$。特别地，$q_{12}q_{01}x_0\ne0$。
 \end{proposition}
 
 \begin{proof}
-引理~\ref{lem:HH0-descent} 将量子 shadow 检测器通过系数迹下降。定理~\ref{thm:Cdischarge} 与
-引理~\ref{lem:quotient-detector} 将其通过 $q_{01}$ 下降。定理
-\ref{thm:Sdischarge} 与同一商引理将其通过 $q_{12}$ 下降。
+引理~\ref{lem:HH0-descent} 将量子 shadow 检测器通过系数迹下降。假设~\ref{hyp:P1}（状态：命题~\ref{thm:Cdischarge}）与
+引理~\ref{lem:quotient-detector} 将其通过 $q_{01}$ 下降。假设~\ref{hyp:P2}（状态：命题~\ref{thm:Sdischarge}）与同一商引理将其通过 $q_{12}$ 下降。
 每一阶段拉回均与前一行一致，故命题~\ref{prop:D3-vT} 给出值 $2624$。
 \end{proof}
 

@@ -11,10 +11,10 @@ p_y=42+2=44,\qquad p_z=269+2=271.
 In the cyclic $m_2$ word, every one of the 42
 $y/Y$ events is followed immediately by a distinct $z/Z$ event; the same
 holds for the two $y/Y$ events of $r_{xy}$.  The witness lists all 44 pairs.
-Those pairs are realized as 44 product ribbons of the P0 reconstruction
-strands along their certified normals, with $227$ leftover $z$-circles off
-the P0 cube.  The scope is the Johnson replacement collar, not an embedded
-cut in $\partial W_2$.
+Those pairs are realized as 44 product ribbons of the P0 control
+strands along their recorded normals, with $227$ model $z$-circles placed
+off the P0 cube.  The scope is the Johnson replacement collar, not an
+embedded cut in $\partial W_2$.
 
 Let $\mathcal C$ be the pregraded rational tangle category with objects
 $T:P_{86}\to P_{88}$, and let $F$ be the framed west-to-east tangle formed
@@ -74,13 +74,20 @@ map \(\operatorname{Sh}_q\) below is the quantum trace of that bimodule, not a
 dimension-matched substitute.
 \end{lemma}
 
-\begin{proof}
-The $44$ product ribbons are realized from the P0 reconstruction strands with
-certified product-normal $z$-sides, giving the Johnson $y$-then-$z$ pairing
-and $227$ leftover $z$-circles.  The action cubes of \eqref{eq:HattoriActual}
-and the representable $HH_0$ reduction of Section~\ref{sec:exact-algebra}
-complete the comparison.
-\end{proof}
+\begin{remark}[Status of Lemma~\ref{lem:C1}]
+\Open.  Established: the $44$ model rectangles from the P0 control strands
+with product-normal $z$-sides, giving the Johnson $y$-then-$z$ pairing and
+$227$ model $z$-circles, and the representable $HH_0$ reduction of
+Section~\ref{sec:exact-algebra}.  Not established: the isotopy
+\[
+R\cup\overline T\cup T'\;\cong\;\overline{FT}\circ FT'\sqcup 227\text{ circles}
+\]
+for the actual cut tangle $R$, fixing the boundary, the detector ball and
+the gluing supports, and hence the chain-level action squares (17).  Without
+that isotopy, \eqref{eq:HattoriActual} is a model isomorphism and the map
+$\operatorname{Sh}_q$ below is not yet identified as the quantum trace of
+the actual coefficient bimodule.
+\end{remark}
 
 \subsection{Quantum trace and the endpoint map}
 
@@ -141,14 +148,18 @@ W\mapsto PWP^{-1},\qquad u\mapsto Pu,\qquad
 \ell\mapsto\ell P^{-1}.
 \]
 The matrix coefficient is unchanged; we choose the public endpoint labels
-after this common transport.  BPW's cup/cap formulas then imply
-that the constant terms, after the same position change, are
+after this common transport.  The constant terms are fixed by the single
+collar endpoint convention of Section~\ref{sec:exact-algebra}: the selected
+cup joins the physical endpoints bound to collar positions $2$ and $87$, and
+BPW's cup/cap formulas give
 \[
-u_0=e_0\pm e_5,\qquad
-\ell_0=e_{87}^*\pm e_2^*.
+u_0=e_2-e_{87},\qquad
+\ell_0=e_{87}^*-e_2^*,
 \]
-All omitted factors are invertible q-monomials or positive-order
-$h$-corrections.
+as in \eqref{eq:u} and \eqref{eq:ell}, with no undetermined sign.  All
+omitted factors are invertible $q$-monomials or positive-order
+$h$-corrections, and by Lemma~\ref{lem:filtered-cubic} below they do not
+affect the divided cubic.
 
 Over $\Q[[h]]$ define
 \[
@@ -157,29 +168,54 @@ D_h=\ell_h(\rho_h(W)-I)\operatorname{Sh}_h.
 This is well defined on the quantum coefficient trace because
 \eqref{eq:actualShadow} has already imposed quantum cyclicity.  The exact
 Magnus calculation and Darn\'e's Andreadakis theorem give
-$W\in\Gamma_3(P_{44})$ \cite[Theorem~6.2]{Darne2021}; equivalently, and also
-by direct evaluation of all 7,744 entries,
+$W\in\Gamma_3(P_{44})$ \cite[Theorem~6.2]{Darne2021}.  Since every pure
+braid generator acts as $I+O(h)$, Lemma~\ref{lem:commutator-order} gives the
+one-directional implication
 \[
-\rho_h(W)-I\in h^3\operatorname{End}(E_{88}).
+W\in\Gamma_3(P_{44})\ \Longrightarrow\
+\rho_h(W)-I\in h^3\operatorname{End}(E_{88});
 \]
+the converse is not asserted and is not needed.  Independently of the
+Andreadakis theorem, direct evaluation of all $7{,}744$ entries of
+$\rho_h(W)-I$ verifies the membership on the right.
 Thus $D_h$ takes values in $h^3\Q[[h]]$.  Division by $h^3$ is unique, and
 reduction modulo $h$ gives a lift-independent ordinary functional
 \[
 D_3:HH_0(\mathcal C;M_R)\longrightarrow\Q.
 \]
 Positive-order corrections in the cup, cap, and basis change do not alter
-the cubic coefficient.
+the cubic coefficient (Lemma~\ref{lem:filtered-cubic}).
+
+\begin{lemma}[Filtered cubic pairing]\label{lem:filtered-cubic}
+Let $A(h)=\sum_{j\ge0}A_jh^j$ be an endomorphism series of $E_{88}$ with
+$A_0=A_1=A_2=0$, and let $u(h)=\sum_k u_kh^k$ and
+$\ell(h)=\sum_i\ell_ih^i$ be a vector series and a row series.  Then
+\[
+[h^3]\,\ell(h)A(h)u(h)=\ell_0A_3u_0,
+\]
+and the coefficient is unchanged when $(A,u,\ell)$ is replaced by
+$(PAP^{-1},Pu,\ell P^{-1})$ for a constant automorphism $P$.
+\end{lemma}
+
+\begin{proof}
+$[h^3]\ell(h)A(h)u(h)=\sum_{i+j+k=3}\ell_iA_ju_k$, and every term with
+$j\le2$ vanishes.  Under simultaneous transport each summand is unchanged.
+\end{proof}
 
 The four mixed-index Burau sign variants
 \[
 -53824,\quad -53760,\quad -59008,\quad -59072
 \]
-are nonzero, but they are not the frozen cubic.  The frozen public receipt and
-Lean give
+are nonzero, but they are not the frozen cubic: each mixes two endpoint
+coordinate systems.  The frozen public receipt and Lean give
 \begin{equation}\label{eq:selectedD3}
-D_3([v_T])=2624\ne0
+[h^3]\,\ell_h(\rho_h(W)-I)u_h=2624\ne0
 \end{equation}
-after the endpoint-indexing erratum.  Nonvanishing does not close S.
+in the single collar convention.  Equation~\eqref{eq:selectedD3} is a
+statement about the frozen Burau computation; it becomes
+$D_3([v_T])=2624$ only when Lemma~\ref{lem:C1} identifies $[v_T]$ with an
+actual coefficient-trace class, which is \Open.  Nonvanishing does not
+close C or S.
 
 \subsection{The complete two-handle cocone}
 
@@ -222,9 +258,10 @@ p_y(r)=\sum_i r_i n_{y,i},\qquad
 p_z(r)=\sum_i r_i n_{z,i}.
 \tag{24}
 \]
-By Lemma~\ref{lem:C1}, parallel copies of the P0 rectangles give a chain isomorphism $H_r$ of the
-same form as (17), with the corresponding endpoint sets.  The split
-$r_{zx}$ component is retained as a separate Frobenius factor.  Since all
+By Lemma~\ref{lem:C1}, once established, parallel copies of the P0 rectangles would give a chain isomorphism $H_r$ of the
+same form as (17), with the corresponding endpoint sets.  The
+$r_{zx}$ component is not assumed split; its stabilization relations are
+the subject of Section~\ref{sec:local-stabilization}.  Since all
 copies lie in one fixed tubular product chart, $H_r$ commutes with every
 gluing action and with adding a parallel pair.
 
@@ -267,8 +304,9 @@ whole source that calculation is
 (\epsilon\otimes\epsilon)\Delta(1)=0,\qquad
 (\epsilon\otimes\epsilon)\Delta(X)=1.
 \]
-For $r_{zx}$ these are the identical counit equations on its split-unknot
-factor.  Forgetting the distinguished new pair has constant-size fibers
+For $r_{zx}$ the same equations are required inside a tubular neighbourhood
+of the component, without any split hypothesis; this is the local statement
+of Section~\ref{sec:local-stabilization}.  Forgetting the distinguished new pair has constant-size fibers
 between placement sets, and the normalizations in (25) cancel their
 cardinalities.  The dotted raw degree $+2$ is cancelled by the target cabled
 shift $-2$.  Consequently, for every owner and state,
@@ -281,15 +319,36 @@ Below $s_0$ the second equality is the definition; the Frobenius identities
 and disjoint-support interchange prove the first equality and the commutation
 of all owner squares.
 
-Equations (26)--(27), together with the coefficient trace relation already
-handled by (17), prove on the whole cabled direct sum
+Once (26)--(27) are established on the actual cabled source, together with
+the coefficient trace relation of (17), they prove on the whole cabled
+direct sum
 \[
 D_3(\beta_i(b)x-x)=0,\quad
 D_3(\psi_i^{[0]}x)=0,\quad
-D_3(\psi_i^{[1]}x-x)=0.
+D_3(\psi_i^{[1]}x-x)=0,
 \]
-The quotient universal property and MWW Theorem~3.2 therefore give
-$\overline D_3:\mathcal S^2_0(W_2;\Q)\to\Q$.
+and the quotient universal property with MWW Theorem~3.2 then gives
+$\overline D_3:\mathcal S^2_0(W_2;\Q)\to\Q$.  At present (17) and
+(26)--(27) are verified only on the control collar, so this descent is part
+of the \Open\ Hypothesis~\ref{hyp:P1}.
+
+\subsection{Local stabilization without a split hypothesis}
+\label{sec:local-stabilization}
+
+For a framed component $K_i$ and a cable state $r$, let $\chi_{i,r}$ denote
+the local closure of the $r_i$ parallel copies of $K_i$ inside a tubular
+neighbourhood of $K_i$, defined in the pre-quotient foam category by the
+undotted and once-dotted sphere evaluations.  The statement needed for the
+$\psi$ relations of every owner, including $r_{zx}$, is
+\[
+\chi_{i,r+e_i}\circ\psi_i^{[0]}=0,\qquad
+\chi_{i,r+e_i}\circ\psi_i^{[1]}=\chi_{i,r},
+\]
+with no assumption that $K_i$ is split from the rest of the link.  This
+local stabilization--retraction statement is \Open.  The earlier text
+inferred a split unknot from the empty free word of the transported
+$r_{zx}$; that inference is withdrawn, since a free-group word does not
+determine an embedded component.
 
 \subsection{C conclusion and the degree-$494$ square}
 
@@ -315,17 +374,28 @@ $\operatorname{Id}_U\otimes X^{\otimes227}$.  Its successive degrees are
 \[
 -44+227=183,\qquad183+315=498,\qquad498-4=494.
 \]
-Diagram (28) sends it to a class $x_2$ satisfying
-$\overline D_3(x_2)=2624\ne0$ on the Johnson replacement collar.
+Under Hypothesis~\ref{hyp:P1}, diagram (28) sends it to a class $x_2$
+with $\overline D_3(x_2)=2624\ne0$ on the Johnson replacement collar.
 
-\begin{theorem}[Coefficient comparison C]\label{thm:Cdischarge}
-Hypothesis~\ref{hyp:P1} holds for the P0 replacement.  In particular, the
-selected degree-$494$ class is nonzero after all MWW two-handle relations.
-\end{theorem}
+\begin{proposition}[Status of C]\label{thm:Cdischarge}
+Hypothesis~\ref{hyp:P1} is \Open\ for the Johnson replacement.
+Established: the representable $HH_0$ reduction, Lemma~\ref{lem:C2} for the
+endpoint representation, Lemma~\ref{lem:filtered-cubic}, and the frozen
+Burau value \eqref{eq:selectedD3}.  Not established: the actual
+product-ribbon isotopy and chain-level action squares of
+Lemma~\ref{lem:C1}; the statewise definition of $D_r$ by placement averages
+and its relations (26)--(27) on every cable state of the actual source; the
+local stabilization statement of Section~\ref{sec:local-stabilization}; and
+hence the descent of $D_3$ through the complete two-handle cocone and the
+nonvanishing of the selected degree-$494$ class after all MWW two-handle
+relations.
+\end{proposition}
 
 \begin{proof}
-This is discharged for the Johnson replacement collar by
-Lemmas~\ref{lem:C1} and~\ref{lem:C2}.
+The established items are the replayed certificates and the Lean files
+named in Appendix~\ref{sec:reproducibility-extended}.  The remaining items
+require the actual cut tangle, which is not part of the current
+certificates.
 \end{proof}
 
 \paragraph{C/S firewall.}

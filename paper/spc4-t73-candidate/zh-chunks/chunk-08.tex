@@ -35,11 +35,19 @@ Closed-manifold HJ Theorem~5.3 is not used to conclude that $B$ is fixed.
 It is used only with Lemma~\ref{lem:Ssystem}: any other complete system,
 including a going-up Kirby attaching system, is related by isotopy,
 permutation and slides in the closed manifold, so the kernels agree.
-Horvat--Jab\l{}onowski Lemmas~5.5 and~5.7 do not appear in
-\cite{HorvatJablonowski2025} and are not invoked.
+The current version of \cite{HorvatJablonowski2025} (arXiv v3) contains
+Lemma~5.5 (spotted-ball slide lemma) and Lemma~5.7 (relative uniqueness of
+complete sphere systems); its Theorem~5.3 is proved through Lemma~5.7,
+which in turn uses Lemma~5.5.  This paper invokes only Theorem~5.3 in the
+closed manifold.  It does not invoke Lemma~5.7 in its relative form, which
+would be the statement needed to keep the detector ball $B$ fixed during
+the sphere slides; that relative statement is not used and the
+corresponding fixed-$B$ conclusion is not claimed.
 In the reversed $1$-handle picture, three belt spheres miss the P0 cube,
 with dual loops pairing to the identity, $b=0$ endpoint foams, and
-disjointness from the C1 leftover link and C2 supports.
+disjointness from the C1 model link and C2 supports; these are properties
+of the model picture, and the corresponding statements for the actual
+$\partial W_2$ are \Open\ (Proposition~\ref{thm:Sdischarge}).
 
 MWW's intrinsic reformulation of a $3$-handle quotient uses the local module
 action of $\mathcal S^2_0(S^2\times D^2)$.  At $N=2$, let $A_0$ denote the
@@ -89,6 +97,9 @@ Closed-manifold HJ Theorem~5.3 relates any other complete
 system to this one by isotopy in the closed manifold; Lemma~\ref{lem:Ssystem}
 identifies the kernels.  The detector remains in $B$, which those belt
 spheres miss.  The six equations (31) are then Lemma~\ref{lem:Sendpoint}.
+All of this concerns the model reversed $1$-handle picture; the
+corresponding constructions in the actual $\partial W_2$ are \Open\
+(Proposition~\ref{thm:Sdischarge}).
 \end{proof}
 
 \subsection{The essential-sphere endpoint comparison}
@@ -141,9 +152,12 @@ The full mixed braid maps have the form \(P(I+O(h))\).  The permutation
 \(P\) has just been cancelled, and pre- or postcomposing a row beginning in
 order \(h^3\) with \(I+O(h)\) changes only order \(h^4\) and higher.
 Therefore the constant calculation (32) is exactly the calculation seen by
-the divided cubic row.  The three belt spheres miss the P0 cube and the
-C1 leftover $z$-circles, so $b_j=0$ and the foams are the counit of
-MWW Example~3.8.
+the divided cubic row.  In the model picture the three belt spheres miss
+the P0 cube and the C1 model $z$-circles, so $b_j=0$ and the foams are the
+counit of MWW Example~3.8.  For the actual $\partial W_2$ the spheres
+$A_j$, the numbers $b_j$, the intersections with the two-handle cocores and
+the hemisphere movies are not constructed, so the lemma is established for
+the model picture only.
 \end{proof}
 
 The endpoint exchange square is the $b=0$ counit of
@@ -159,11 +173,22 @@ Lemma~\ref{lem:Sendpoint}.
 whose lower maps are the actual counit row and actual \(A_j\)-action by the
 movie decomposition in Lemma~\ref{lem:Sendpoint}.
 
-\begin{theorem}[Relative three-handle closure S]\label{thm:Sdischarge}
-Hypothesis~\ref{hyp:P2} holds for the P0 replacement.
-\end{theorem}
+\begin{proposition}[Status of S]\label{thm:Sdischarge}
+Hypothesis~\ref{hyp:P2} is \Open\ for the Johnson replacement.
+Established: Lemma~\ref{lem:Ssystem} (kernel invariance under isotopy,
+permutation and sphere slides) and the algebraic form (30)--(32) on the
+model picture.  Not established: an actual complete sphere system
+$A_1,A_2,A_3$ in the actual $\partial W_2$ with the conditions of HJ
+Theorem~5.3 verified (embedded, pairwise disjoint, connected complement,
+spherical homology basis, disjoint from the detector ball, simultaneous
+surgery giving $S^3$); the actual equators, hemispheres, intersections with
+the two-handle cocores, restored core disks and Morse movies; and the
+identities $D(vA_0)=D(v)$, $D(vA_1)=0$ for all source elements and all
+relative-class summands computed from them.
+\end{proposition}
 
 \begin{proof}
-By Lemmas~\ref{lem:Ssystem} and~\ref{lem:Sendpoint} and Proposition
-\ref{thm:Sgeometry}.
+Lemma~\ref{lem:Ssystem} is proved above.  The remaining items depend on
+Hypotheses~\ref{hyp:P0} and~\ref{hyp:P1} and on constructions that are not
+part of the current certificates.
 \end{proof}

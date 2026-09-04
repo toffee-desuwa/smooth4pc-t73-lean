@@ -1,7 +1,8 @@
 \section{Johnson product-ribbon presentation and P0}\label{sec:johnson-presentation}
 
 We record the AR-side construction, summarize rejected compact lifts, and
-give the Johnson-generator replacement proving Hypothesis~\ref{hyp:P0}.
+give the Johnson-generator replacement for Hypothesis~\ref{hyp:P0}; its
+remaining obligations are listed in Proposition~\ref{thm:P0discharge}.
 
 \subsection{The actual AR link}
 
@@ -212,17 +213,22 @@ genus-three Heegaard pair to the coordinate-spine pair used by
 Aitchison--Rubinstein.
 \end{lemma}
 
-\begin{proof}
-There is a Freudenthal triangulation of Johnson's period-one torus on which
-the affine map $S$ is a simplex-by-simplex map onto a triangulation of the
-period-two torus, carrying each Johnson spine $1$-simplex onto the
-corresponding AR coordinate spine.  Because the linear part is $2I$,
-Euclidean distances scale by $2$, so Johnson's Voronoi handlebodies map onto
-Voronoi cells of the image spines.  The protected ball of radius
-$1/196104$ about $0$ maps to the ball of radius $2/196104$ about $Q$.  A
-discrete Voronoi Heegaard pair on a $384$-tetrahedron torus is certified, and
-$T(v)=v-(1,1,1)$ carries the Johnson pair onto it.
-\end{proof}
+\begin{remark}[Status of Lemma~\ref{lem:P0a}]
+\Open.  Established: there is a Freudenthal triangulation of Johnson's
+period-one torus on which $S$ is a simplex-by-simplex map onto a
+triangulation of the period-two torus, carrying each Johnson spine
+$1$-simplex onto the corresponding AR coordinate spine; the linear part is
+$2I$, so Euclidean distances scale by $2$; the protected ball of radius
+$1/196104$ about $0$ maps to the ball of radius $2/196104$ about $Q$; and a
+discrete Voronoi Heegaard pair on the $384$-tetrahedron torus, defined by
+comparing barycentre distances to the two spines, is certified and carried
+by $T(v)=v-(1,1,1)$.  Not established: that these discrete cells are regular
+neighbourhoods of the spines.  The required certificate is a barycentric
+dual-block neighbourhood of each spine with an explicit elementary-collapse
+sequence onto the spine, common boundary of genus three, union equal to
+$T^3$, transport of the complete pair by $S$, and independent handlebody
+recognition; until it is supplied, the lemma is \Open.
+\end{remark}
 
 \begin{lemma}[The two framed cancellations]\label{lem:P0b}
 In the Johnson--AR replacement, the pairs \((t,h_{CS})\) and \((x,m_1)\)
@@ -231,34 +237,61 @@ cancellations transport the whole labelled attaching link and preserve the
 section framing class \(\varepsilon=0\).
 \end{lemma}
 
-\begin{proof}
-For the selected Johnson lift, $\psi_A(x)=z$ and $m_1=zx^{-1}$.  Each pair
-admits a local product $1/2$-handle cancellation of geometric intersection
-$1$ that transports the labelled attaching link and preserves
-$\varepsilon=0$.
-\end{proof}
+\begin{remark}[Status of Lemma~\ref{lem:P0b}]
+\Open.  Established: for the selected Johnson lift, $\psi_A(x)=z$ at the
+level of free-group words, so $m_1=zx^{-1}$ after the first cancellation,
+and the certificate contains two standard local cancellation movies in
+$\mathbb R^3$ with geometric intersection $1$.  Not established: the actual
+PL homeomorphism $\psi_A$ composed from the $93$ Johnson generators, the
+actual framed attaching link \eqref{eq:ARcore}--\eqref{eq:ARannulus} built
+from it, and the cancellations of $(t,h_{CS})$ and $(x,m_1)$ performed on
+that link with triangulated belt spheres, band slides, transported
+components and transported normal fields.  Word-level identities do not
+substitute for these embedded objects.
+\end{remark}
 
 \begin{lemma}[Compatibility with MWW cabling]\label{lem:P0c}
 The framing on the 44 Johnson lanes is the framing used by the MWW cable
 construction.
 \end{lemma}
 
-\begin{proof}
-The $44$ Johnson six-sweep strands are realized as height-monotone
-polylines in a triangulated $3$-ball with constant product normals, bound to
-the Johnson $y$-wickets in the certified handlebody pair.  Reconstruction
-recovers the public $11340$-letter word.
-\end{proof}
+\begin{remark}[Status of Lemma~\ref{lem:P0c}]
+\Open.  Established: $44$ height-monotone polylines with constant product
+normals in a triangulated $3$-ball, labelled by the Johnson $y$-wickets,
+whose derived crossing movie recovers the public $11340$-letter word.  Not
+established: that these strands are the strands cut from the actual
+cancelled attaching link by the $y/z$ disk system, and that their normals
+are the MWW cable framing.  The committed strands are generated from the
+word by a control construction; they calibrate the crossing extractor and
+do not bind the framing.
+\end{remark}
 
 \subsection{P0 conclusion}\label{sec:p0-conclusion}
 
-\begin{theorem}[Johnson replacement discharges P0]\label{thm:P0discharge}
-Hypothesis~\ref{hyp:P0} holds for the Johnson replacement presentation.
-\end{theorem}
+\begin{proposition}[Status of P0 for the Johnson replacement]\label{thm:P0discharge}
+The replayed finite certificates establish: (i) the $93$-transvection
+factorization of $A$ and the $93$-bit side pattern with a GAP free basis;
+(ii) the exact compact $m_2$ word with $42$ $y$-passages and
+$\operatorname{lk}(m_2,r_{yz})=0$ (Lemma~\ref{lem:P0d-link}); (iii) the
+six-sweep word equal to the public $11340$-letter word; (iv) a discrete
+Voronoi Heegaard pair on the $384$-tetrahedron torus carried by $S$.  The
+following obligations of Hypothesis~\ref{hyp:P0} are \Open:
+(a) the regular-neighbourhood identification of the handlebody pair
+(Lemma~\ref{lem:P0a}); (b) the actual PL homeomorphism $\psi_A$ composed
+from the $93$ Johnson generators and the actual Aitchison--Rubinstein framed
+link \eqref{eq:ARcore}--\eqref{eq:ARannulus}; (c) the actual Kirby
+cancellations of $(t,h_{CS})$ and $(x,m_1)$ with belt spheres, band slides
+and transported normal fields (Lemma~\ref{lem:P0b}); (d) the collar strands
+cut from the actual cancelled link and the framing identity with the MWW
+cable (Lemma~\ref{lem:P0c}); (e) the identification of the closed picture
+with $\Sigma_A^0$.  Hypothesis~\ref{hyp:P0} is therefore \Open.
+\end{proposition}
 
 \begin{proof}
-Lemmas~\ref{lem:P0a}--\ref{lem:P0c} and~\ref{lem:P0d-link} supply the
-handlebody bridge, cancellations, cabling compatibility, and vanishing
-mixed linking.  The staged Kirby pipeline identifies the resulting closed
-picture with $\Sigma_A^0$.
+Items (i)--(iv) are the replayed certificates listed in
+Appendix~\ref{sec:reproducibility-extended}.  Items (a)--(e) are not
+established by them: the committed collar strands are generated from the
+public word by a control construction, and the cancellation movies are
+local models in $\mathbb R^3$ rather than moves on the actual attaching
+link.
 \end{proof}

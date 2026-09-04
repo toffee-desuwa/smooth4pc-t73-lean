@@ -17,9 +17,9 @@ attaching 球面的 isotopy 给出同构的柄附着。置换仅重排不相交�
 
 在 Johnson 替换反向 $1$-柄图景中选取标准完整系
 \(\mathcal A=(A_1,A_2,A_3)\)，已与 P0 重构立方体 $B$ 不相交。闭流形 HJ 定理~5.3 不用于得出 $B$ 已固定。
-它仅与引理~\ref{lem:Ssystem} 一起使用：任何其他完整系（含 going-up Kirby attaching 系）在闭流形中经 isotopy、置换与 slide 相关，故核一致。Horvat--Jab\l{}onowski 引理~5.5 与~5.7 不出现在 \cite{HorvatJablonowski2025} 中，亦未调用。
+它仅与引理~\ref{lem:Ssystem} 一起使用：任何其他完整系（含 going-up Kirby attaching 系）在闭流形中经 isotopy、置换与 slide 相关，故核一致。\cite{HorvatJablonowski2025} 的当前版本（arXiv v3）含引理~5.5（spotted-ball slide 引理）与引理~5.7（完整球面系的相对唯一性）；其定理~5.3 经引理~5.7 证明，而引理~5.7 又使用引理~5.5。本文只在闭流形中调用定理~5.3，不直接调用相对形式的引理~5.7；后者正是在球面 slide 过程中保持 detector 球 $B$ 固定所需的陈述，本文既不使用它，也不断言相应的固定 $B$ 结论。
 在反向 $1$-柄图景中，三个 belt 球面避开 P0 立方体，
-dual 圈配对为恒等，$b=0$ 端点 foam，且与 C1 剩余 link 及 C2 支撑不相交。
+dual 圈配对为恒等，$b=0$ 端点 foam，且与 C1 模型 link 及 C2 支撑不相交；这些是模型图景的性质，实际 $\partial W_2$ 的相应陈述为 \Open（命题~\ref{thm:Sdischarge}）。
 
 MWW 对 $3$-柄商的内在重述使用 $\mathcal S^2_0(S^2\times D^2)$ 的局部模作用。在 $N=2$ 时，令 $A_0$ 为带一个点的本质球面，$A_1$ 为无点球面。商关系为
 \[
@@ -51,7 +51,7 @@ A_0=1,\qquad A_1=0.
 
 \begin{proof}
 Johnson 替换的反向 $1$-柄图景放置三个避开 $B$ 的 belt 球面，dual 圈的柄段与 owner belt 球面相交一次，且坐标图返回避开每个 belt 立方体。闭流形 HJ 定理~5.3 将任何其他完整系在闭流形中经 isotopy 与此系相关；引理~\ref{lem:Ssystem}
-识别核。检测器留在那些 belt 球面避开的 $B$ 中。六个方程 (31) 于是为引理~\ref{lem:Sendpoint}。
+识别核。检测器留在那些 belt 球面避开的 $B$ 中。六个方程 (31) 于是为引理~\ref{lem:Sendpoint}。以上均针对模型反向 $1$-柄图景；实际 $\partial W_2$ 中的相应构造为 \Open（命题~\ref{thm:Sdischarge}）。
 \end{proof}
 
 \subsection{本质球面端点比较}
@@ -80,7 +80,7 @@ Johnson 替换的反向 $1$-柄图景放置三个避开 $B$ 的 belt 球面，du
 当 \(b_j=0\) 时解释为 \(\epsilon(1)=0,\epsilon(X)=1\)。
 \(1,X\) 基由 MWW 例~3.8 中 \(\Delta^+\) cap 归一化，BHPW strict 函子性防止 \(\Delta^-\) movie 中的独立符号。
 
-完整混合 braid 映射形如 \(P(I+O(h))\)。置换 \(P\) 刚被抵消，以 \(I+O(h)\) 预复合或后复合始于 \(h^3\) 阶的行仅改变到 \(h^4\) 阶及以上。故常数计算 (32) 正是除法三次行所见计算。三个 belt 球面避开 P0 立方体与 C1 剩余 $z$-圆，故 $b_j=0$，foam 为 MWW 例~3.8 的 counit。
+完整混合 braid 映射形如 \(P(I+O(h))\)。置换 \(P\) 刚被抵消，以 \(I+O(h)\) 预复合或后复合始于 \(h^3\) 阶的行仅改变到 \(h^4\) 阶及以上。故常数计算 (32) 正是除法三次行所见计算。在模型图景中三个 belt 球面避开 P0 立方体与 C1 模型 $z$-圆，故 $b_j=0$，foam 为 MWW 例~3.8 的 counit。对实际 $\partial W_2$，球面 $A_j$、数 $b_j$、与二柄余核的交及半球 movie 均未构造，故本引理仅对模型图景确立。
 \end{proof}
 
 端点交换方块是引理~\ref{lem:Sendpoint} 的 $b=0$ counit。
@@ -94,11 +94,10 @@ Johnson 替换的反向 $1$-柄图景放置三个避开 $B$ 的 belt 球面，du
 \]
 其下映射为实际 counit 行及引理~\ref{lem:Sendpoint} 中 movie 分解的实际 \(A_j\)-作用。
 
-\begin{theorem}[相对三柄闭包 S]\label{thm:Sdischarge}
-假设~\ref{hyp:P2} 对 P0 替换成立。
-\end{theorem}
+\begin{proposition}[S 的状态]\label{thm:Sdischarge}
+假设~\ref{hyp:P2} 对 Johnson 替换为 \Open。已确立：引理~\ref{lem:Ssystem}（isotopy、置换与球面 slide 下的核不变性）以及模型图景上的代数形式 (30)--(32)。未确立：实际 $\partial W_2$ 中满足 HJ 定理~5.3 条件（嵌入、两两不相交、补连通、球面同调基、与 detector 球不相交、同时 surgery 得 $S^3$）的实际完整球面系 $A_1,A_2,A_3$；实际赤道、半球、与二柄余核的交、恢复的 core 圆盘与 Morse movie；以及由它们算出的、对所有源元与全部相对类分项成立的恒等式 $D(vA_0)=D(v)$、$D(vA_1)=0$。
+\end{proposition}
 
 \begin{proof}
-由引理~\ref{lem:Ssystem} 与~\ref{lem:Sendpoint} 及命题
-\ref{thm:Sgeometry}。
+引理~\ref{lem:Ssystem} 已于上文证明。其余各项依赖假设~\ref{hyp:P0} 与~\ref{hyp:P1}，以及当前证书不含的构造。
 \end{proof}

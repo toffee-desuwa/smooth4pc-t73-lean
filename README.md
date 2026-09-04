@@ -17,13 +17,19 @@ sphere*).
 
 ## What is proved, and what is open
 
-For an explicit **Johnson-generator** handle presentation the paper proves the
-geometric inputs **P0, C, S, and P3** needed for a skein-lasagna comparison at
-quantum degree \(494\), including the identification \(X_J\cong\Sigma_A^0\).
+For an explicit **Johnson-generator** handle presentation the paper formulates
+the geometric inputs **P0, C, S, and P3** needed for a skein-lasagna comparison
+at quantum degree \(494\), together with the identification
+\(X_J\cong\Sigma_A^0\). **P0, C, and S are open**: the committed certificates
+check finite combinatorial models of these inputs (control strands, local
+model movies, model spheres), not the actual Cappell--Shaneson geometry. The
+paper's status table (Section 3) is the claim boundary.
 
-An exact finite calculation gives a nonzero divided cubic \(D_3=2624\). An
-Artin--Magnus certificate and the pure-braid Andreadakis theorem establish a
-third-order property of the public braid word.
+An exact finite calculation gives the nonzero integer \(2624\) as the divided
+cubic of a frozen Burau computation in the collar endpoint convention;
+identifying it with the MWW divided cubic of an actual geometric class is part
+of the open input C. An Artin--Magnus certificate and the pure-braid
+Andreadakis theorem establish a third-order property of the public braid word.
 
 A Lean development formalizes the **abstract quotient argument**: given
 interface data assembling the MWW quotients and four-handle transport
@@ -35,7 +41,8 @@ in Lean.
 | --- | --- |
 | Finite algebra (\(2624\), degree \(494\), \(\det A=\det(A-I)=1\)) | Checked in Lean |
 | Abstract conditional implication | Checked in Lean |
-| Johnson P0 / C / S / P3 (paper geometry + certificates) | Discharged in the paper |
+| Johnson P0 / C / S (actual geometry) | **Open** (finite-model certificates only) |
+| P3 computed part (E12: empty-link degree 494 on \(S^4\)) | Checked; E11/E13 depend on P0 |
 | Lean inhabitant of `ExternalGeometry` | **Open** |
 
 The exact Lean boundary is
@@ -46,6 +53,8 @@ python3 scripts/audit_t73_premises.py --check
 ```
 
 Expected summary: `P0/C/S/P3=PASS`, `OVERALL=OPEN`, `COUNTEREXAMPLE=False`.
+The `PASS` values are certificate-internal (the finite models replay); the
+paper's status table records P0, C, and S as open.
 
 **Erratum (2 September 2026).** An earlier draft mixed two endpoint index
 tables and reported \(-59072\). With both objects in the collar table used by

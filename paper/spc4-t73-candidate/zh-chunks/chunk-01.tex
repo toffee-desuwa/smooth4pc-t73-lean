@@ -32,9 +32,10 @@ is concentrated in bidegree zero.
 
 We investigate the standard-form Cappell--Shaneson parameter
 $(41,189,73)$.  A Johnson-generator replacement supplies a finite braid word
-and a labelled handle presentation; the paper verifies the handlebody,
+and a labelled handle presentation; the paper states the handlebody,
 coefficient-comparison, three-handle, four-handle, and
-Cappell--Shaneson-identification inputs for that replacement.
+Cappell--Shaneson-identification inputs for that replacement and records,
+for each of them, whether it is established or \Open.
 
 \subsection*{Contributions}
 
@@ -42,11 +43,16 @@ The main contributions are as follows.
 \begin{enumerate}
 \item We record a splitting-preserving Johnson lift and an exact
 six-sweep 44-channel word equal to the public 11340-letter word.  This is a
-finite P0d fact.  Lemmas P0a--c supply the Johnson replacement presentation,
-and P3/E13 identifies that picture with \(\Sigma_A^0\).
-\item Coefficient comparison and the reversed three-handle picture are
-proved for the Johnson replacement.
+finite P0d fact.  Lemmas P0a--c state the Johnson replacement presentation;
+their geometric content (the actual Aitchison--Rubinstein link built from
+the actual Johnson homeomorphism, the actual Kirby cancellations, and the
+framing identity with the MWW cable) is \Open, and so is the identification
+of the closed picture with \(\Sigma_A^0\).
+\item The coefficient comparison C and the reversed three-handle picture S
+are formulated for the Johnson replacement with their remaining obligations
+listed explicitly; both are \Open.
 \item A formal Lean core checks the abstract quotient implication; the
-geometric instances are proved in the body of the paper and summarized in
+status of every geometric instance is summarized in
+Section~\ref{sec:status-table} and the replay commands in
 Appendix~\ref{sec:reproducibility-extended}.
 \end{enumerate}

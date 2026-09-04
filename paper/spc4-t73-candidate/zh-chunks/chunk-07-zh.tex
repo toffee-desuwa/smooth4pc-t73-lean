@@ -9,7 +9,7 @@
 p_y=42+2=44,\qquad p_z=269+2=271.
 \]
 在循环 $m_2$ 词中，42 个 $y/Y$ 事件每一个都紧接其后跟一个不同的 $z/Z$ 事件；$r_{xy}$ 的两个 $y/Y$ 事件亦然。见证列出全部 44 对。
-这些对在 P0 重构股沿其认证法向的 44 条乘积带中实现，P0 立方体外另有 $227$ 个剩余 $z$-圆。范围是 Johnson 替换领圈，而非 $\partial W_2$ 中的嵌入切割。
+这些对在 P0 控制股沿其记录法向的 44 条乘积带中实现，P0 立方体外另置 $227$ 个模型 $z$-圆。范围是 Johnson 替换领圈，而非 $\partial W_2$ 中的嵌入切割。
 
 令 $\mathcal C$ 为对象 $T:P_{86}\to P_{88}$ 的预分次有理 tangle 范畴，$F$ 为这些矩形构成的带框西-东 tangle。MWW 一柄定理将切割系数识别为
 \[
@@ -52,10 +52,13 @@ C(FT,FU)\otimes C(S^1)^{\otimes227}.
 对 P0 替换，\eqref{eq:HattoriActual} 是实际 MWW 系数双模（含两个粘合作用）的自然同构。此外，下述映射 \(\operatorname{Sh}_q\) 是该双模的量子 trace，而非维数匹配的替代。
 \end{lemma}
 
-\begin{proof}
-44 条乘积带由 P0 重构股实现，具认证乘积法向 $z$-侧，给出 Johnson $y$-后-$z$ 配对
-及 $227$ 个剩余 $z$-圆。\eqref{eq:HattoriActual} 的作用立方与第~\ref{sec:exact-algebra} 节的可表 $HH_0$ 约化完成比较。
-\end{proof}
+\begin{remark}[引理~\ref{lem:C1} 的状态]
+\Open。已确立：由 P0 控制股及其乘积法向 $z$-侧得到的 44 个模型矩形，给出 Johnson $y$-后-$z$ 配对与 $227$ 个模型 $z$-圆，以及第~\ref{sec:exact-algebra} 节的可表 $HH_0$ 约化。未确立：对实际切割 tangle $R$ 的同痕
+\[
+R\cup\overline T\cup T'\;\cong\;\overline{FT}\circ FT'\sqcup 227\text{ 个圆}
+\]
+（固定边界、detector 球与粘合支撑），从而链层面作用方块 (17) 亦未确立。没有该同痕，\eqref{eq:HattoriActual} 只是模型同构，下述映射 $\operatorname{Sh}_q$ 尚未被识别为实际系数双模的量子 trace。
+\end{remark}
 
 \subsection{量子 trace 与端点映射}
 
@@ -100,36 +103,50 @@ $\operatorname{Sh}_h([v_T])=u_h$。其绝对次数为
 W\mapsto PWP^{-1},\qquad u\mapsto Pu,\qquad
 \ell\mapsto\ell P^{-1}.
 \]
-矩阵系数不变；我们在该共同传输后选取公开端点标签。BPW 杯/盖公式则蕴含常数项在同一位置变换后为
+矩阵系数不变；我们在该共同传输后选取公开端点标签。常数项由第~\ref{sec:exact-algebra} 节的单一领圈端点约定固定：所选 cup 连接绑定到领圈位置 $2$ 与 $87$ 的物理端点，BPW 杯/盖公式给出
 \[
-u_0=e_0\pm e_5,\qquad
-\ell_0=e_{87}^*\pm e_2^*.
+u_0=e_2-e_{87},\qquad
+\ell_0=e_{87}^*-e_2^*,
 \]
-所有省略因子均为可逆 q-单项式或正阶 $h$ 修正。
+即 \eqref{eq:u} 与 \eqref{eq:ell}，不留任何未定符号。所有省略因子均为可逆 $q$-单项式或正阶 $h$ 修正，由下文引理~\ref{lem:filtered-cubic}，它们不影响 divided cubic。
 
 在 $\Q[[h]]$ 上定义
 \[
 D_h=\ell_h(\rho_h(W)-I)\operatorname{Sh}_h.
 \]
-这在量子系数 trace 上良定义，因为 \eqref{eq:actualShadow} 已施加量子循环性。精确 Magnus 计算与 Darn\'e 的 Andreadakis 定理给出 $W\in\Gamma_3(P_{44})$ \cite[Theorem~6.2]{Darne2021}；等价地，且亦由全部 7,744 个条目直接计算，
+这在量子系数 trace 上良定义，因为 \eqref{eq:actualShadow} 已施加量子循环性。精确 Magnus 计算与 Darn\'e 的 Andreadakis 定理给出 $W\in\Gamma_3(P_{44})$ \cite[Theorem~6.2]{Darne2021}。因每个纯辫生成元作用为 $I+O(h)$，引理~\ref{lem:commutator-order} 给出单向蕴含
 \[
-\rho_h(W)-I\in h^3\operatorname{End}(E_{88}).
+W\in\Gamma_3(P_{44})\ \Longrightarrow\
+\rho_h(W)-I\in h^3\operatorname{End}(E_{88});
 \]
+不断言其逆，亦不需要。独立于 Andreadakis 定理，对 $\rho_h(W)-I$ 全部 $7{,}744$ 个条目的直接计算验证了右侧的隶属关系。
 故 $D_h$ 取值于 $h^3\Q[[h]]$。除以 $h^3$ 唯一，对 $h$ 约化给出与提升无关的普通泛函
 \[
 D_3:HH_0(\mathcal C;M_R)\longrightarrow\Q.
 \]
-杯、盖与基变换中的正阶修正不改变三次系数。
+杯、盖与基变换中的正阶修正不改变三次系数（引理~\ref{lem:filtered-cubic}）。
+
+\begin{lemma}[滤过三次配对]\label{lem:filtered-cubic}
+设 $A(h)=\sum_{j\ge0}A_jh^j$ 为 $E_{88}$ 的自同态级数且 $A_0=A_1=A_2=0$，$u(h)=\sum_k u_kh^k$ 与 $\ell(h)=\sum_i\ell_ih^i$ 为向量级数与行级数。则
+\[
+[h^3]\,\ell(h)A(h)u(h)=\ell_0A_3u_0,
+\]
+且以常数自同构 $P$ 将 $(A,u,\ell)$ 换为 $(PAP^{-1},Pu,\ell P^{-1})$ 时该系数不变。
+\end{lemma}
+
+\begin{proof}
+$[h^3]\ell(h)A(h)u(h)=\sum_{i+j+k=3}\ell_iA_ju_k$，其中 $j\le2$ 的项均为零。同步传输下每一项不变。
+\end{proof}
 
 四个混合指标 Burau 符号变体
 \[
 -53824,\quad -53760,\quad -59008,\quad -59072
 \]
-非零，但它们不是冻结三次项。冻结公开收据与 Lean 给出
+非零，但它们不是冻结三次项：每一个都混用了两套端点坐标系。冻结公开收据与 Lean 在单一领圈约定下给出
 \begin{equation}\label{eq:selectedD3}
-D_3([v_T])=2624\ne0
+[h^3]\,\ell_h(\rho_h(W)-I)u_h=2624\ne0.
 \end{equation}
-在端点指标勘误之后。非零并不闭合 S。
+方程~\eqref{eq:selectedD3} 是关于冻结 Burau 计算的陈述；只有当引理~\ref{lem:C1} 将 $[v_T]$ 与实际系数迹类等同（该引理为 \Open）时它才成为 $D_3([v_T])=2624$。非零并不闭合 C 或 S。
 
 \subsection{完整二柄余锥}
 
@@ -154,7 +171,7 @@ p_y(r)=\sum_i r_i n_{y,i},\qquad
 p_z(r)=\sum_i r_i n_{z,i}.
 \tag{24}
 \]
-由引理~\ref{lem:C1}，P0 矩形的平行副本给出与 (17) 同形的链同构 $H_r$，具相应端点集。分裂的 $r_{zx}$ 分量保留为单独 Frobenius 因子。因所有副本位于同一固定管状乘积坐标图中，$H_r$ 与每个粘合作用及添加平行对可交换。
+由引理~\ref{lem:C1}（一旦确立），P0 矩形的平行副本将给出与 (17) 同形的链同构 $H_r$，具相应端点集。不假设 $r_{zx}$ 分量分裂；其 stabilization 关系是第~\ref{sec:local-stabilization} 节的主题。因所有副本位于同一固定管状乘积坐标图中，$H_r$ 与每个粘合作用及添加平行对可交换。
 
 令 $s_0=e_{m_2}+e_{r_{xy}}$。若 $r\ge s_0$，令 $\Omega_r$ 为 $m_2$ 与 $r_{xy}$ 各选一个负副本与一个正副本的全部有限选择集。对 $\omega\in\Omega_r$，用 MWW 核心 counit 闭合每个未选乘积因子，用所选 44 个通道做点推，并记所得行的三次系数为 $D_{r,\omega}$。定义
 \[
@@ -176,7 +193,7 @@ D_r\beta_i(b)=D_r
 (\epsilon\otimes\epsilon)\Delta(1)=0,\qquad
 (\epsilon\otimes\epsilon)\Delta(X)=1.
 \]
-对 $r_{zx}$ 这些是其分裂 unknot 因子上的相同 counit 方程。遗忘 distinguished 新对在放置集之间有常数大小纤维，(25) 中的归一化消去其基数。dotted 原始次数 $+2$ 被目标缆化移位 $-2$ 抵消。因此对每个 owner 与态，
+对 $r_{zx}$，同样的方程须在该分量的管状邻域内成立，且不作任何分裂假设；这是第~\ref{sec:local-stabilization} 节的局部陈述。遗忘 distinguished 新对在放置集之间有常数大小纤维，(25) 中的归一化消去其基数。dotted 原始次数 $+2$ 被目标缆化移位 $-2$ 抵消。因此对每个 owner 与态，
 \[
 D_{r+e_i}\psi_i^{[0]}=0,\qquad
 D_{r+e_i}\psi_i^{[1]}=D_r.
@@ -184,13 +201,23 @@ D_{r+e_i}\psi_i^{[1]}=D_r.
 \]
 在 $s_0$ 之下第二个等式为定义；Frobenius 恒等式与不相交支撑交换证明第一个等式及所有 owner 方块可交换。
 
-方程 (26)--(27) 连同已由 (17) 处理的系数 trace 关系，在整个缆化直和上证明
+一旦 (26)--(27) 在实际缆化源上确立，连同 (17) 的系数 trace 关系，它们在整个缆化直和上证明
 \[
 D_3(\beta_i(b)x-x)=0,\quad
 D_3(\psi_i^{[0]}x)=0,\quad
-D_3(\psi_i^{[1]}x-x)=0.
+D_3(\psi_i^{[1]}x-x)=0,
 \]
-商 universal 性质与 MWW 定理~3.2 因此给出 $\overline D_3:\mathcal S^2_0(W_2;\Q)\to\Q$。
+商 universal 性质与 MWW 定理~3.2 随即给出 $\overline D_3:\mathcal S^2_0(W_2;\Q)\to\Q$。目前 (17) 与 (26)--(27) 仅在控制领圈上验证，故该下降属于 \Open 的假设~\ref{hyp:P1}。
+
+\subsection{无分裂假设的局部稳定化}
+\label{sec:local-stabilization}
+
+对带框分量 $K_i$ 与缆态 $r$，令 $\chi_{i,r}$ 为 $K_i$ 的 $r_i$ 个平行副本在 $K_i$ 管状邻域内的局部闭合，在预商 foam 范畴中由无点与一点球面求值定义。每个 owner（含 $r_{zx}$）的 $\psi$ 关系所需的陈述是
+\[
+\chi_{i,r+e_i}\circ\psi_i^{[0]}=0,\qquad
+\chi_{i,r+e_i}\circ\psi_i^{[1]}=\chi_{i,r},
+\]
+且不假设 $K_i$ 与 link 其余部分分裂。该局部稳定化--收缩陈述为 \Open。较早文本由运输后 $r_{zx}$ 的空自由词推断 split unknot；该推断撤回，因为自由群词不决定嵌入分量。
 
 \subsection{C 结论与次数 $494$ 方块}
 
@@ -214,14 +241,14 @@ M_R(T_1,T_1)&\xrightarrow{H_{T_1,T_1}}&
 \[
 -44+227=183,\qquad183+315=498,\qquad498-4=494.
 \]
-图 (28) 将其映到类 $x_2$，在 Johnson 替换领圈上满足 $\overline D_3(x_2)=2624\ne0$。
+在假设~\ref{hyp:P1} 下，图 (28) 将其映到类 $x_2$，在 Johnson 替换领圈上满足 $\overline D_3(x_2)=2624\ne0$。
 
-\begin{theorem}[系数比较 C]\label{thm:Cdischarge}
-假设~\ref{hyp:P1} 对 P0 替换成立。特别地，所选次数 $494$ 类在所有 MWW 二柄关系之后非零。
-\end{theorem}
+\begin{proposition}[C 的状态]\label{thm:Cdischarge}
+假设~\ref{hyp:P1} 对 Johnson 替换为 \Open。已确立：可表 $HH_0$ 约化、端点表示上的引理~\ref{lem:C2}、引理~\ref{lem:filtered-cubic}，以及冻结 Burau 值 \eqref{eq:selectedD3}。未确立：引理~\ref{lem:C1} 的实际乘积带同痕与链层面作用方块；按放置平均定义 $D_r$ 及其在实际源每个缆态上的关系 (26)--(27)；第~\ref{sec:local-stabilization} 节的局部稳定化陈述；从而 $D_3$ 通过完备二柄余锥的下降，以及所选次数 $494$ 类在所有 MWW 二柄关系之后非零。
+\end{proposition}
 
 \begin{proof}
-由引理~\ref{lem:C1} 与~\ref{lem:C2}，针对 Johnson 替换领圈已证。
+已确立各项是附录~\ref{sec:reproducibility-extended} 所列可重放证书与 Lean 文件。其余各项需要实际切割 tangle，它不属于当前证书。
 \end{proof}
 
 \paragraph{C/S 防火墙。}

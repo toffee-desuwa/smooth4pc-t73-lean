@@ -2,8 +2,9 @@
 
 This section makes the finite layer of Section~4 self-contained.  The
 geometric binding of the same data to the Johnson replacement collar is
-Hypothesis~\ref{hyp:P1}; the integer $2624$ itself is independent of that
-binding.
+Hypothesis~\ref{hyp:P1}, which is \Open; the integer $2624$ itself is
+independent of that binding and is the value of the frozen Burau
+computation.
 
 \subsection{Erratum to the 2 September public draft}
 
@@ -17,10 +18,12 @@ and $87$, so
   u=e_2-e_{87},\qquad \ell=e_{87}^*-e_2^*.
 \]
 With both objects in that one table, the exact calculation gives
-$[\varepsilon^3]\ell(\rho(W)-I)u=-328$ and hence
-$D_3(v_T)=(-2)^3(-328)=2624$.  The nonvanishing conclusion is unchanged.
-Using the THXY coordinates consistently gives $-2496$; this is a coordinate
-check, not a second geometric class.  The value $2624$ belongs to the
+$[\varepsilon^3]\ell(\rho(W)-I)u=-328$ and hence the cubic coefficient is
+$(-2)^3(-328)=2624$.  The nonvanishing conclusion is unchanged.
+Placing both $u$ and $\ell$ in the THXY coordinates while leaving the word
+in collar coordinates gives $-2496$; this is not a coordinate change of the
+whole pairing, because the operator is not transported, and it is not a
+second geometric class (Appendix~\ref{app:legality}).  The value $2624$ belongs to the
 currently frozen collar data; if the Johnson collar word changes, the
 numerical value must be recomputed.
 
@@ -76,16 +79,17 @@ homotopy equivalence with $S^4$.  This paper uses Iwaki
 Proposition~2.1 on the identified surgery manifold instead.
 \end{remark}
 
-\begin{corollary}[Homotopy-sphere conclusion for the identified picture]
+\begin{corollary}[Homotopy-sphere conclusion]
 \label{cor:homotopy-sphere}
-For the Johnson CS handle picture $X_J$ identified with $\Sigma_A^0$ by
-P3/E13, $\Sigma_A^0$ is a homotopy $4$-sphere.
+The standard Cappell--Shaneson manifold $\Sigma_A^0$ is a homotopy
+$4$-sphere.  If the Johnson CS handle picture $X_J$ is identified with
+$\Sigma_A^0$ (P3/E13, \Open), the same holds for $X_J$.
 \end{corollary}
 
 \begin{proof}
-By \eqref{eq:determinants}, $A\in\mathrm{SL}(3,\Z)$ and $\det(A-I)=1$.
-The identification $X_J\cong\Sigma_A^0$ is the constructed CS handle picture;
-Iwaki Proposition~2.1 \cite{Iwaki2024} then applies.
+By \eqref{eq:determinants}, $A\in\mathrm{SL}(3,\Z)$ and $\det(A-I)=1$, so
+Iwaki Proposition~2.1 \cite{Iwaki2024} applies to $\Sigma_A^0$.  The
+identification $X_J\cong\Sigma_A^0$ depends on Hypothesis~\ref{hyp:P0}.
 \end{proof}
 
 \subsection{Coefficient traces and the selected Hattori class}
@@ -114,8 +118,9 @@ The sum of the $r_T$ kills every relation generator $f\cdot m-m\cdot f$ and
 therefore factors uniquely through the quotient.
 \end{proof}
 
-For the Johnson replacement collar, Lemma~\ref{lem:C1} supplies the actual
-coefficient equivalence \eqref{eq:HattoriActual}.  The selected class and
+For the Johnson replacement collar, Lemma~\ref{lem:C1}, once established,
+supplies the actual coefficient equivalence \eqref{eq:HattoriActual}; at
+present it is \Open.  The selected class and
 divided detector of Section~7 are the geometric instances of the following
 pattern.
 
@@ -220,15 +225,17 @@ degree $3$.  Contracting with \eqref{eq:ell} gives
 \end{equation}
 Hence, with $[h]\eps=-2$,
 \begin{equation}\label{eq:D3-vT-value}
-D_3([v_T])=2624\ne0.
+[h^3]\,\ell(\rho_h(B_{88})-I)u=2624\ne0,
 \end{equation}
+which is $D_3([v_T])$ once Hypothesis~\ref{hyp:P1} identifies $[v_T]$ with
+an actual coefficient-trace class.
 The complete degree-three vector is printed in Appendix~\ref{app:vector}.
 \end{proposition}
 
 \begin{proof}
 Traverse $B_{88}$ from right to left, reduce modulo $\eps^7$, and contract
 with \eqref{eq:ell}.  The resulting series is
-\eqref{eq:ell-eps-series}, so $D_3([v_T])=(-2)^3(-328)=2624$.
+\eqref{eq:ell-eps-series}, so the cubic coefficient is $(-2)^3(-328)=2624$.
 \end{proof}
 
 \begin{lemma}[Parameter expansion]\label{lem:eps-of-h}
@@ -290,9 +297,11 @@ $\ell_2(q_{12}q_{01}x_0)=2624$.  In particular, $q_{12}q_{01}x_0\ne0$.
 
 \begin{proof}
 Lemma~\ref{lem:HH0-descent} descends the quantum shadow detector through the
-coefficient trace.  Theorem~\ref{thm:Cdischarge} and
-Lemma~\ref{lem:quotient-detector} descend it through $q_{01}$.  Theorem
-\ref{thm:Sdischarge} and the same quotient lemma descend it through $q_{12}$.
+coefficient trace.  Hypothesis~\ref{hyp:P1} (status:
+Proposition~\ref{thm:Cdischarge}) and Lemma~\ref{lem:quotient-detector}
+descend it through $q_{01}$.  Hypothesis~\ref{hyp:P2} (status:
+Proposition~\ref{thm:Sdischarge}) and the same quotient lemma descend it
+through $q_{12}$.
 At every stage the pullback agrees with the preceding row, so
 Proposition~\ref{prop:D3-vT} gives the value $2624$.
 \end{proof}

@@ -76,10 +76,15 @@ We study the trace-73 Cappell--Shaneson homotopy $4$-sphere associated with
 \[
 A=\begin{pmatrix}0&269&1240\\0&41&189\\1&0&32\end{pmatrix}.
 \]
-For an explicit Johnson-generator handle presentation we prove the geometric
-inputs P0, C, S, and P3 needed for a skein-lasagna comparison at quantum
-degree $494$, including the identification $X_J\cong\Sigma_A^0$.
-An exact finite calculation gives a nonzero divided cubic $D_3=2624$.
+For an explicit Johnson-generator handle presentation we formulate the
+geometric inputs P0, C, S, and P3 needed for a skein-lasagna comparison at
+quantum degree $494$, together with the identification $X_J\cong\Sigma_A^0$.
+At present P0, C, and S are \Open: the repository certificates check finite
+combinatorial models of these inputs, not the actual Cappell--Shaneson
+geometry.  An exact finite calculation gives the nonzero integer $2624$ as
+the divided cubic of a frozen Burau computation in a fixed collar endpoint
+convention; identifying that integer with the MWW divided cubic of an actual
+geometric class is part of the open input C.
 An Artin--Magnus certificate and the pure-braid Andreadakis theorem
 establish a third-order property of the public braid word.
 A Lean development formalizes the abstract quotient argument: given interface
@@ -126,9 +131,10 @@ is concentrated in bidegree zero.
 
 We investigate the standard-form Cappell--Shaneson parameter
 $(41,189,73)$.  A Johnson-generator replacement supplies a finite braid word
-and a labelled handle presentation; the paper verifies the handlebody,
+and a labelled handle presentation; the paper states the handlebody,
 coefficient-comparison, three-handle, four-handle, and
-Cappell--Shaneson-identification inputs for that replacement.
+Cappell--Shaneson-identification inputs for that replacement and records,
+for each of them, whether it is established or \Open.
 
 \subsection*{Contributions}
 
@@ -136,12 +142,17 @@ The main contributions are as follows.
 \begin{enumerate}
 \item We record a splitting-preserving Johnson lift and an exact
 six-sweep 44-channel word equal to the public 11340-letter word.  This is a
-finite P0d fact.  Lemmas P0a--c supply the Johnson replacement presentation,
-and P3/E13 identifies that picture with \(\Sigma_A^0\).
-\item Coefficient comparison and the reversed three-handle picture are
-proved for the Johnson replacement.
+finite P0d fact.  Lemmas P0a--c state the Johnson replacement presentation;
+their geometric content (the actual Aitchison--Rubinstein link built from
+the actual Johnson homeomorphism, the actual Kirby cancellations, and the
+framing identity with the MWW cable) is \Open, and so is the identification
+of the closed picture with \(\Sigma_A^0\).
+\item The coefficient comparison C and the reversed three-handle picture S
+are formulated for the Johnson replacement with their remaining obligations
+listed explicitly; both are \Open.
 \item A formal Lean core checks the abstract quotient implication; the
-geometric instances are proved in the body of the paper and summarized in
+status of every geometric instance is summarized in
+Section~\ref{sec:status-table} and the replay commands in
 Appendix~\ref{sec:reproducibility-extended}.
 \end{enumerate}
 
@@ -232,87 +243,123 @@ implication from input structures \texttt{ExternalGeometry} and
 The candidate-specific inputs are stated below and proved in
 Sections~\ref{sec:johnson-presentation}--\ref{sec:final-identifications}.
 
-\begin{theorem}[Embedded candidate presentation, P0]\label{hyp:P0}
+\begin{hypothesis}[Embedded candidate presentation, P0]\label{hyp:P0}
 The explicit Johnson-generator replacement is a labelled and framed handle
 presentation of $\Sigma_A^0$, with the two framed product cancellations, the
 embedded detector ball and the stated cable attachments.
-\end{theorem}
+\end{hypothesis}
 
-\begin{proof}[Proof of Theorem~\ref{hyp:P0}]
-See Sections~\ref{sec:johnson-presentation} and~\ref{sec:p0-conclusion},
-in particular Theorem~\ref{thm:P0discharge}.
-\end{proof}
+\begin{remark}[Status of P0]
+\Open.  Section~\ref{sec:johnson-presentation} records the Johnson
+replacement, and Proposition~\ref{thm:P0discharge} separates what the
+finite certificates establish from the obligations that remain.
+\end{remark}
 
-\begin{theorem}[Coefficient comparison, C]\label{hyp:P1}
+\begin{hypothesis}[Coefficient comparison, C]\label{hyp:P1}
 The completed MWW coefficient quantum trace admits a grading-preserving,
 symmetric-monoidal natural map to the BPW/BHPW weight-one endpoint
 representation, natural also for boundary cobordisms supported away from
 $B$.  Under this map the point-push action is the public Burau
 representation, and the divided cubic row descends through every beta and psi
-relation.  Its value on the selected class is $2624$.
-The class lies in quantum degree $494$ on the Johnson replacement collar.
-\end{theorem}
+relation.  Its value on the selected class is the frozen Burau value
+$2624$.  The class lies in quantum degree $494$ on the Johnson replacement
+collar.
+\end{hypothesis}
 
-\begin{proof}[Proof of Theorem~\ref{hyp:P1}]
-See Section~\ref{sec:c-comparison}, in particular Theorem~\ref{thm:Cdischarge}.
-\end{proof}
+\begin{remark}[Status of C]
+\Open.  See Section~\ref{sec:c-comparison}, in particular
+Proposition~\ref{thm:Cdischarge}.
+\end{remark}
 
-\begin{theorem}[Relative three-handle closure, S]\label{hyp:P2}
+\begin{hypothesis}[Relative three-handle closure, S]\label{hyp:P2}
 The three $3$-handles may be
 attached along a complete sphere system disjoint from $B$.  For each sphere
 the detector kills the undotted MWW relation and identifies the once-dotted
 map with the source term.  Hence the divided detector descends through the
 complete three-handle coequalizer.
-\end{theorem}
+\end{hypothesis}
 
-\begin{proof}[Proof of Theorem~\ref{hyp:P2}]
-See Section~\ref{sec:s-closure}, in particular Theorem~\ref{thm:Sdischarge}.
-\end{proof}
+\begin{remark}[Status of S]
+\Open.  See Section~\ref{sec:s-closure}, in particular
+Proposition~\ref{thm:Sdischarge}.
+\end{remark}
 
-\begin{theorem}[Four-handle closure of the replacement picture, P3]\label{hyp:P3}
-After the reversed $1$-handle $3$-handles of Hypothesis~\ref{hyp:P2}, the
-remaining boundary is $S^3$.  Attaching a $4$-ball along that $S^3$ yields a
-closed $4$-manifold $X_J$.  MWW Proposition~3.4 identifies the empty-link
-lasagna module of this $W_3$ picture with $\mathcal S^2_0(X_J)$.  MWW
-Corollary~3.5 gives $\mathcal S^2_0(S^4)\cong\mathbb Z$ concentrated in
-bidegree $(0,0)$, so the quantum-$494$ summand vanishes.  Diffeomorphisms
-induce grading-preserving equivalences.  $\det A=\det(A-I)=1$ is the
+\begin{hypothesis}[Four-handle closure of the replacement picture, P3]\label{hyp:P3}
+After the three $3$-handles of Hypothesis~\ref{hyp:P2} are attached along
+the belt spheres of the reversed $1$-handles, the remaining boundary is
+$S^3$.  Attaching a $4$-ball along that $S^3$ yields a closed $4$-manifold
+$X_J$.  MWW Proposition~3.4 identifies the empty-link lasagna module of this
+$W_3$ picture with $\mathcal S^2_0(X_J)$.  MWW Corollary~3.5 gives
+$\mathcal S^2_0(S^4)\cong\mathbb Z$ concentrated in bidegree $(0,0)$, so
+the quantum-$494$ summand vanishes.  Diffeomorphisms induce
+grading-preserving equivalences.  $\det A=\det(A-I)=1$ is the
 homotopy-sphere criterion for the standard Cappell--Shaneson construction.
 The identification $X_J\cong\Sigma_A^0$ is the constructed Johnson CS
 handle picture of Hypothesis~\ref{hyp:P0}, not these determinants.
-\end{theorem}
+\end{hypothesis}
 
-\begin{proof}[Proof of Theorem~\ref{hyp:P3}]
-The reversed $1$-handle picture yields boundary $S^3$ after three
-$1$--$3$ cancellations; attaching a PL $4$-ball gives the closed manifold
-$X_J$.  The empty-link Khovanov ranks in quantum degrees $0$ and $494$, the
-Euler characteristic of the attaching $4$-ball, and the grading sum
-$-44+227+315-4=494$ are computed directly.  The isomorphisms
-$\mathcal S^2_0(B^4)\cong\mathcal S^2_0(S^4)$ and
+\begin{remark}[Status of P3]
+The computed part is established: the empty-link Khovanov ranks in quantum
+degrees $0$ and $494$, the Euler characteristic of the attaching $4$-ball,
+and the grading sum $-44+227+315-4=494$ are computed directly, and the
+isomorphisms $\mathcal S^2_0(B^4)\cong\mathcal S^2_0(S^4)$ and
 $\mathcal S^2_0(S^4)\cong\mathbb Z$ concentrated in bidegree $(0,0)$ are
 \cite[Proposition~3.4 and Corollary~3.5]{ManolescuWalkerWedrich2023}.
-The identification $X_J\cong\Sigma_A^0$ is Theorem~\ref{thm:P0discharge}.
-Independent replay commands are listed in
-Appendix~\ref{sec:reproducibility-extended}.
-\end{proof}
+The statement that the three $3$-handle attachments along the belt spheres
+restore the boundary $S^3$, and the identification $X_J\cong\Sigma_A^0$,
+depend on Hypothesis~\ref{hyp:P0} and are therefore \Open.  Independent
+replay commands are listed in Appendix~\ref{sec:reproducibility-extended}.
+\end{remark}
 
 \begin{theorem}[Conditional trace-73 theorem]\label{thm:joined}
-The Johnson CS handle picture $X_J$ is identified with $\Sigma_A^0$.
-Iwaki Proposition~2.1 therefore makes $\Sigma_A^0$ a homotopy sphere.
-If the geometric data of Hypotheses~\ref{hyp:P0}--\ref{hyp:P3} are
-assembled into the Lean interface \texttt{ExternalGeometry}, then
+Assume Hypotheses~\ref{hyp:P0}--\ref{hyp:P3} for the Johnson CS handle
+picture $X_J$.  Then $X_J$ is identified with $\Sigma_A^0$, Iwaki
+Proposition~2.1 makes $\Sigma_A^0$ a homotopy sphere, and if the resulting
+geometric data are assembled into the Lean interface
+\texttt{ExternalGeometry}, then
 \[
 \Sigma_A^0\not\cong_{\mathrm{diff}}S^4.
 \]
+Hypotheses~\ref{hyp:P0}--\ref{hyp:P2} are \Open.
 That interface is not constructed in Lean, so no counterexample is claimed.
 \end{theorem}
 
 \begin{proof}[Proof of Theorem~\ref{thm:joined}]
 Theorem~\ref{thm:A} gives the smooth obstruction once
-\texttt{ExternalGeometry} is inhabited.  The identification
-$X_J\cong\Sigma_A^0$ and Theorems~\ref{thm:P0discharge},
-\ref{thm:Cdischarge}, and~\ref{thm:Sdischarge} supply the hypotheses.
+\texttt{ExternalGeometry} is inhabited.  Hypotheses~\ref{hyp:P0}--\ref{hyp:P2}
+supply its geometric fields, and Hypothesis~\ref{hyp:P3} supplies the
+four-handle transport and the identification $X_J\cong\Sigma_A^0$.
 \end{proof}
+
+\subsection{Status table}\label{sec:status-table}
+
+The table records, for every geometric input, what the replayed
+certificates establish and what remains \Open.  It is the claim boundary of
+this paper; the claim-boundary checker in the repository reads it.
+
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{@{}l l X@{}}
+\toprule
+Input & Status & Established / remaining \\
+\midrule
+P0a (handlebody bridge) & \Open & A discrete Voronoi handlebody pair on the $384$-tetrahedron torus is certified and carried by $S$; it is not yet identified with regular neighbourhoods of the spines (dual-block neighbourhoods, explicit collapse sequences, common boundary of genus three, and independent handlebody recognition are pending). \\
+P0b (two framed cancellations) & \Open & The certificate contains local model cancellation movies in $\mathbb R^3$; the actual Johnson PL homeomorphism $\psi_A$, the actual Aitchison--Rubinstein framed link, and its actual Kirby cancellations with belt spheres, band slides and transported normal fields are not constructed. \\
+P0c (MWW cabling framing) & \Open & The $44$ collar strands are a control realization of the public word, not strands cut from the actual cancelled attaching link. \\
+P0d (finite word) & \Discharged & The six-sweep Johnson factors reproduce the public $11340$-letter word letter-for-letter, and $\operatorname{lk}(m_2,r_{yz})=0$ in the railroad diagram. \\
+C1 (coefficient bimodule) & \Open & The product-ribbon isotopy of the actual cut tangle and the chain-level action squares are not constructed; the certificate checks $44$ model rectangles and $227$ model circles. \\
+C2 (statewise cocone) & \Open & The all-cable constant-term statement holds for the endpoint representation; the statewise relations (26)--(27) on every cable state of the actual source, including the local stabilization for $r_{zx}$, are not established. \\
+C3 & \Unused & Not used. \\
+S (sphere system, hemisphere maps) & \Open & Lemma~\ref{lem:Ssystem} is proved as stated; the actual sphere system in $\partial W_2$, the actual hemisphere movies, and the endpoint factorization for them are not constructed. \\
+P2/E7 & \Unused & ``$B$ is fixed'' is not used. \\
+P3/E11 & \Open & Depends on Hypothesis~\ref{hyp:P0}. \\
+P3/E12 & \Discharged & Computed vanishing of the empty-link degree-$494$ summand on the standard $S^4$; MWW Proposition~3.4 and Corollary~3.5 are cited. \\
+P3/E13 & \Open & The identification $X_J\cong\Sigma_A^0$ depends on Hypothesis~\ref{hyp:P0}. \\
+Finite detector & \Discharged & $2624$ is the exact value of the frozen Burau computation in the single collar endpoint convention. \\
+Lean \texttt{ExternalGeometry} & \Open & No inhabitant is constructed. \\
+\bottomrule
+\end{tabularx}
+\end{center}
 
 \input{sec-published-results}
 
@@ -366,13 +413,15 @@ value is $2624$, which is still nonzero.\footnote{Independent replay:
 \begin{proposition}[Exact scope of the computation]\label{prop:scope}
 Equation~\eqref{eq:burau} concerns the truncated Burau model with the collar
 endpoints of \eqref{eq:u} and \eqref{eq:ell}.  Identifying the result with
-the MWW divided cubic is the content of Theorem~\ref{hyp:P1}.
+the MWW divided cubic is the content of Hypothesis~\ref{hyp:P1}, which is
+\Open.
 \end{proposition}
 
 \begin{proof}
-The Burau calculation supplies an integer; Theorem~\ref{hyp:P1} and
-Section~\ref{sec:c-comparison} identify it with the MWW detector on the
-Johnson replacement collar.
+The Burau calculation supplies an integer; Hypothesis~\ref{hyp:P1} and
+Section~\ref{sec:c-comparison} would identify it with the MWW detector on
+the Johnson replacement collar.  Until that hypothesis is established,
+$2624$ is only the value of the frozen Burau computation.
 \end{proof}
 
 Thus the finite recomputation and the categorical comparison have distinct
@@ -414,12 +463,14 @@ relations, and transports the resulting nonzero class through the
 four-handle isomorphism.
 
 The formal algebra correctly captures the last sentence.  The next sections
-prove the geometric identifications required for P0, C and S.
+formulate the geometric identifications required for P0, C and S and record
+which parts are established and which remain \Open.
 
 \section{Johnson product-ribbon presentation and P0}\label{sec:johnson-presentation}
 
 We record the AR-side construction, summarize rejected compact lifts, and
-give the Johnson-generator replacement proving Hypothesis~\ref{hyp:P0}.
+give the Johnson-generator replacement for Hypothesis~\ref{hyp:P0}; its
+remaining obligations are listed in Proposition~\ref{thm:P0discharge}.
 
 \subsection{The actual AR link}
 
@@ -630,17 +681,22 @@ genus-three Heegaard pair to the coordinate-spine pair used by
 Aitchison--Rubinstein.
 \end{lemma}
 
-\begin{proof}
-There is a Freudenthal triangulation of Johnson's period-one torus on which
-the affine map $S$ is a simplex-by-simplex map onto a triangulation of the
-period-two torus, carrying each Johnson spine $1$-simplex onto the
-corresponding AR coordinate spine.  Because the linear part is $2I$,
-Euclidean distances scale by $2$, so Johnson's Voronoi handlebodies map onto
-Voronoi cells of the image spines.  The protected ball of radius
-$1/196104$ about $0$ maps to the ball of radius $2/196104$ about $Q$.  A
-discrete Voronoi Heegaard pair on a $384$-tetrahedron torus is certified, and
-$T(v)=v-(1,1,1)$ carries the Johnson pair onto it.
-\end{proof}
+\begin{remark}[Status of Lemma~\ref{lem:P0a}]
+\Open.  Established: there is a Freudenthal triangulation of Johnson's
+period-one torus on which $S$ is a simplex-by-simplex map onto a
+triangulation of the period-two torus, carrying each Johnson spine
+$1$-simplex onto the corresponding AR coordinate spine; the linear part is
+$2I$, so Euclidean distances scale by $2$; the protected ball of radius
+$1/196104$ about $0$ maps to the ball of radius $2/196104$ about $Q$; and a
+discrete Voronoi Heegaard pair on the $384$-tetrahedron torus, defined by
+comparing barycentre distances to the two spines, is certified and carried
+by $T(v)=v-(1,1,1)$.  Not established: that these discrete cells are regular
+neighbourhoods of the spines.  The required certificate is a barycentric
+dual-block neighbourhood of each spine with an explicit elementary-collapse
+sequence onto the spine, common boundary of genus three, union equal to
+$T^3$, transport of the complete pair by $S$, and independent handlebody
+recognition; until it is supplied, the lemma is \Open.
+\end{remark}
 
 \begin{lemma}[The two framed cancellations]\label{lem:P0b}
 In the Johnson--AR replacement, the pairs \((t,h_{CS})\) and \((x,m_1)\)
@@ -649,36 +705,63 @@ cancellations transport the whole labelled attaching link and preserve the
 section framing class \(\varepsilon=0\).
 \end{lemma}
 
-\begin{proof}
-For the selected Johnson lift, $\psi_A(x)=z$ and $m_1=zx^{-1}$.  Each pair
-admits a local product $1/2$-handle cancellation of geometric intersection
-$1$ that transports the labelled attaching link and preserves
-$\varepsilon=0$.
-\end{proof}
+\begin{remark}[Status of Lemma~\ref{lem:P0b}]
+\Open.  Established: for the selected Johnson lift, $\psi_A(x)=z$ at the
+level of free-group words, so $m_1=zx^{-1}$ after the first cancellation,
+and the certificate contains two standard local cancellation movies in
+$\mathbb R^3$ with geometric intersection $1$.  Not established: the actual
+PL homeomorphism $\psi_A$ composed from the $93$ Johnson generators, the
+actual framed attaching link \eqref{eq:ARcore}--\eqref{eq:ARannulus} built
+from it, and the cancellations of $(t,h_{CS})$ and $(x,m_1)$ performed on
+that link with triangulated belt spheres, band slides, transported
+components and transported normal fields.  Word-level identities do not
+substitute for these embedded objects.
+\end{remark}
 
 \begin{lemma}[Compatibility with MWW cabling]\label{lem:P0c}
 The framing on the 44 Johnson lanes is the framing used by the MWW cable
 construction.
 \end{lemma}
 
-\begin{proof}
-The $44$ Johnson six-sweep strands are realized as height-monotone
-polylines in a triangulated $3$-ball with constant product normals, bound to
-the Johnson $y$-wickets in the certified handlebody pair.  Reconstruction
-recovers the public $11340$-letter word.
-\end{proof}
+\begin{remark}[Status of Lemma~\ref{lem:P0c}]
+\Open.  Established: $44$ height-monotone polylines with constant product
+normals in a triangulated $3$-ball, labelled by the Johnson $y$-wickets,
+whose derived crossing movie recovers the public $11340$-letter word.  Not
+established: that these strands are the strands cut from the actual
+cancelled attaching link by the $y/z$ disk system, and that their normals
+are the MWW cable framing.  The committed strands are generated from the
+word by a control construction; they calibrate the crossing extractor and
+do not bind the framing.
+\end{remark}
 
 \subsection{P0 conclusion}\label{sec:p0-conclusion}
 
-\begin{theorem}[Johnson replacement discharges P0]\label{thm:P0discharge}
-Hypothesis~\ref{hyp:P0} holds for the Johnson replacement presentation.
-\end{theorem}
+\begin{proposition}[Status of P0 for the Johnson replacement]\label{thm:P0discharge}
+The replayed finite certificates establish: (i) the $93$-transvection
+factorization of $A$ and the $93$-bit side pattern with a GAP free basis;
+(ii) the exact compact $m_2$ word with $42$ $y$-passages and
+$\operatorname{lk}(m_2,r_{yz})=0$ (Lemma~\ref{lem:P0d-link}); (iii) the
+six-sweep word equal to the public $11340$-letter word; (iv) a discrete
+Voronoi Heegaard pair on the $384$-tetrahedron torus carried by $S$.  The
+following obligations of Hypothesis~\ref{hyp:P0} are \Open:
+(a) the regular-neighbourhood identification of the handlebody pair
+(Lemma~\ref{lem:P0a}); (b) the actual PL homeomorphism $\psi_A$ composed
+from the $93$ Johnson generators and the actual Aitchison--Rubinstein framed
+link \eqref{eq:ARcore}--\eqref{eq:ARannulus}; (c) the actual Kirby
+cancellations of $(t,h_{CS})$ and $(x,m_1)$ with belt spheres, band slides
+and transported normal fields (Lemma~\ref{lem:P0b}); (d) the collar strands
+cut from the actual cancelled link and the framing identity with the MWW
+cable (Lemma~\ref{lem:P0c}); (e) the identification of the closed picture
+with $\Sigma_A^0$.  Hypothesis~\ref{hyp:P0} is therefore \Open.
+\end{proposition}
 
 \begin{proof}
-Lemmas~\ref{lem:P0a}--\ref{lem:P0c} and~\ref{lem:P0d-link} supply the
-handlebody bridge, cancellations, cabling compatibility, and vanishing
-mixed linking.  The staged Kirby pipeline identifies the resulting closed
-picture with $\Sigma_A^0$.
+Items (i)--(iv) are the replayed certificates listed in
+Appendix~\ref{sec:reproducibility-extended}.  Items (a)--(e) are not
+established by them: the committed collar strands are generated from the
+public word by a control construction, and the cancellation movies are
+local models in $\mathbb R^3$ rather than moves on the actual attaching
+link.
 \end{proof}
 
 \section{The coefficient-trace comparison}\label{sec:c-comparison}
@@ -694,10 +777,10 @@ p_y=42+2=44,\qquad p_z=269+2=271.
 In the cyclic $m_2$ word, every one of the 42
 $y/Y$ events is followed immediately by a distinct $z/Z$ event; the same
 holds for the two $y/Y$ events of $r_{xy}$.  The witness lists all 44 pairs.
-Those pairs are realized as 44 product ribbons of the P0 reconstruction
-strands along their certified normals, with $227$ leftover $z$-circles off
-the P0 cube.  The scope is the Johnson replacement collar, not an embedded
-cut in $\partial W_2$.
+Those pairs are realized as 44 product ribbons of the P0 control
+strands along their recorded normals, with $227$ model $z$-circles placed
+off the P0 cube.  The scope is the Johnson replacement collar, not an
+embedded cut in $\partial W_2$.
 
 Let $\mathcal C$ be the pregraded rational tangle category with objects
 $T:P_{86}\to P_{88}$, and let $F$ be the framed west-to-east tangle formed
@@ -757,13 +840,20 @@ map \(\operatorname{Sh}_q\) below is the quantum trace of that bimodule, not a
 dimension-matched substitute.
 \end{lemma}
 
-\begin{proof}
-The $44$ product ribbons are realized from the P0 reconstruction strands with
-certified product-normal $z$-sides, giving the Johnson $y$-then-$z$ pairing
-and $227$ leftover $z$-circles.  The action cubes of \eqref{eq:HattoriActual}
-and the representable $HH_0$ reduction of Section~\ref{sec:exact-algebra}
-complete the comparison.
-\end{proof}
+\begin{remark}[Status of Lemma~\ref{lem:C1}]
+\Open.  Established: the $44$ model rectangles from the P0 control strands
+with product-normal $z$-sides, giving the Johnson $y$-then-$z$ pairing and
+$227$ model $z$-circles, and the representable $HH_0$ reduction of
+Section~\ref{sec:exact-algebra}.  Not established: the isotopy
+\[
+R\cup\overline T\cup T'\;\cong\;\overline{FT}\circ FT'\sqcup 227\text{ circles}
+\]
+for the actual cut tangle $R$, fixing the boundary, the detector ball and
+the gluing supports, and hence the chain-level action squares (17).  Without
+that isotopy, \eqref{eq:HattoriActual} is a model isomorphism and the map
+$\operatorname{Sh}_q$ below is not yet identified as the quantum trace of
+the actual coefficient bimodule.
+\end{remark}
 
 \subsection{Quantum trace and the endpoint map}
 
@@ -824,14 +914,18 @@ W\mapsto PWP^{-1},\qquad u\mapsto Pu,\qquad
 \ell\mapsto\ell P^{-1}.
 \]
 The matrix coefficient is unchanged; we choose the public endpoint labels
-after this common transport.  BPW's cup/cap formulas then imply
-that the constant terms, after the same position change, are
+after this common transport.  The constant terms are fixed by the single
+collar endpoint convention of Section~\ref{sec:exact-algebra}: the selected
+cup joins the physical endpoints bound to collar positions $2$ and $87$, and
+BPW's cup/cap formulas give
 \[
-u_0=e_0\pm e_5,\qquad
-\ell_0=e_{87}^*\pm e_2^*.
+u_0=e_2-e_{87},\qquad
+\ell_0=e_{87}^*-e_2^*,
 \]
-All omitted factors are invertible q-monomials or positive-order
-$h$-corrections.
+as in \eqref{eq:u} and \eqref{eq:ell}, with no undetermined sign.  All
+omitted factors are invertible $q$-monomials or positive-order
+$h$-corrections, and by Lemma~\ref{lem:filtered-cubic} below they do not
+affect the divided cubic.
 
 Over $\Q[[h]]$ define
 \[
@@ -840,29 +934,54 @@ D_h=\ell_h(\rho_h(W)-I)\operatorname{Sh}_h.
 This is well defined on the quantum coefficient trace because
 \eqref{eq:actualShadow} has already imposed quantum cyclicity.  The exact
 Magnus calculation and Darn\'e's Andreadakis theorem give
-$W\in\Gamma_3(P_{44})$ \cite[Theorem~6.2]{Darne2021}; equivalently, and also
-by direct evaluation of all 7,744 entries,
+$W\in\Gamma_3(P_{44})$ \cite[Theorem~6.2]{Darne2021}.  Since every pure
+braid generator acts as $I+O(h)$, Lemma~\ref{lem:commutator-order} gives the
+one-directional implication
 \[
-\rho_h(W)-I\in h^3\operatorname{End}(E_{88}).
+W\in\Gamma_3(P_{44})\ \Longrightarrow\
+\rho_h(W)-I\in h^3\operatorname{End}(E_{88});
 \]
+the converse is not asserted and is not needed.  Independently of the
+Andreadakis theorem, direct evaluation of all $7{,}744$ entries of
+$\rho_h(W)-I$ verifies the membership on the right.
 Thus $D_h$ takes values in $h^3\Q[[h]]$.  Division by $h^3$ is unique, and
 reduction modulo $h$ gives a lift-independent ordinary functional
 \[
 D_3:HH_0(\mathcal C;M_R)\longrightarrow\Q.
 \]
 Positive-order corrections in the cup, cap, and basis change do not alter
-the cubic coefficient.
+the cubic coefficient (Lemma~\ref{lem:filtered-cubic}).
+
+\begin{lemma}[Filtered cubic pairing]\label{lem:filtered-cubic}
+Let $A(h)=\sum_{j\ge0}A_jh^j$ be an endomorphism series of $E_{88}$ with
+$A_0=A_1=A_2=0$, and let $u(h)=\sum_k u_kh^k$ and
+$\ell(h)=\sum_i\ell_ih^i$ be a vector series and a row series.  Then
+\[
+[h^3]\,\ell(h)A(h)u(h)=\ell_0A_3u_0,
+\]
+and the coefficient is unchanged when $(A,u,\ell)$ is replaced by
+$(PAP^{-1},Pu,\ell P^{-1})$ for a constant automorphism $P$.
+\end{lemma}
+
+\begin{proof}
+$[h^3]\ell(h)A(h)u(h)=\sum_{i+j+k=3}\ell_iA_ju_k$, and every term with
+$j\le2$ vanishes.  Under simultaneous transport each summand is unchanged.
+\end{proof}
 
 The four mixed-index Burau sign variants
 \[
 -53824,\quad -53760,\quad -59008,\quad -59072
 \]
-are nonzero, but they are not the frozen cubic.  The frozen public receipt and
-Lean give
+are nonzero, but they are not the frozen cubic: each mixes two endpoint
+coordinate systems.  The frozen public receipt and Lean give
 \begin{equation}\label{eq:selectedD3}
-D_3([v_T])=2624\ne0
+[h^3]\,\ell_h(\rho_h(W)-I)u_h=2624\ne0
 \end{equation}
-after the endpoint-indexing erratum.  Nonvanishing does not close S.
+in the single collar convention.  Equation~\eqref{eq:selectedD3} is a
+statement about the frozen Burau computation; it becomes
+$D_3([v_T])=2624$ only when Lemma~\ref{lem:C1} identifies $[v_T]$ with an
+actual coefficient-trace class, which is \Open.  Nonvanishing does not
+close C or S.
 
 \subsection{The complete two-handle cocone}
 
@@ -905,9 +1024,10 @@ p_y(r)=\sum_i r_i n_{y,i},\qquad
 p_z(r)=\sum_i r_i n_{z,i}.
 \tag{24}
 \]
-By Lemma~\ref{lem:C1}, parallel copies of the P0 rectangles give a chain isomorphism $H_r$ of the
-same form as (17), with the corresponding endpoint sets.  The split
-$r_{zx}$ component is retained as a separate Frobenius factor.  Since all
+By Lemma~\ref{lem:C1}, once established, parallel copies of the P0 rectangles would give a chain isomorphism $H_r$ of the
+same form as (17), with the corresponding endpoint sets.  The
+$r_{zx}$ component is not assumed split; its stabilization relations are
+the subject of Section~\ref{sec:local-stabilization}.  Since all
 copies lie in one fixed tubular product chart, $H_r$ commutes with every
 gluing action and with adding a parallel pair.
 
@@ -950,8 +1070,9 @@ whole source that calculation is
 (\epsilon\otimes\epsilon)\Delta(1)=0,\qquad
 (\epsilon\otimes\epsilon)\Delta(X)=1.
 \]
-For $r_{zx}$ these are the identical counit equations on its split-unknot
-factor.  Forgetting the distinguished new pair has constant-size fibers
+For $r_{zx}$ the same equations are required inside a tubular neighbourhood
+of the component, without any split hypothesis; this is the local statement
+of Section~\ref{sec:local-stabilization}.  Forgetting the distinguished new pair has constant-size fibers
 between placement sets, and the normalizations in (25) cancel their
 cardinalities.  The dotted raw degree $+2$ is cancelled by the target cabled
 shift $-2$.  Consequently, for every owner and state,
@@ -964,15 +1085,36 @@ Below $s_0$ the second equality is the definition; the Frobenius identities
 and disjoint-support interchange prove the first equality and the commutation
 of all owner squares.
 
-Equations (26)--(27), together with the coefficient trace relation already
-handled by (17), prove on the whole cabled direct sum
+Once (26)--(27) are established on the actual cabled source, together with
+the coefficient trace relation of (17), they prove on the whole cabled
+direct sum
 \[
 D_3(\beta_i(b)x-x)=0,\quad
 D_3(\psi_i^{[0]}x)=0,\quad
-D_3(\psi_i^{[1]}x-x)=0.
+D_3(\psi_i^{[1]}x-x)=0,
 \]
-The quotient universal property and MWW Theorem~3.2 therefore give
-$\overline D_3:\mathcal S^2_0(W_2;\Q)\to\Q$.
+and the quotient universal property with MWW Theorem~3.2 then gives
+$\overline D_3:\mathcal S^2_0(W_2;\Q)\to\Q$.  At present (17) and
+(26)--(27) are verified only on the control collar, so this descent is part
+of the \Open\ Hypothesis~\ref{hyp:P1}.
+
+\subsection{Local stabilization without a split hypothesis}
+\label{sec:local-stabilization}
+
+For a framed component $K_i$ and a cable state $r$, let $\chi_{i,r}$ denote
+the local closure of the $r_i$ parallel copies of $K_i$ inside a tubular
+neighbourhood of $K_i$, defined in the pre-quotient foam category by the
+undotted and once-dotted sphere evaluations.  The statement needed for the
+$\psi$ relations of every owner, including $r_{zx}$, is
+\[
+\chi_{i,r+e_i}\circ\psi_i^{[0]}=0,\qquad
+\chi_{i,r+e_i}\circ\psi_i^{[1]}=\chi_{i,r},
+\]
+with no assumption that $K_i$ is split from the rest of the link.  This
+local stabilization--retraction statement is \Open.  The earlier text
+inferred a split unknot from the empty free word of the transported
+$r_{zx}$; that inference is withdrawn, since a free-group word does not
+determine an embedded component.
 
 \subsection{C conclusion and the degree-$494$ square}
 
@@ -998,17 +1140,28 @@ $\operatorname{Id}_U\otimes X^{\otimes227}$.  Its successive degrees are
 \[
 -44+227=183,\qquad183+315=498,\qquad498-4=494.
 \]
-Diagram (28) sends it to a class $x_2$ satisfying
-$\overline D_3(x_2)=2624\ne0$ on the Johnson replacement collar.
+Under Hypothesis~\ref{hyp:P1}, diagram (28) sends it to a class $x_2$
+with $\overline D_3(x_2)=2624\ne0$ on the Johnson replacement collar.
 
-\begin{theorem}[Coefficient comparison C]\label{thm:Cdischarge}
-Hypothesis~\ref{hyp:P1} holds for the P0 replacement.  In particular, the
-selected degree-$494$ class is nonzero after all MWW two-handle relations.
-\end{theorem}
+\begin{proposition}[Status of C]\label{thm:Cdischarge}
+Hypothesis~\ref{hyp:P1} is \Open\ for the Johnson replacement.
+Established: the representable $HH_0$ reduction, Lemma~\ref{lem:C2} for the
+endpoint representation, Lemma~\ref{lem:filtered-cubic}, and the frozen
+Burau value \eqref{eq:selectedD3}.  Not established: the actual
+product-ribbon isotopy and chain-level action squares of
+Lemma~\ref{lem:C1}; the statewise definition of $D_r$ by placement averages
+and its relations (26)--(27) on every cable state of the actual source; the
+local stabilization statement of Section~\ref{sec:local-stabilization}; and
+hence the descent of $D_3$ through the complete two-handle cocone and the
+nonvanishing of the selected degree-$494$ class after all MWW two-handle
+relations.
+\end{proposition}
 
 \begin{proof}
-This is discharged for the Johnson replacement collar by
-Lemmas~\ref{lem:C1} and~\ref{lem:C2}.
+The established items are the replayed certificates and the Lean files
+named in Appendix~\ref{sec:reproducibility-extended}.  The remaining items
+require the actual cut tangle, which is not part of the current
+certificates.
 \end{proof}
 
 \paragraph{C/S firewall.}
@@ -1054,11 +1207,19 @@ Closed-manifold HJ Theorem~5.3 is not used to conclude that $B$ is fixed.
 It is used only with Lemma~\ref{lem:Ssystem}: any other complete system,
 including a going-up Kirby attaching system, is related by isotopy,
 permutation and slides in the closed manifold, so the kernels agree.
-Horvat--Jab\l{}onowski Lemmas~5.5 and~5.7 do not appear in
-\cite{HorvatJablonowski2025} and are not invoked.
+The current version of \cite{HorvatJablonowski2025} (arXiv v3) contains
+Lemma~5.5 (spotted-ball slide lemma) and Lemma~5.7 (relative uniqueness of
+complete sphere systems); its Theorem~5.3 is proved through Lemma~5.7,
+which in turn uses Lemma~5.5.  This paper invokes only Theorem~5.3 in the
+closed manifold.  It does not invoke Lemma~5.7 in its relative form, which
+would be the statement needed to keep the detector ball $B$ fixed during
+the sphere slides; that relative statement is not used and the
+corresponding fixed-$B$ conclusion is not claimed.
 In the reversed $1$-handle picture, three belt spheres miss the P0 cube,
 with dual loops pairing to the identity, $b=0$ endpoint foams, and
-disjointness from the C1 leftover link and C2 supports.
+disjointness from the C1 model link and C2 supports; these are properties
+of the model picture, and the corresponding statements for the actual
+$\partial W_2$ are \Open\ (Proposition~\ref{thm:Sdischarge}).
 
 MWW's intrinsic reformulation of a $3$-handle quotient uses the local module
 action of $\mathcal S^2_0(S^2\times D^2)$.  At $N=2$, let $A_0$ denote the
@@ -1108,6 +1269,9 @@ Closed-manifold HJ Theorem~5.3 relates any other complete
 system to this one by isotopy in the closed manifold; Lemma~\ref{lem:Ssystem}
 identifies the kernels.  The detector remains in $B$, which those belt
 spheres miss.  The six equations (31) are then Lemma~\ref{lem:Sendpoint}.
+All of this concerns the model reversed $1$-handle picture; the
+corresponding constructions in the actual $\partial W_2$ are \Open\
+(Proposition~\ref{thm:Sdischarge}).
 \end{proof}
 
 \subsection{The essential-sphere endpoint comparison}
@@ -1160,9 +1324,12 @@ The full mixed braid maps have the form \(P(I+O(h))\).  The permutation
 \(P\) has just been cancelled, and pre- or postcomposing a row beginning in
 order \(h^3\) with \(I+O(h)\) changes only order \(h^4\) and higher.
 Therefore the constant calculation (32) is exactly the calculation seen by
-the divided cubic row.  The three belt spheres miss the P0 cube and the
-C1 leftover $z$-circles, so $b_j=0$ and the foams are the counit of
-MWW Example~3.8.
+the divided cubic row.  In the model picture the three belt spheres miss
+the P0 cube and the C1 model $z$-circles, so $b_j=0$ and the foams are the
+counit of MWW Example~3.8.  For the actual $\partial W_2$ the spheres
+$A_j$, the numbers $b_j$, the intersections with the two-handle cocores and
+the hemisphere movies are not constructed, so the lemma is established for
+the model picture only.
 \end{proof}
 
 The endpoint exchange square is the $b=0$ counit of
@@ -1178,27 +1345,40 @@ Lemma~\ref{lem:Sendpoint}.
 whose lower maps are the actual counit row and actual \(A_j\)-action by the
 movie decomposition in Lemma~\ref{lem:Sendpoint}.
 
-\begin{theorem}[Relative three-handle closure S]\label{thm:Sdischarge}
-Hypothesis~\ref{hyp:P2} holds for the P0 replacement.
-\end{theorem}
+\begin{proposition}[Status of S]\label{thm:Sdischarge}
+Hypothesis~\ref{hyp:P2} is \Open\ for the Johnson replacement.
+Established: Lemma~\ref{lem:Ssystem} (kernel invariance under isotopy,
+permutation and sphere slides) and the algebraic form (30)--(32) on the
+model picture.  Not established: an actual complete sphere system
+$A_1,A_2,A_3$ in the actual $\partial W_2$ with the conditions of HJ
+Theorem~5.3 verified (embedded, pairwise disjoint, connected complement,
+spherical homology basis, disjoint from the detector ball, simultaneous
+surgery giving $S^3$); the actual equators, hemispheres, intersections with
+the two-handle cocores, restored core disks and Morse movies; and the
+identities $D(vA_0)=D(v)$, $D(vA_1)=0$ for all source elements and all
+relative-class summands computed from them.
+\end{proposition}
 
 \begin{proof}
-By Lemmas~\ref{lem:Ssystem} and~\ref{lem:Sendpoint} and Proposition
-\ref{thm:Sgeometry}.
+Lemma~\ref{lem:Ssystem} is proved above.  The remaining items depend on
+Hypotheses~\ref{hyp:P0} and~\ref{hyp:P1} and on constructions that are not
+part of the current certificates.
 \end{proof}
 
 \section{Final identifications}\label{sec:final-identifications}
 
 MWW Theorem~3.10 identifies the iterated quotient with the module after the
 three-handles, and Proposition~3.4 gives the four-handle isomorphism
-\cite{ManolescuWalkerWedrich2023}.  Theorem~\ref{thm:P0discharge},
-Theorem~\ref{thm:Cdischarge}, and Theorem~\ref{thm:Sdischarge} establish
-Hypotheses~\ref{hyp:P0}--\ref{hyp:P2}.  For the Johnson replacement
-four-handle picture $X_J$, three $1$--$3$ cancellations restore $S^3$, a PL
-$4$-ball is attached, and the quantum degree-$494$ summand of the standard
-sphere module vanishes by the computation in the proof of
-Hypothesis~\ref{hyp:P3} together with MWW Corollary~3.5.  The staged Kirby
-pipeline identifies $X_J$ with $\Sigma_A^0$.
+\cite{ManolescuWalkerWedrich2023}.  Propositions~\ref{thm:P0discharge},
+\ref{thm:Cdischarge}, and~\ref{thm:Sdischarge} record the status of
+Hypotheses~\ref{hyp:P0}--\ref{hyp:P2}; all three are \Open.  For the Johnson
+replacement four-handle picture $X_J$, attaching the three $3$-handles
+along the belt spheres of the reversed $1$-handles restores the boundary
+$S^3$ (Hypothesis~\ref{hyp:P3}), a PL $4$-ball is attached, and the quantum
+degree-$494$ summand of the standard sphere module vanishes by the
+computation in the status remark of Hypothesis~\ref{hyp:P3} together with
+MWW Corollary~3.5.  The staged Kirby pipeline would identify $X_J$ with
+$\Sigma_A^0$ once Hypothesis~\ref{hyp:P0} is established.
 
 \begin{remark}[Formalization boundary]\label{rem:lean-boundary}
 A Lean development \cite{Lean4} proves Theorem~\ref{thm:A} as a conditional
@@ -1237,18 +1417,28 @@ theorem.
 Horvat--Jab\l{}onowski's recent work gives a useful geometric criterion for
 recognizing three-handle attaching systems \cite{HorvatJablonowski2025}.
 Theorem~5.3 is used only with Lemma~\ref{lem:Ssystem} for kernel invariance
-in the closed manifold, not to fix $B$.  Lemmas~5.5 and~5.7 do not appear in
-that paper and are not invoked.
+in the closed manifold, not to fix $B$.  Their Lemma~5.5 (spotted-ball slide
+lemma) and Lemma~5.7 (relative uniqueness of complete sphere systems),
+present in the current arXiv version, enter only through the proof of
+Theorem~5.3 and are not invoked directly here.
 
 \section{Conclusion}
 
-For the Johnson replacement we have proved Hypotheses~\ref{hyp:P0}--\ref{hyp:P3}
-and identified $X_J\cong\Sigma_A^0$.  Together with Theorem~\ref{thm:A} and
-Iwaki's homotopy-sphere criterion, this gives a conditional smooth
-obstruction in quantum degree $494$ once the geometric data are assembled
-into the Lean interface \texttt{ExternalGeometry}.  That interface is not
-constructed here, so no counterexample is claimed.  Independent replay
-commands are listed in Appendix~\ref{sec:reproducibility-extended}.
+For the Johnson replacement we have formulated
+Hypotheses~\ref{hyp:P0}--\ref{hyp:P3} and recorded their status.  The
+finite layer (the value $2624$ of the frozen Burau computation, the degree
+$494$, and the third-order property of the public word) and the abstract
+Lean implication are established.  Hypotheses~\ref{hyp:P0}--\ref{hyp:P2}
+are \Open: they require the actual Cappell--Shaneson geometry, namely the
+actual Johnson PL homeomorphism $\psi_A$, the actual Aitchison--Rubinstein
+framed link, the actual Kirby cancellations and cut tangle, and the actual
+sphere system with its hemisphere maps.  Together with Theorem~\ref{thm:A}
+and Iwaki's homotopy-sphere criterion, this gives a conditional smooth
+obstruction in quantum degree $494$ once those hypotheses are established
+and the geometric data are assembled into the Lean interface
+\texttt{ExternalGeometry}.  That interface is not constructed here, so no
+counterexample is claimed.  Independent replay commands are listed in
+Appendix~\ref{sec:reproducibility-extended}.
 
 \appendix
 
@@ -1288,8 +1478,11 @@ braid equality follows.
 
 \begin{remark}
 Symbolic witnesses that import crossing rows without embedded geometry fail
-this contract.  The Johnson certificate used in Section~\ref{sec:johnson-presentation}
-satisfies it.  The machine-checkable replay is listed in
+this contract.  The committed Johnson certificate satisfies the finite
+contract, but its strands are a control realization of the public word
+(Section~\ref{sec:johnson-presentation}), so its embeddedness and
+disjointness receipts are receipts for that model, not for strands cut from
+the actual attaching link.  The machine-checkable replay is listed in
 Appendix~\ref{sec:reproducibility-extended}.
 \end{remark}
 
@@ -1315,9 +1508,9 @@ Lean field & Mathematical obligation \\
 \end{tabularx}
 \end{center}
 
-The geometric inputs discharged in Sections~\ref{sec:johnson-presentation}--\ref{sec:final-identifications}
-remain to be assembled into a single Lean inhabitant of
-\texttt{ExternalGeometry}; that assembly is \Open\ for the Johnson candidate.
+The geometric inputs formulated in Sections~\ref{sec:johnson-presentation}--\ref{sec:final-identifications}
+are themselves \Open, and they remain to be assembled into a single Lean
+inhabitant of \texttt{ExternalGeometry}; that assembly is \Open\ for the Johnson candidate.
 The empty-link control in \texttt{T73S4Inhabitant.lean} packages only
 \texttt{EmptyKhQ}.  The Lean theorem consumes no stronger statement, and it
 records the external topology as structure fields rather than formalizing it

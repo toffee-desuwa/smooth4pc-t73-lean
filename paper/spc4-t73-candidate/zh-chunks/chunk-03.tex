@@ -48,86 +48,122 @@ implication from input structures \texttt{ExternalGeometry} and
 The candidate-specific inputs are stated below and proved in
 Sections~\ref{sec:johnson-presentation}--\ref{sec:final-identifications}.
 
-\begin{theorem}[Embedded candidate presentation, P0]\label{hyp:P0}
+\begin{hypothesis}[Embedded candidate presentation, P0]\label{hyp:P0}
 The explicit Johnson-generator replacement is a labelled and framed handle
 presentation of $\Sigma_A^0$, with the two framed product cancellations, the
 embedded detector ball and the stated cable attachments.
-\end{theorem}
+\end{hypothesis}
 
-\begin{proof}[Proof of Theorem~\ref{hyp:P0}]
-See Sections~\ref{sec:johnson-presentation} and~\ref{sec:p0-conclusion},
-in particular Theorem~\ref{thm:P0discharge}.
-\end{proof}
+\begin{remark}[Status of P0]
+\Open.  Section~\ref{sec:johnson-presentation} records the Johnson
+replacement, and Proposition~\ref{thm:P0discharge} separates what the
+finite certificates establish from the obligations that remain.
+\end{remark}
 
-\begin{theorem}[Coefficient comparison, C]\label{hyp:P1}
+\begin{hypothesis}[Coefficient comparison, C]\label{hyp:P1}
 The completed MWW coefficient quantum trace admits a grading-preserving,
 symmetric-monoidal natural map to the BPW/BHPW weight-one endpoint
 representation, natural also for boundary cobordisms supported away from
 $B$.  Under this map the point-push action is the public Burau
 representation, and the divided cubic row descends through every beta and psi
-relation.  Its value on the selected class is $2624$.
-The class lies in quantum degree $494$ on the Johnson replacement collar.
-\end{theorem}
+relation.  Its value on the selected class is the frozen Burau value
+$2624$.  The class lies in quantum degree $494$ on the Johnson replacement
+collar.
+\end{hypothesis}
 
-\begin{proof}[Proof of Theorem~\ref{hyp:P1}]
-See Section~\ref{sec:c-comparison}, in particular Theorem~\ref{thm:Cdischarge}.
-\end{proof}
+\begin{remark}[Status of C]
+\Open.  See Section~\ref{sec:c-comparison}, in particular
+Proposition~\ref{thm:Cdischarge}.
+\end{remark}
 
-\begin{theorem}[Relative three-handle closure, S]\label{hyp:P2}
+\begin{hypothesis}[Relative three-handle closure, S]\label{hyp:P2}
 The three $3$-handles may be
 attached along a complete sphere system disjoint from $B$.  For each sphere
 the detector kills the undotted MWW relation and identifies the once-dotted
 map with the source term.  Hence the divided detector descends through the
 complete three-handle coequalizer.
-\end{theorem}
+\end{hypothesis}
 
-\begin{proof}[Proof of Theorem~\ref{hyp:P2}]
-See Section~\ref{sec:s-closure}, in particular Theorem~\ref{thm:Sdischarge}.
-\end{proof}
+\begin{remark}[Status of S]
+\Open.  See Section~\ref{sec:s-closure}, in particular
+Proposition~\ref{thm:Sdischarge}.
+\end{remark}
 
-\begin{theorem}[Four-handle closure of the replacement picture, P3]\label{hyp:P3}
-After the reversed $1$-handle $3$-handles of Hypothesis~\ref{hyp:P2}, the
-remaining boundary is $S^3$.  Attaching a $4$-ball along that $S^3$ yields a
-closed $4$-manifold $X_J$.  MWW Proposition~3.4 identifies the empty-link
-lasagna module of this $W_3$ picture with $\mathcal S^2_0(X_J)$.  MWW
-Corollary~3.5 gives $\mathcal S^2_0(S^4)\cong\mathbb Z$ concentrated in
-bidegree $(0,0)$, so the quantum-$494$ summand vanishes.  Diffeomorphisms
-induce grading-preserving equivalences.  $\det A=\det(A-I)=1$ is the
+\begin{hypothesis}[Four-handle closure of the replacement picture, P3]\label{hyp:P3}
+After the three $3$-handles of Hypothesis~\ref{hyp:P2} are attached along
+the belt spheres of the reversed $1$-handles, the remaining boundary is
+$S^3$.  Attaching a $4$-ball along that $S^3$ yields a closed $4$-manifold
+$X_J$.  MWW Proposition~3.4 identifies the empty-link lasagna module of this
+$W_3$ picture with $\mathcal S^2_0(X_J)$.  MWW Corollary~3.5 gives
+$\mathcal S^2_0(S^4)\cong\mathbb Z$ concentrated in bidegree $(0,0)$, so
+the quantum-$494$ summand vanishes.  Diffeomorphisms induce
+grading-preserving equivalences.  $\det A=\det(A-I)=1$ is the
 homotopy-sphere criterion for the standard Cappell--Shaneson construction.
 The identification $X_J\cong\Sigma_A^0$ is the constructed Johnson CS
 handle picture of Hypothesis~\ref{hyp:P0}, not these determinants.
-\end{theorem}
+\end{hypothesis}
 
-\begin{proof}[Proof of Theorem~\ref{hyp:P3}]
-The reversed $1$-handle picture yields boundary $S^3$ after three
-$1$--$3$ cancellations; attaching a PL $4$-ball gives the closed manifold
-$X_J$.  The empty-link Khovanov ranks in quantum degrees $0$ and $494$, the
-Euler characteristic of the attaching $4$-ball, and the grading sum
-$-44+227+315-4=494$ are computed directly.  The isomorphisms
-$\mathcal S^2_0(B^4)\cong\mathcal S^2_0(S^4)$ and
+\begin{remark}[Status of P3]
+The computed part is established: the empty-link Khovanov ranks in quantum
+degrees $0$ and $494$, the Euler characteristic of the attaching $4$-ball,
+and the grading sum $-44+227+315-4=494$ are computed directly, and the
+isomorphisms $\mathcal S^2_0(B^4)\cong\mathcal S^2_0(S^4)$ and
 $\mathcal S^2_0(S^4)\cong\mathbb Z$ concentrated in bidegree $(0,0)$ are
 \cite[Proposition~3.4 and Corollary~3.5]{ManolescuWalkerWedrich2023}.
-The identification $X_J\cong\Sigma_A^0$ is Theorem~\ref{thm:P0discharge}.
-Independent replay commands are listed in
-Appendix~\ref{sec:reproducibility-extended}.
-\end{proof}
+The statement that the three $3$-handle attachments along the belt spheres
+restore the boundary $S^3$, and the identification $X_J\cong\Sigma_A^0$,
+depend on Hypothesis~\ref{hyp:P0} and are therefore \Open.  Independent
+replay commands are listed in Appendix~\ref{sec:reproducibility-extended}.
+\end{remark}
 
 \begin{theorem}[Conditional trace-73 theorem]\label{thm:joined}
-The Johnson CS handle picture $X_J$ is identified with $\Sigma_A^0$.
-Iwaki Proposition~2.1 therefore makes $\Sigma_A^0$ a homotopy sphere.
-If the geometric data of Hypotheses~\ref{hyp:P0}--\ref{hyp:P3} are
-assembled into the Lean interface \texttt{ExternalGeometry}, then
+Assume Hypotheses~\ref{hyp:P0}--\ref{hyp:P3} for the Johnson CS handle
+picture $X_J$.  Then $X_J$ is identified with $\Sigma_A^0$, Iwaki
+Proposition~2.1 makes $\Sigma_A^0$ a homotopy sphere, and if the resulting
+geometric data are assembled into the Lean interface
+\texttt{ExternalGeometry}, then
 \[
 \Sigma_A^0\not\cong_{\mathrm{diff}}S^4.
 \]
+Hypotheses~\ref{hyp:P0}--\ref{hyp:P2} are \Open.
 That interface is not constructed in Lean, so no counterexample is claimed.
 \end{theorem}
 
 \begin{proof}[Proof of Theorem~\ref{thm:joined}]
 Theorem~\ref{thm:A} gives the smooth obstruction once
-\texttt{ExternalGeometry} is inhabited.  The identification
-$X_J\cong\Sigma_A^0$ and Theorems~\ref{thm:P0discharge},
-\ref{thm:Cdischarge}, and~\ref{thm:Sdischarge} supply the hypotheses.
+\texttt{ExternalGeometry} is inhabited.  Hypotheses~\ref{hyp:P0}--\ref{hyp:P2}
+supply its geometric fields, and Hypothesis~\ref{hyp:P3} supplies the
+four-handle transport and the identification $X_J\cong\Sigma_A^0$.
 \end{proof}
+
+\subsection{Status table}\label{sec:status-table}
+
+The table records, for every geometric input, what the replayed
+certificates establish and what remains \Open.  It is the claim boundary of
+this paper; the claim-boundary checker in the repository reads it.
+
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{@{}l l X@{}}
+\toprule
+Input & Status & Established / remaining \\
+\midrule
+P0a (handlebody bridge) & \Open & A discrete Voronoi handlebody pair on the $384$-tetrahedron torus is certified and carried by $S$; it is not yet identified with regular neighbourhoods of the spines (dual-block neighbourhoods, explicit collapse sequences, common boundary of genus three, and independent handlebody recognition are pending). \\
+P0b (two framed cancellations) & \Open & The certificate contains local model cancellation movies in $\mathbb R^3$; the actual Johnson PL homeomorphism $\psi_A$, the actual Aitchison--Rubinstein framed link, and its actual Kirby cancellations with belt spheres, band slides and transported normal fields are not constructed. \\
+P0c (MWW cabling framing) & \Open & The $44$ collar strands are a control realization of the public word, not strands cut from the actual cancelled attaching link. \\
+P0d (finite word) & \Discharged & The six-sweep Johnson factors reproduce the public $11340$-letter word letter-for-letter, and $\operatorname{lk}(m_2,r_{yz})=0$ in the railroad diagram. \\
+C1 (coefficient bimodule) & \Open & The product-ribbon isotopy of the actual cut tangle and the chain-level action squares are not constructed; the certificate checks $44$ model rectangles and $227$ model circles. \\
+C2 (statewise cocone) & \Open & The all-cable constant-term statement holds for the endpoint representation; the statewise relations (26)--(27) on every cable state of the actual source, including the local stabilization for $r_{zx}$, are not established. \\
+C3 & \Unused & Not used. \\
+S (sphere system, hemisphere maps) & \Open & Lemma~\ref{lem:Ssystem} is proved as stated; the actual sphere system in $\partial W_2$, the actual hemisphere movies, and the endpoint factorization for them are not constructed. \\
+P2/E7 & \Unused & ``$B$ is fixed'' is not used. \\
+P3/E11 & \Open & Depends on Hypothesis~\ref{hyp:P0}. \\
+P3/E12 & \Discharged & Computed vanishing of the empty-link degree-$494$ summand on the standard $S^4$; MWW Proposition~3.4 and Corollary~3.5 are cited. \\
+P3/E13 & \Open & The identification $X_J\cong\Sigma_A^0$ depends on Hypothesis~\ref{hyp:P0}. \\
+Finite detector & \Discharged & $2624$ is the exact value of the frozen Burau computation in the single collar endpoint convention. \\
+Lean \texttt{ExternalGeometry} & \Open & No inhabitant is constructed. \\
+\bottomrule
+\end{tabularx}
+\end{center}
 
 \input{sec-published-results}

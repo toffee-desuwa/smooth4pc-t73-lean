@@ -15,12 +15,15 @@ skein-lasagna 阻碍》）。
 
 ## 已证与开放
 
-对显式 **Johnson 生成元** 柄表示，正文证明 skein-lasagna 在 quantum degree
-\(494\) 处比较所需的几何输入 **P0、C、S、P3**，包括识别
-\(X_J\cong\Sigma_A^0\)。
+对显式 **Johnson 生成元** 柄表示，正文陈述 skein-lasagna 在 quantum degree
+\(494\) 处比较所需的几何输入 **P0、C、S、P3**，以及识别
+\(X_J\cong\Sigma_A^0\)。**P0、C、S 目前开放**：已提交的证书只检查这些输入的
+有限组合模型（控制股、局部模型 movie、模型球面），不是实际的
+Cappell--Shaneson 几何。论文第 3 节的状态表是本仓库的断言边界。
 
-精确有限计算给出非零 divided cubic \(D_3=2624\)。Artin--Magnus 证书与
-pure-braid Andreadakis 定理确立公开 braid 词的三阶性质。
+精确有限计算给出非零整数 \(2624\)，它是冻结 Burau 计算在 collar 端点约定下的
+divided cubic；把它与实际几何类的 MWW divided cubic 等同是开放输入 C 的一部分。
+Artin--Magnus 证书与 pure-braid Andreadakis 定理确立公开 braid 词的三阶性质。
 
 Lean 开发将**抽象商论证**形式化：若给定将 MWW 商与四柄运输组装起来的接口数据
 （`ExternalGeometry`），则非零次数-\(494\) 类**将**阻碍与 \(S^4\) 的微分同胚。
@@ -30,7 +33,8 @@ Lean 开发将**抽象商论证**形式化：若给定将 MWW 商与四柄运输
 | --- | --- |
 | 有限代数（\(2624\)、次数 \(494\)、\(\det A=\det(A-I)=1\)） | Lean 已检 |
 | 抽象条件蕴含 | Lean 已检 |
-| Johnson P0 / C / S / P3（正文几何 + 证书） | 正文已证 |
+| Johnson P0 / C / S（实际几何） | **开放**（仅有限模型证书） |
+| P3 计算部分（E12：\(S^4\) 上空 link 次数 494） | 已检；E11/E13 依赖 P0 |
 | Lean 中 `ExternalGeometry` 实例 | **开放** |
 
 Lean 边界见
@@ -41,6 +45,7 @@ python3 scripts/audit_t73_premises.py --check
 ```
 
 预期摘要：`P0/C/S/P3=PASS`，`OVERALL=OPEN`，`COUNTEREXAMPLE=False`。
+其中 `PASS` 是证书内部值（有限模型可重放）；论文状态表将 P0、C、S 记为开放。
 
 **勘误（2026 年 9 月 2 日）。** 较早草稿混用两套 endpoint 索引表，报告了
 \(-59072\)。统一到 braid 词所用 collar 表后，精确值为 \(+2624\)（仍非零）。
