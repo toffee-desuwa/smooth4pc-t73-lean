@@ -29,7 +29,7 @@ PUBLISHED = ROOT / "paper" / "spc4-t73-candidate" / "sec-published-results.tex"
 
 # Status table rows (label as printed in the paper -> expected status macro).
 EXPECTED_STATUS = {
-    "P0a (handlebody bridge)": r"\Open",
+    "P0a (handlebody bridge)": r"\Discharged",
     "P0b (two framed cancellations)": r"\Open",
     "P0c (MWW cabling framing)": r"\Open",
     "P0d (finite word)": r"\Discharged",

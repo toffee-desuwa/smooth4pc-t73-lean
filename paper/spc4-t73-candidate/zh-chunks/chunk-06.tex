@@ -213,22 +213,35 @@ genus-three Heegaard pair to the coordinate-spine pair used by
 Aitchison--Rubinstein.
 \end{lemma}
 
-\begin{remark}[Status of Lemma~\ref{lem:P0a}]
-\Open.  Established: there is a Freudenthal triangulation of Johnson's
-period-one torus on which $S$ is a simplex-by-simplex map onto a
-triangulation of the period-two torus, carrying each Johnson spine
-$1$-simplex onto the corresponding AR coordinate spine; the linear part is
-$2I$, so Euclidean distances scale by $2$; the protected ball of radius
-$1/196104$ about $0$ maps to the ball of radius $2/196104$ about $Q$; and a
-discrete Voronoi Heegaard pair on the $384$-tetrahedron torus, defined by
-comparing barycentre distances to the two spines, is certified and carried
-by $T(v)=v-(1,1,1)$.  Not established: that these discrete cells are regular
-neighbourhoods of the spines.  The required certificate is a barycentric
-dual-block neighbourhood of each spine with an explicit elementary-collapse
-sequence onto the spine, common boundary of genus three, union equal to
-$T^3$, transport of the complete pair by $S$, and independent handlebody
-recognition; until it is supplied, the lemma is \Open.
-\end{remark}
+\begin{proof}
+Scale Johnson's period-one torus by $4$ and the AR period-two torus by $2$;
+both become the period-four Freudenthal mesh $T$ ($64$ vertices, $384$
+tetrahedra), on which $S(u)=2u-(1/2,1/2,1/2)$ is the translation
+$T(v)=v-(1,1,1)$, a simplicial automorphism of $T$.  The Johnson spines
+$K_J^0,K_J^1$ are the axis circles through $(0,0,0)$ and $(2,2,2)$, the AR
+spines $K_{AR}^0,K_{AR}^1$ those through $(-1,-1,-1)$ and $(1,1,1)$; each is
+a rose of three circles with $10$ vertices and $12$ edges (rank $3$).  In the
+first barycentric subdivision $T'$ ($1664$ vertices, $9216$ tetrahedra) let
+$H^0=N(K^0;T')=\bigcup_{\sigma\in K^0}D(\sigma)$ be the dual-block
+neighbourhood of $K^0$ and $H^1$ the closure of its complement.  The
+repository certificate exhibits explicit elementary-collapse sequences
+$H^0\searrow K^0$ ($3944$ free-face collapses on $1440$ tetrahedra) and
+$H^1\searrow K^1$ ($17688$ collapses on $7776$ tetrahedra) for both the
+Johnson and the AR pair, each replayed step by step by an independent
+checker; by Rourke--Sanderson, a compact $3$-manifold collapsing onto a
+rank-three graph is a regular neighbourhood of it, hence a genus-three
+handlebody.  The two handlebodies of each pair are disjoint, their union is
+all of $T'$, and they share one closed connected boundary surface of $1056$
+triangles and Euler characteristic $-4$.  The translation $T$ carries
+$H_J^0$ onto $H_{AR}^0$ and $H_J^1$ onto $H_{AR}^1$ tetrahedron by
+tetrahedron, while other shifts fail.  Regina~7.4 independently reports
+all four complexes as genus-three handlebodies
+(\texttt{recogniseHandlebody()}$=3$, $H_1=\mathbb Z^3$).  The protected
+ball of radius $1/196104$ about $0$ maps to the ball of radius $2/196104$
+about $Q$.  No uniqueness of regular neighbourhoods is used.  Replay:
+\texttt{scripts/verify\_elementary\_collapse.py --check} and
+\texttt{scripts/verify\_t73\_handlebody\_bridge\_regina.py --check}.
+\end{proof}
 
 \begin{lemma}[The two framed cancellations]\label{lem:P0b}
 In the Johnson--AR replacement, the pairs \((t,h_{CS})\) and \((x,m_1)\)
@@ -273,11 +286,14 @@ The replayed finite certificates establish: (i) the $93$-transvection
 factorization of $A$ and the $93$-bit side pattern with a GAP free basis;
 (ii) the exact compact $m_2$ word with $42$ $y$-passages and
 $\operatorname{lk}(m_2,r_{yz})=0$ (Lemma~\ref{lem:P0d-link}); (iii) the
-six-sweep word equal to the public $11340$-letter word; (iv) a discrete
-Voronoi Heegaard pair on the $384$-tetrahedron torus carried by $S$.  The
+six-sweep word equal to the public $11340$-letter word; (iv) the
+handlebody bridge of Lemma~\ref{lem:P0a}: dual-block regular
+neighbourhoods of the Johnson and AR spines with explicit collapse
+sequences, carried onto each other by $S$.  The
 following obligations of Hypothesis~\ref{hyp:P0} are \Open:
-(a) the regular-neighbourhood identification of the handlebody pair
-(Lemma~\ref{lem:P0a}); (b) the actual PL homeomorphism $\psi_A$ composed
+(a) the identification of the mapping-torus handlebodies with this pair,
+which the Aitchison--Rubinstein construction requires but the certificate
+does not use; (b) the actual PL homeomorphism $\psi_A$ composed
 from the $93$ Johnson generators and the actual Aitchison--Rubinstein framed
 link \eqref{eq:ARcore}--\eqref{eq:ARannulus}; (c) the actual Kirby
 cancellations of $(t,h_{CS})$ and $(x,m_1)$ with belt spheres, band slides
@@ -289,9 +305,9 @@ with $\Sigma_A^0$.  Hypothesis~\ref{hyp:P0} is therefore \Open.
 
 \begin{proof}
 Items (i)--(iv) are the replayed certificates listed in
-Appendix~\ref{sec:reproducibility-extended}.  Items (a)--(e) are not
-established by them: the committed collar strands are generated from the
-public word by a control construction, and the cancellation movies are
-local models in $\mathbb R^3$ rather than moves on the actual attaching
-link.
+Appendix~\ref{sec:reproducibility-extended}; item (iv) is the proof of
+Lemma~\ref{lem:P0a}.  Items (a)--(e) are not established by them: the
+committed collar strands are generated from the public word by a control
+construction, and the cancellation movies are local models in
+$\mathbb R^3$ rather than moves on the actual attaching link.
 \end{proof}

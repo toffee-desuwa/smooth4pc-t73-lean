@@ -98,6 +98,10 @@ python -B scripts/verify_t73_endpoint_transport.py
 ### Johnson P0 → C → S → P3（推荐顺序）
 
 ```text
+# P0a：对偶块正则邻域、显式坍缩、Regina 交叉检查
+python -B scripts/verify_elementary_collapse.py --check
+python -B scripts/verify_t73_handlebody_bridge_regina.py --check   # 需要 regina 模块
+
 # P0（约 1–2 分钟）：AR 桥、消去、几何辫
 python -B scripts/certify_t73_p0_johnson.py --check
 

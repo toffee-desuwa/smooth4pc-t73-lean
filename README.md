@@ -114,6 +114,10 @@ formalized in `Smooth4PC/FilteredCubicNaturality.lean`
 ### Johnson P0 → C → S → P3 (recommended order)
 
 ```text
+# P0a: dual-block regular neighbourhoods, explicit collapses, Regina cross-check
+python -B scripts/verify_elementary_collapse.py --check
+python -B scripts/verify_t73_handlebody_bridge_regina.py --check   # needs the regina module
+
 # P0 (~1–2 min): AR bridge, cancellations, geometric braid
 python -B scripts/certify_t73_p0_johnson.py --check
 

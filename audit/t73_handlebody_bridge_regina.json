@@ -1,0 +1,353 @@
+{
+  "combinatorial": {
+    "collapse_sequence_index_sha_matches": true,
+    "collapse_sequences_sha256": "90A738B0EC57CB18062CF9DB8D0A3B538B800DD5723FADFFAA8C5759A8BBF371",
+    "collapses": {
+      "H_AR0": {
+        "complex_simplices": 7934,
+        "failed_step": null,
+        "ok": true,
+        "reason": "",
+        "step_count": 3944,
+        "target_simplices": 46
+      },
+      "H_AR1": {
+        "complex_simplices": 35422,
+        "failed_step": null,
+        "ok": true,
+        "reason": "",
+        "step_count": 17688,
+        "target_simplices": 46
+      },
+      "H_J0": {
+        "complex_simplices": 7934,
+        "failed_step": null,
+        "ok": true,
+        "reason": "",
+        "step_count": 3944,
+        "target_simplices": 46
+      },
+      "H_J1": {
+        "complex_simplices": 35422,
+        "failed_step": null,
+        "ok": true,
+        "reason": "",
+        "step_count": 17688,
+        "target_simplices": 46
+      }
+    },
+    "handlebodies": {
+      "H_AR0": {
+        "boundary_euler_characteristic": -4,
+        "boundary_genus": 3,
+        "boundary_is_closed_connected_surface": true,
+        "boundary_triangle_count": 1056,
+        "contains_subdivided_spine": true,
+        "euler_characteristic": -2,
+        "manifold_face_multiplicities": true,
+        "simplex_counts": {
+          "dim0": 558,
+          "dim1": 2528,
+          "dim2": 3408,
+          "dim3": 1440
+        },
+        "spine": "K_AR0",
+        "tetrahedron_count": 1440
+      },
+      "H_AR1": {
+        "boundary_euler_characteristic": -4,
+        "boundary_genus": 3,
+        "boundary_is_closed_connected_surface": true,
+        "boundary_triangle_count": 1056,
+        "contains_subdivided_spine": true,
+        "euler_characteristic": -2,
+        "manifold_face_multiplicities": true,
+        "simplex_counts": {
+          "dim0": 1630,
+          "dim1": 9936,
+          "dim2": 16080,
+          "dim3": 7776
+        },
+        "spine": "K_AR1",
+        "tetrahedron_count": 7776
+      },
+      "H_J0": {
+        "boundary_euler_characteristic": -4,
+        "boundary_genus": 3,
+        "boundary_is_closed_connected_surface": true,
+        "boundary_triangle_count": 1056,
+        "contains_subdivided_spine": true,
+        "euler_characteristic": -2,
+        "manifold_face_multiplicities": true,
+        "simplex_counts": {
+          "dim0": 558,
+          "dim1": 2528,
+          "dim2": 3408,
+          "dim3": 1440
+        },
+        "spine": "K_J0",
+        "tetrahedron_count": 1440
+      },
+      "H_J1": {
+        "boundary_euler_characteristic": -4,
+        "boundary_genus": 3,
+        "boundary_is_closed_connected_surface": true,
+        "boundary_triangle_count": 1056,
+        "contains_subdivided_spine": true,
+        "euler_characteristic": -2,
+        "manifold_face_multiplicities": true,
+        "simplex_counts": {
+          "dim0": 1630,
+          "dim1": 9936,
+          "dim2": 16080,
+          "dim3": 7776
+        },
+        "spine": "K_J1",
+        "tetrahedron_count": 7776
+      }
+    },
+    "matches_committed_ar_torus": true,
+    "pair_checks": {
+      "ar": {
+        "both_boundaries_closed_connected": true,
+        "both_boundaries_genus_three": true,
+        "common_boundary_genus": 3,
+        "common_boundary_triangle_count": 1056,
+        "shared_boundary_triangles": true,
+        "tetrahedra_disjoint": true,
+        "union_is_Tprime": true
+      },
+      "johnson": {
+        "both_boundaries_closed_connected": true,
+        "both_boundaries_genus_three": true,
+        "common_boundary_genus": 3,
+        "common_boundary_triangle_count": 1056,
+        "shared_boundary_triangles": true,
+        "tetrahedra_disjoint": true,
+        "union_is_Tprime": true
+      }
+    },
+    "spines": {
+      "K_AR0": {
+        "base_point": [
+          3,
+          3,
+          3
+        ],
+        "components": 1,
+        "edges": 12,
+        "full_subcomplex_of_T": false,
+        "rank": 3,
+        "subdivided_full_subcomplex_of_Tprime": true,
+        "vertices": 10
+      },
+      "K_AR1": {
+        "base_point": [
+          1,
+          1,
+          1
+        ],
+        "components": 1,
+        "edges": 12,
+        "full_subcomplex_of_T": false,
+        "rank": 3,
+        "subdivided_full_subcomplex_of_Tprime": true,
+        "vertices": 10
+      },
+      "K_J0": {
+        "base_point": [
+          0,
+          0,
+          0
+        ],
+        "components": 1,
+        "edges": 12,
+        "full_subcomplex_of_T": false,
+        "rank": 3,
+        "subdivided_full_subcomplex_of_Tprime": true,
+        "vertices": 10
+      },
+      "K_J1": {
+        "base_point": [
+          2,
+          2,
+          2
+        ],
+        "components": 1,
+        "edges": 12,
+        "full_subcomplex_of_T": false,
+        "rank": 3,
+        "subdivided_full_subcomplex_of_Tprime": true,
+        "vertices": 10
+      }
+    },
+    "translation": {
+      "formula_original": "S(u)=2u-(1/2,1/2,1/2)",
+      "formula_scaled": "T(v)=v-(1,1,1) on the common period-4 Freudenthal mesh",
+      "handlebody_images": {
+        "H_J0": true,
+        "H_J1": true
+      },
+      "is_simplicial_automorphism_of_T": true,
+      "maps_handlebody_pair": true,
+      "shift": [
+        -1,
+        -1,
+        -1
+      ],
+      "spine_images": {
+        "K_J0": true,
+        "K_J1": true
+      }
+    },
+    "translation_mutation_100_fails": true,
+    "triangulation_checks": {
+      "T_all_vertex_links_are_spheres": true,
+      "T_edges": 448,
+      "T_euler_characteristic": 0,
+      "T_every_triangle_in_two_tetrahedra": true,
+      "T_tetrahedra": 384,
+      "T_triangles": 768,
+      "T_vertices": 64,
+      "Tprime_all_vertex_links_are_spheres": true,
+      "Tprime_edges": 10880,
+      "Tprime_euler_characteristic": 0,
+      "Tprime_every_triangle_in_two_tetrahedra": true,
+      "Tprime_tetrahedra": 9216,
+      "Tprime_triangles": 18432,
+      "Tprime_vertices": 1664
+    }
+  },
+  "combinatorial_verdict": true,
+  "generator": "scripts/verify_t73_handlebody_bridge_regina.py",
+  "inputs": {
+    "ar_spines": "geometry/t73_ar_spines.json",
+    "collapse_sequences": "geometry/t73_handlebody_collapse_sequences.json",
+    "handlebodies": "geometry/t73_handlebody_pair_dual_block.json",
+    "johnson_spines": "geometry/t73_johnson_spines.json",
+    "triangulation": "geometry/t73_common_torus_triangulation.json"
+  },
+  "lemma": "lem:P0a (Johnson--AR handlebody bridge), paper/spc4-t73-candidate/main.tex",
+  "p0a_bridge": true,
+  "proof_route": "dual-block regular neighbourhoods in the first barycentric subdivision plus explicit elementary collapses; Regina is an independent cross-check and is not used by the PL argument",
+  "regina": {
+    "available": true,
+    "handlebodies": {
+      "H_AR0": {
+        "boundary_components": 1,
+        "boundary_euler_characteristic": -4,
+        "boundary_genus": 3,
+        "boundary_triangles": 1056,
+        "elapsed_seconds": 5.554,
+        "homology_h1": "3 Z",
+        "homology_invariant_factors": 0,
+        "homology_is_free_rank_three": true,
+        "homology_rank": 3,
+        "internal_gluings": 2352,
+        "is_connected": true,
+        "is_orientable": true,
+        "is_valid": true,
+        "raw_homology_h1": "3 Z",
+        "raw_homology_invariant_factors": 0,
+        "raw_homology_rank": 3,
+        "raw_tetrahedra": 1440,
+        "recognise_handlebody_available": true,
+        "recognise_handlebody_genus": 3,
+        "simplified_boundary_components": 1,
+        "simplified_boundary_euler_characteristic": -4,
+        "simplified_tetrahedra": 7,
+        "simplify_method": "simplify",
+        "verdict": true
+      },
+      "H_AR1": {
+        "boundary_components": 1,
+        "boundary_euler_characteristic": -4,
+        "boundary_genus": 3,
+        "boundary_triangles": 1056,
+        "elapsed_seconds": 4.48,
+        "homology_h1": "3 Z",
+        "homology_invariant_factors": 0,
+        "homology_is_free_rank_three": true,
+        "homology_rank": 3,
+        "internal_gluings": 15024,
+        "is_connected": true,
+        "is_orientable": true,
+        "is_valid": true,
+        "raw_homology_h1": null,
+        "raw_homology_invariant_factors": null,
+        "raw_homology_rank": null,
+        "raw_homology_skipped_because": "raw triangulation has 7776 > 2000 tetrahedra; H_1 is computed on the simplified copy instead",
+        "raw_tetrahedra": 7776,
+        "recognise_handlebody_available": true,
+        "recognise_handlebody_genus": 3,
+        "simplified_boundary_components": 1,
+        "simplified_boundary_euler_characteristic": -4,
+        "simplified_tetrahedra": 7,
+        "simplify_method": "simplify",
+        "verdict": true
+      },
+      "H_J0": {
+        "boundary_components": 1,
+        "boundary_euler_characteristic": -4,
+        "boundary_genus": 3,
+        "boundary_triangles": 1056,
+        "elapsed_seconds": 5.167,
+        "homology_h1": "3 Z",
+        "homology_invariant_factors": 0,
+        "homology_is_free_rank_three": true,
+        "homology_rank": 3,
+        "internal_gluings": 2352,
+        "is_connected": true,
+        "is_orientable": true,
+        "is_valid": true,
+        "raw_homology_h1": "3 Z",
+        "raw_homology_invariant_factors": 0,
+        "raw_homology_rank": 3,
+        "raw_tetrahedra": 1440,
+        "recognise_handlebody_available": true,
+        "recognise_handlebody_genus": 3,
+        "simplified_boundary_components": 1,
+        "simplified_boundary_euler_characteristic": -4,
+        "simplified_tetrahedra": 7,
+        "simplify_method": "simplify",
+        "verdict": true
+      },
+      "H_J1": {
+        "boundary_components": 1,
+        "boundary_euler_characteristic": -4,
+        "boundary_genus": 3,
+        "boundary_triangles": 1056,
+        "elapsed_seconds": 3.749,
+        "homology_h1": "3 Z",
+        "homology_invariant_factors": 0,
+        "homology_is_free_rank_three": true,
+        "homology_rank": 3,
+        "internal_gluings": 15024,
+        "is_connected": true,
+        "is_orientable": true,
+        "is_valid": true,
+        "raw_homology_h1": null,
+        "raw_homology_invariant_factors": null,
+        "raw_homology_rank": null,
+        "raw_homology_skipped_because": "raw triangulation has 7776 > 2000 tetrahedra; H_1 is computed on the simplified copy instead",
+        "raw_tetrahedra": 7776,
+        "recognise_handlebody_available": true,
+        "recognise_handlebody_genus": 3,
+        "simplified_boundary_components": 1,
+        "simplified_boundary_euler_characteristic": -4,
+        "simplified_tetrahedra": 7,
+        "simplify_method": "simplify",
+        "verdict": true
+      }
+    },
+    "regina_version": "7.4"
+  },
+  "regina_verdict": true,
+  "schema": "t73_handlebody_bridge_regina/v1",
+  "stable_sha256": "F78DEADAD2CDA3948133CCD982E58BCDEBFF7792BE64C2DAED3F364C59F15D67",
+  "volatile_fields": [
+    "regina_version",
+    "simplified_tetrahedra",
+    "elapsed_seconds"
+  ]
+}
