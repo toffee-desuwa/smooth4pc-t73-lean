@@ -92,7 +92,24 @@ in memory and compares it to the committed JSON under `audit/`.
 python -I -B scripts/recompute_t73_delta3.py --check
 ```
 
-Expect `DELTA3_ETA_T1=2624`, `DELTA3_XI=0`, and `VERIFY=PASS`.
+Expect `DELTA3_ETA_T1=2624`, `DELTA3_XI=0`, and `VERIFY=PASS`. The cup
+vector `u` and cap row `ell` are no longer hand-written: they are derived from
+the single endpoint authority `data/T73_ENDPOINT_CONVENTION.json` (physical
+endpoint ids, orientations, geometric and public orders, pivotal
+coefficients) by the endpoint transport program, which also proves
+`W_public = P W_geometric P^-1` letter by letter along the actual cabled word:
+
+```text
+python -B scripts/build_t73_endpoint_transport.py --check
+python -B scripts/verify_t73_endpoint_transport.py
+```
+
+Expect `ENDPOINT_TRANSPORT=PASS`, `NO_UNRESOLVED_SIGNS=PASS`, `DELTA3=2624`,
+and the coordinate controls `-59072` / `-2496` reproduced as illegal partial
+transports. The filtered cubic lemma behind this (`[h^3] ell A u = ell_0 A_3 u_0`
+when `A` starts in order three, and simultaneous-conjugation invariance) is
+formalized in `Smooth4PC/FilteredCubicNaturality.lean`
+(`python -B tests/test_t73_filtered_cubic_naturality.py -v`).
 
 ### Johnson P0 → C → S → P3 (recommended order)
 

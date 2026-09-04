@@ -73,6 +73,18 @@ DELTA3_XI=0
 VERIFY=PASS
 ```
 
+The cup and cap terms are derived from the endpoint authority
+`data/T73_ENDPOINT_CONVENTION.json`; regenerate and verify the transport with
+
+```text
+python -B scripts/build_t73_endpoint_transport.py --check
+python -B scripts/verify_t73_endpoint_transport.py
+python -B tests/test_t73_endpoint_transport.py -v
+```
+
+The bearing lines are `ENDPOINT_TRANSPORT=PASS`, `NO_UNRESOLVED_SIGNS=PASS`
+and `DELTA3=2624`.
+
 ## 5. Replay Johnson P0 / C / S / P3 certificates
 
 Run from the repository root with Python 3.10+. On Windows, `python` may be

@@ -79,7 +79,21 @@ python3 scripts/audit_t73_premises.py --check
 python -I -B scripts/recompute_t73_delta3.py --check
 ```
 
-预期：`DELTA3_ETA_T1=2624`、`DELTA3_XI=0`、`VERIFY=PASS`。
+预期：`DELTA3_ETA_T1=2624`、`DELTA3_XI=0`、`VERIFY=PASS`。cup 向量 `u` 与 cap 行
+`ell` 不再手写：它们由唯一端点权威 `data/T73_ENDPOINT_CONVENTION.json`（物理端点
+id、定向、几何序与公开序、枢轴系数）经端点传输程序推导，该程序还沿实际缆化词逐字母
+证明 `W_public = P W_geometric P^-1`：
+
+```text
+python -B scripts/build_t73_endpoint_transport.py --check
+python -B scripts/verify_t73_endpoint_transport.py
+```
+
+预期 `ENDPOINT_TRANSPORT=PASS`、`NO_UNRESOLVED_SIGNS=PASS`、`DELTA3=2624`，并把坐标
+对照 `-59072` / `-2496` 重现为非法的部分传输。其背后的滤过三次引理
+（`A` 从三阶开始时 `[h^3] ell A u = ell_0 A_3 u_0`，以及同步共轭不变性）在
+`Smooth4PC/FilteredCubicNaturality.lean` 中形式化
+（`python -B tests/test_t73_filtered_cubic_naturality.py -v`）。
 
 ### Johnson P0 → C → S → P3（推荐顺序）
 

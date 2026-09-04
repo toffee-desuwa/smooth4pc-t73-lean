@@ -6,7 +6,8 @@
       "expanded B44 Artin word",
       "expanded B88 Artin word",
       "epsilon or h scalar coefficients",
-      "divided-cubic expected values"
+      "divided-cubic expected values",
+      "hand-written cup/cap endpoint terms"
     ]
   },
   "provenance": {
@@ -3942,26 +3943,9 @@
     ],
     "parameter_substitution": "t=q^-2; h=q-1",
     "position_table_sha256": "119C7E9E74AE6C820DA72A84CDFD5D445D81E6C3AACCC209C25D37C323961508",
-    "u_terms": [
-      [
-        2,
-        1
-      ],
-      [
-        87,
-        -1
-      ]
-    ],
-    "ell_terms": [
-      [
-        87,
-        1
-      ],
-      [
-        2,
-        -1
-      ]
-    ]
+    "endpoint_convention": "T73_ENDPOINT_CONVENTION.json",
+    "endpoint_convention_sha256": "B47609C0C8ED098DFB897AD9822577A31D4ABCB6D735A02417AE48E0342DC98E",
+    "endpoint_terms_rule": "the cup vector u and cap row ell are derived from the endpoint convention (transport monomials, canonical coevaluation, pivotal evaluation) by scripts/build_t73_endpoint_transport.py; hand-written terms are not accepted"
   },
   "hattori_binding": {
     "source_extract": {

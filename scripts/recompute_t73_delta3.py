@@ -6,12 +6,20 @@ derived B44/B88 words and not the expected cubic.  This script independently
 rebuilds both words, evaluates the unreduced Burau action in
 Z[epsilon]/(epsilon^7), substitutes t=q^-2 with q=1+h, and prints a
 path-independent receipt.
+
+The cup vector u and the cap row ell are not read from hand-written lists.
+They are derived from the single endpoint authority file
+data/T73_ENDPOINT_CONVENTION.json (physical endpoint identities, orientations,
+geometric and public orders, pivotal coefficients) by
+build_t73_endpoint_transport.derive_endpoint_terms; the public input records
+only the name and SHA-256 of that authority file.
 """
 
 from __future__ import annotations
 
 import argparse
 import hashlib
+import importlib.util
 import json
 from pathlib import Path
 from typing import Any
@@ -296,6 +304,33 @@ def check_binding(data: dict[str, Any]) -> None:
         raise ValueError("Hattori inputs do not use one fixed coefficient")
 
 
+def derive_endpoint_terms_from_authority(input_path: Path, data: dict[str, Any]) -> dict[str, Any]:
+    """Cup/cap constant terms from the single endpoint authority file.
+
+    The terms are recomputed from the recorded transport monomials and the
+    oriented coevaluation / pivotal evaluation; a hand-written ``u_terms`` or
+    ``ell_terms`` field in the public input is rejected.
+    """
+    model = data["endpoint_model"]
+    if "u_terms" in model or "ell_terms" in model:
+        raise ValueError("hand-written u_terms/ell_terms are not accepted; use the endpoint authority")
+    convention_path = input_path.parent / model["endpoint_convention"]
+    if not convention_path.is_file():
+        raise ValueError("missing endpoint convention file")
+    convention_sha = sha256_bytes(convention_path.read_bytes())
+    if convention_sha != model["endpoint_convention_sha256"]:
+        raise ValueError("endpoint convention SHA mismatch")
+    builder = HERE / "build_t73_endpoint_transport.py"
+    spec = importlib.util.spec_from_file_location("build_t73_endpoint_transport", builder)
+    if spec is None or spec.loader is None:
+        raise RuntimeError("cannot load build_t73_endpoint_transport.py")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    derived = module.derive_endpoint_terms(convention_path)
+    derived["convention_file_sha256"] = convention_sha
+    return derived
+
+
 def build_receipt(input_path: Path) -> dict[str, Any]:
     input_bytes = input_path.read_bytes()
     data = json.loads(input_bytes.decode("utf-8"))
@@ -326,26 +361,28 @@ def build_receipt(input_path: Path) -> dict[str, Any]:
     if canonical_sha(b88) != integrity["B88_sha256"]:
         raise ValueError("B88 SHA mismatch")
 
-    vector = sparse_vector(
-        dimension, degree, data["endpoint_model"]["u_terms"]
-    )
+    endpoint = derive_endpoint_terms_from_authority(input_path, data)
+    u_terms = endpoint["u_terms"]
+    ell_terms = endpoint["ell_terms"]
+    vector = sparse_vector(dimension, degree, u_terms)
     delta_vector = delta_apply(b88, vector)
-    eta_epsilon = apply_covector(
-        delta_vector, data["endpoint_model"]["ell_terms"]
-    )
+    eta_epsilon = apply_covector(delta_vector, ell_terms)
     delta_xi_vector = delta_apply(b88, delta_vector)
-    xi_epsilon = apply_covector(
-        delta_xi_vector, data["endpoint_model"]["ell_terms"]
-    )
+    xi_epsilon = apply_covector(delta_xi_vector, ell_terms)
     eta_h = substitute_epsilon_with_h(eta_epsilon, degree)
     xi_h = substitute_epsilon_with_h(xi_epsilon, degree)
 
     return {
-        "schema": "t73_delta3_public_receipt/v1",
+        "schema": "t73_delta3_public_receipt/v2",
         "input_sha256": sha256_bytes(input_bytes),
         "endpoint_model": {
-            "u_terms": data["endpoint_model"]["u_terms"],
-            "ell_terms": data["endpoint_model"]["ell_terms"],
+            "u_terms": u_terms,
+            "ell_terms": ell_terms,
+            "derived_from": (
+                "data/T73_ENDPOINT_CONVENTION.json via "
+                "scripts/build_t73_endpoint_transport.py derive_endpoint_terms"
+            ),
+            "endpoint_convention_sha256": endpoint["convention_file_sha256"],
             "position_table_sha256": position_table_sha,
         },
         "derived_words": {
@@ -381,6 +418,9 @@ def print_text(receipt: dict[str, Any]) -> None:
     print(f"B88_LENGTH={words['B88_length']}")
     print(f"B88_SHA256={words['B88_sha256']}")
     print(f"POSITION_TABLE_SHA256={receipt['endpoint_model']['position_table_sha256']}")
+    print(f"ENDPOINT_CONVENTION_SHA256={receipt['endpoint_model']['endpoint_convention_sha256']}")
+    print("U_TERMS_DERIVED=" + json.dumps(receipt["endpoint_model"]["u_terms"], separators=(",", ":")))
+    print("ELL_TERMS_DERIVED=" + json.dumps(receipt["endpoint_model"]["ell_terms"], separators=(",", ":")))
     print(
         "ELL_RHOW_MINUS_I_U_EPS="
         + json.dumps(eps["ell_(rhoW-I)_u_degrees_0_to_6"], separators=(",", ":"))

@@ -108,7 +108,7 @@ W\mapsto PWP^{-1},\qquad u\mapsto Pu,\qquad
 u_0=e_2-e_{87},\qquad
 \ell_0=e_{87}^*-e_2^*,
 \]
-即 \eqref{eq:u} 与 \eqref{eq:ell}，不留任何未定符号。所有省略因子均为可逆 $q$-单项式或正阶 $h$ 修正，由下文引理~\ref{lem:filtered-cubic}，它们不影响 divided cubic。
+即 \eqref{eq:u} 与 \eqref{eq:ell}，不留任何未定符号。这些约定的唯一权威是仓库文件 \texttt{data/T73\_ENDPOINT\_CONVENTION.json}，它为 $88$ 个端点各记录物理身份、owner、定向、几何序（冻结 MWW 切割槽位）、公开序（领圈位置）、THXY 指标与枢轴系数 $\pm q^k$。程序 \texttt{scripts/build\_t73\_endpoint\_transport.py} 由它推导单项式矩阵 $P(q)$，沿实际 $45{,}360$ 字母缆化词逐字母（带股跟踪，八种定向模式全部出现）验证 $W_{\mathrm{public}}=PW_{\mathrm{geometric}}P^{-1}$，并由典范 coevaluation 与枢轴 evaluation 推导 $u_0$ 与 $\ell_0$ 而非读取它们；\texttt{recompute\_t73\_delta3.py} 消费该推导。所有省略因子均为可逆 $q$-单项式或正阶 $h$ 修正，由下文引理~\ref{lem:filtered-cubic}，它们不影响 divided cubic。
 
 在 $\Q[[h]]$ 上定义
 \[
@@ -135,7 +135,7 @@ D_3:HH_0(\mathcal C;M_R)\longrightarrow\Q.
 \end{lemma}
 
 \begin{proof}
-$[h^3]\ell(h)A(h)u(h)=\sum_{i+j+k=3}\ell_iA_ju_k$，其中 $j\le2$ 的项均为零。同步传输下每一项不变。
+$[h^3]\ell(h)A(h)u(h)=\sum_{i+j+k=3}\ell_iA_ju_k$，其中 $j\le2$ 的项均为零。同步传输下每一项不变。两个陈述均在 \texttt{Smooth4PC/FilteredCubicNaturality.lean} 中形式化（\texttt{pairingCoeff\_three\_of\_startsAtThree}、\texttt{cubic\_invariant\_under\_simultaneous\_transport}）；数值假设 $\rho_h(W)-I\in h^3\operatorname{End}(E_{88})$ 由端点传输程序对全部 $7{,}744$ 个条目重算，三次系数用常数项、用完整传输后的 $q$-级数、或按 $\ell_0A_3u_0$ 计算均一致。
 \end{proof}
 
 四个混合指标 Burau 符号变体

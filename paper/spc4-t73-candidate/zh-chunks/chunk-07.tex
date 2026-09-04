@@ -156,7 +156,19 @@ BPW's cup/cap formulas give
 u_0=e_2-e_{87},\qquad
 \ell_0=e_{87}^*-e_2^*,
 \]
-as in \eqref{eq:u} and \eqref{eq:ell}, with no undetermined sign.  All
+as in \eqref{eq:u} and \eqref{eq:ell}, with no undetermined sign.  The
+single authority for these conventions is the repository file
+\texttt{data/T73\_ENDPOINT\_CONVENTION.json}, which records for each of the
+$88$ endpoints its physical identity, owner, orientation, geometric order
+(the frozen MWW cut slot), public order (the collar position), THXY index
+and pivotal coefficient $\pm q^k$.  The program
+\texttt{scripts/build\_t73\_endpoint\_transport.py} derives the monomial
+matrix $P(q)$ from it, verifies
+$W_{\mathrm{public}}=PW_{\mathrm{geometric}}P^{-1}$ letter by letter along
+the actual $45{,}360$-letter cabled word with strand tracking (all eight
+orientation patterns occur), and derives $u_0$ and $\ell_0$ from the
+canonical coevaluation and the pivotal evaluation instead of reading them;
+\texttt{recompute\_t73\_delta3.py} consumes that derivation.  All
 omitted factors are invertible $q$-monomials or positive-order
 $h$-corrections, and by Lemma~\ref{lem:filtered-cubic} below they do not
 affect the divided cubic.
@@ -200,6 +212,14 @@ $(PAP^{-1},Pu,\ell P^{-1})$ for a constant automorphism $P$.
 \begin{proof}
 $[h^3]\ell(h)A(h)u(h)=\sum_{i+j+k=3}\ell_iA_ju_k$, and every term with
 $j\le2$ vanishes.  Under simultaneous transport each summand is unchanged.
+Both statements are formalized in
+\texttt{Smooth4PC/FilteredCubicNaturality.lean}
+(\texttt{pairingCoeff\_three\_of\_startsAtThree},
+\texttt{cubic\_invariant\_under\_simultaneous\_transport}); the numerical
+hypothesis $\rho_h(W)-I\in h^3\operatorname{End}(E_{88})$ is recomputed on
+all $7{,}744$ entries by the endpoint transport program, and the cubic
+agrees whether it is evaluated with the constant terms, with the full
+transported $q$-series, or as $\ell_0A_3u_0$.
 \end{proof}
 
 The four mixed-index Burau sign variants

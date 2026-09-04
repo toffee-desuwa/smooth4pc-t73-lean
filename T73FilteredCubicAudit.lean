@@ -1,0 +1,9 @@
+import Smooth4PC.FilteredCubicNaturality
+
+#print axioms Smooth4PC.pairingCoeff_lt_three_eq_zero
+#print axioms Smooth4PC.pairingCoeff_three_of_startsAtThree
+#print axioms Smooth4PC.pairingCoeff_transport
+#print axioms Smooth4PC.startsAtThree_transport
+#print axioms Smooth4PC.cubic_invariant_under_simultaneous_transport
+#print axioms Smooth4PC.transportVectorSeries_zero_of_id
+#print axioms Smooth4PC.pairingCoeff_three_transportVectorSeries

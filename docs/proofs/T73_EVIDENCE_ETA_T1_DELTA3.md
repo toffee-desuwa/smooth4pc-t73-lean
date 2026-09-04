@@ -128,9 +128,23 @@ B88_POSITION_TO_PASSAGE_TABLE SHA256:
   119C7E9E74AE6C820DA72A84CDFD5D445D81E6C3AACCC209C25D37C323961508
 
 T73_DELTA3_PUBLIC_RECEIPT.json SHA256:
-  7C681B99492A5C34B3B8A7EC8B7269E3FD67CD989728C2D4A1C619A63387A722
+  765124A7625A5CA06BF4BCCD24B7FF24DEFD20DE9F12BE9F31F0AE0B6C5EF907
 ```
 
 This decision settles the endpoint-coordinate arithmetic only.  It does not
 discharge the candidate-specific Hattori, two-handle, sphere-map, or closed
 four-manifold assumptions.
+
+## 5. Endpoint authority (2026-09-04)
+
+The cup and cap terms are no longer hand-written. They are derived from the
+single endpoint authority `data/T73_ENDPOINT_CONVENTION.json` by
+`scripts/build_t73_endpoint_transport.py`, which records for every one of the
+88 endpoints its physical identity, owner, orientation, geometric order (frozen
+MWW cut slot), public order (collar position), THXY index and pivotal
+coefficient, verifies `W_public = P W_geometric P^-1` letter by letter along
+the actual 45360-letter cabled word, and reproduces the withdrawn values as
+illegal partial transports (THXY cup with collar cap: -59072; THXY cup and cap
+with the untransported word: -2496). The public input now records only the name
+and SHA-256 of the authority file; the receipt schema is v2 and its SHA-256 is
+the value quoted in section 4.

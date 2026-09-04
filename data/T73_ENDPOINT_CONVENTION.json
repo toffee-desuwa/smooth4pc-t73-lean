@@ -1,0 +1,3422 @@
+{
+  "P_monomial_matrix": [
+    {
+      "col_geometric": 1,
+      "monomial": "-q^1",
+      "row_public": 0
+    },
+    {
+      "col_geometric": 2,
+      "monomial": "q^1",
+      "row_public": 1
+    },
+    {
+      "col_geometric": 0,
+      "monomial": "q^2",
+      "row_public": 2
+    },
+    {
+      "col_geometric": 3,
+      "monomial": "-q^4",
+      "row_public": 3
+    },
+    {
+      "col_geometric": 45,
+      "monomial": "-q^5",
+      "row_public": 4
+    },
+    {
+      "col_geometric": 46,
+      "monomial": "q^5",
+      "row_public": 5
+    },
+    {
+      "col_geometric": 44,
+      "monomial": "-q^7",
+      "row_public": 6
+    },
+    {
+      "col_geometric": 47,
+      "monomial": "q^7",
+      "row_public": 7
+    },
+    {
+      "col_geometric": 43,
+      "monomial": "-q^9",
+      "row_public": 8
+    },
+    {
+      "col_geometric": 48,
+      "monomial": "q^9",
+      "row_public": 9
+    },
+    {
+      "col_geometric": 42,
+      "monomial": "-q^11",
+      "row_public": 10
+    },
+    {
+      "col_geometric": 49,
+      "monomial": "q^11",
+      "row_public": 11
+    },
+    {
+      "col_geometric": 41,
+      "monomial": "-q^13",
+      "row_public": 12
+    },
+    {
+      "col_geometric": 50,
+      "monomial": "q^13",
+      "row_public": 13
+    },
+    {
+      "col_geometric": 40,
+      "monomial": "-q^15",
+      "row_public": 14
+    },
+    {
+      "col_geometric": 51,
+      "monomial": "q^15",
+      "row_public": 15
+    },
+    {
+      "col_geometric": 39,
+      "monomial": "-q^17",
+      "row_public": 16
+    },
+    {
+      "col_geometric": 52,
+      "monomial": "q^17",
+      "row_public": 17
+    },
+    {
+      "col_geometric": 38,
+      "monomial": "-q^19",
+      "row_public": 18
+    },
+    {
+      "col_geometric": 53,
+      "monomial": "q^19",
+      "row_public": 19
+    },
+    {
+      "col_geometric": 37,
+      "monomial": "-q^21",
+      "row_public": 20
+    },
+    {
+      "col_geometric": 54,
+      "monomial": "q^21",
+      "row_public": 21
+    },
+    {
+      "col_geometric": 36,
+      "monomial": "-q^23",
+      "row_public": 22
+    },
+    {
+      "col_geometric": 55,
+      "monomial": "q^23",
+      "row_public": 23
+    },
+    {
+      "col_geometric": 35,
+      "monomial": "-q^25",
+      "row_public": 24
+    },
+    {
+      "col_geometric": 56,
+      "monomial": "q^25",
+      "row_public": 25
+    },
+    {
+      "col_geometric": 34,
+      "monomial": "-q^27",
+      "row_public": 26
+    },
+    {
+      "col_geometric": 57,
+      "monomial": "q^27",
+      "row_public": 27
+    },
+    {
+      "col_geometric": 33,
+      "monomial": "-q^29",
+      "row_public": 28
+    },
+    {
+      "col_geometric": 58,
+      "monomial": "q^29",
+      "row_public": 29
+    },
+    {
+      "col_geometric": 32,
+      "monomial": "-q^31",
+      "row_public": 30
+    },
+    {
+      "col_geometric": 59,
+      "monomial": "q^31",
+      "row_public": 31
+    },
+    {
+      "col_geometric": 31,
+      "monomial": "-q^33",
+      "row_public": 32
+    },
+    {
+      "col_geometric": 60,
+      "monomial": "q^33",
+      "row_public": 33
+    },
+    {
+      "col_geometric": 30,
+      "monomial": "-q^35",
+      "row_public": 34
+    },
+    {
+      "col_geometric": 61,
+      "monomial": "q^35",
+      "row_public": 35
+    },
+    {
+      "col_geometric": 29,
+      "monomial": "-q^37",
+      "row_public": 36
+    },
+    {
+      "col_geometric": 62,
+      "monomial": "q^37",
+      "row_public": 37
+    },
+    {
+      "col_geometric": 28,
+      "monomial": "-q^39",
+      "row_public": 38
+    },
+    {
+      "col_geometric": 63,
+      "monomial": "q^39",
+      "row_public": 39
+    },
+    {
+      "col_geometric": 27,
+      "monomial": "-q^41",
+      "row_public": 40
+    },
+    {
+      "col_geometric": 64,
+      "monomial": "q^41",
+      "row_public": 41
+    },
+    {
+      "col_geometric": 26,
+      "monomial": "-q^43",
+      "row_public": 42
+    },
+    {
+      "col_geometric": 65,
+      "monomial": "q^43",
+      "row_public": 43
+    },
+    {
+      "col_geometric": 25,
+      "monomial": "-q^45",
+      "row_public": 44
+    },
+    {
+      "col_geometric": 66,
+      "monomial": "q^45",
+      "row_public": 45
+    },
+    {
+      "col_geometric": 24,
+      "monomial": "-q^47",
+      "row_public": 46
+    },
+    {
+      "col_geometric": 67,
+      "monomial": "q^47",
+      "row_public": 47
+    },
+    {
+      "col_geometric": 23,
+      "monomial": "-q^49",
+      "row_public": 48
+    },
+    {
+      "col_geometric": 68,
+      "monomial": "q^49",
+      "row_public": 49
+    },
+    {
+      "col_geometric": 22,
+      "monomial": "-q^51",
+      "row_public": 50
+    },
+    {
+      "col_geometric": 69,
+      "monomial": "q^51",
+      "row_public": 51
+    },
+    {
+      "col_geometric": 21,
+      "monomial": "-q^53",
+      "row_public": 52
+    },
+    {
+      "col_geometric": 70,
+      "monomial": "q^53",
+      "row_public": 53
+    },
+    {
+      "col_geometric": 20,
+      "monomial": "-q^55",
+      "row_public": 54
+    },
+    {
+      "col_geometric": 71,
+      "monomial": "q^55",
+      "row_public": 55
+    },
+    {
+      "col_geometric": 19,
+      "monomial": "-q^57",
+      "row_public": 56
+    },
+    {
+      "col_geometric": 72,
+      "monomial": "q^57",
+      "row_public": 57
+    },
+    {
+      "col_geometric": 18,
+      "monomial": "-q^59",
+      "row_public": 58
+    },
+    {
+      "col_geometric": 73,
+      "monomial": "q^59",
+      "row_public": 59
+    },
+    {
+      "col_geometric": 17,
+      "monomial": "-q^61",
+      "row_public": 60
+    },
+    {
+      "col_geometric": 74,
+      "monomial": "q^61",
+      "row_public": 61
+    },
+    {
+      "col_geometric": 16,
+      "monomial": "-q^63",
+      "row_public": 62
+    },
+    {
+      "col_geometric": 75,
+      "monomial": "q^63",
+      "row_public": 63
+    },
+    {
+      "col_geometric": 15,
+      "monomial": "-q^65",
+      "row_public": 64
+    },
+    {
+      "col_geometric": 76,
+      "monomial": "q^65",
+      "row_public": 65
+    },
+    {
+      "col_geometric": 14,
+      "monomial": "-q^67",
+      "row_public": 66
+    },
+    {
+      "col_geometric": 77,
+      "monomial": "q^67",
+      "row_public": 67
+    },
+    {
+      "col_geometric": 13,
+      "monomial": "-q^69",
+      "row_public": 68
+    },
+    {
+      "col_geometric": 78,
+      "monomial": "q^69",
+      "row_public": 69
+    },
+    {
+      "col_geometric": 12,
+      "monomial": "-q^71",
+      "row_public": 70
+    },
+    {
+      "col_geometric": 79,
+      "monomial": "q^71",
+      "row_public": 71
+    },
+    {
+      "col_geometric": 11,
+      "monomial": "-q^73",
+      "row_public": 72
+    },
+    {
+      "col_geometric": 80,
+      "monomial": "q^73",
+      "row_public": 73
+    },
+    {
+      "col_geometric": 10,
+      "monomial": "-q^75",
+      "row_public": 74
+    },
+    {
+      "col_geometric": 81,
+      "monomial": "q^75",
+      "row_public": 75
+    },
+    {
+      "col_geometric": 9,
+      "monomial": "-q^77",
+      "row_public": 76
+    },
+    {
+      "col_geometric": 82,
+      "monomial": "q^77",
+      "row_public": 77
+    },
+    {
+      "col_geometric": 8,
+      "monomial": "-q^79",
+      "row_public": 78
+    },
+    {
+      "col_geometric": 83,
+      "monomial": "q^79",
+      "row_public": 79
+    },
+    {
+      "col_geometric": 7,
+      "monomial": "-q^81",
+      "row_public": 80
+    },
+    {
+      "col_geometric": 84,
+      "monomial": "q^81",
+      "row_public": 81
+    },
+    {
+      "col_geometric": 6,
+      "monomial": "-q^83",
+      "row_public": 82
+    },
+    {
+      "col_geometric": 85,
+      "monomial": "q^83",
+      "row_public": 83
+    },
+    {
+      "col_geometric": 5,
+      "monomial": "-q^85",
+      "row_public": 84
+    },
+    {
+      "col_geometric": 86,
+      "monomial": "q^85",
+      "row_public": 85
+    },
+    {
+      "col_geometric": 4,
+      "monomial": "q^86",
+      "row_public": 86
+    },
+    {
+      "col_geometric": 87,
+      "monomial": "-q^88",
+      "row_public": 87
+    }
+  ],
+  "convention_sha256": "DF14B274039CADA19BB297DA6B1D2C28E71B47B911B69F492766946FAA19691C",
+  "endpoints": [
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 1,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "r_xy",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_r_xy_neg:0002",
+      "physical_component_id": "c_r_xy_neg",
+      "physical_endpoint_id": "ep:c_r_xy_neg:0002:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "1",
+      "public_index": 0,
+      "tensor_factor": "V*",
+      "thxy_index": 2,
+      "transport_monomial": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 2,
+      "weight_defect_basis_vector": "e_0: ground states at every other position, v_+^* at public position 0 (geometric slot 1, strand ep:c_r_xy_neg:0002:exit)",
+      "wicket": 1,
+      "word_letter": 1
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 2,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "r_xy",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_r_xy_pos:0001",
+      "physical_component_id": "c_r_xy_pos",
+      "physical_endpoint_id": "ep:c_r_xy_pos:0001:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^1",
+      "public_index": 1,
+      "tensor_factor": "V",
+      "thxy_index": 3,
+      "transport_monomial": {
+        "monomial": "q^1",
+        "q_exponent": 1,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 1,
+      "weight_defect_basis_vector": "e_1: ground states at every other position, v_- at public position 1 (geometric slot 2, strand ep:c_r_xy_pos:0001:entry)",
+      "wicket": 1,
+      "word_letter": 1
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_-",
+      "geometric_order": 0,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": 1,
+      "owner": "r_xy",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_r_xy_neg:0000",
+      "physical_component_id": "c_r_xy_neg",
+      "physical_endpoint_id": "ep:c_r_xy_neg:0000:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^2",
+      "public_index": 2,
+      "tensor_factor": "V",
+      "thxy_index": 0,
+      "transport_monomial": {
+        "monomial": "q^2",
+        "q_exponent": 2,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 0,
+      "weight_defect_basis_vector": "e_2: ground states at every other position, v_- at public position 2 (geometric slot 0, strand ep:c_r_xy_neg:0000:entry)",
+      "wicket": 2,
+      "word_letter": 3
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_+^*",
+      "geometric_order": 3,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": -1,
+      "owner": "r_xy",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_r_xy_pos:0003",
+      "physical_component_id": "c_r_xy_pos",
+      "physical_endpoint_id": "ep:c_r_xy_pos:0003:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^3",
+      "public_index": 3,
+      "tensor_factor": "V*",
+      "thxy_index": 1,
+      "transport_monomial": {
+        "monomial": "-q^4",
+        "q_exponent": 4,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 3,
+      "weight_defect_basis_vector": "e_3: ground states at every other position, v_+^* at public position 3 (geometric slot 3, strand ep:c_r_xy_pos:0003:exit)",
+      "wicket": 2,
+      "word_letter": 3
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 45,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0304",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0304:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^4",
+      "public_index": 4,
+      "tensor_factor": "V*",
+      "thxy_index": 86,
+      "transport_monomial": {
+        "monomial": "-q^5",
+        "q_exponent": 5,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 304,
+      "weight_defect_basis_vector": "e_4: ground states at every other position, v_+^* at public position 4 (geometric slot 45, strand ep:c_m_2_neg:0304:exit)",
+      "wicket": 3,
+      "word_letter": 6
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 46,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0006",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0006:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^5",
+      "public_index": 5,
+      "tensor_factor": "V",
+      "thxy_index": 87,
+      "transport_monomial": {
+        "monomial": "q^5",
+        "q_exponent": 5,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 6,
+      "weight_defect_basis_vector": "e_5: ground states at every other position, v_- at public position 5 (geometric slot 46, strand ep:c_m_2_pos:0006:entry)",
+      "wicket": 3,
+      "word_letter": 6
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 44,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0296",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0296:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^6",
+      "public_index": 6,
+      "tensor_factor": "V*",
+      "thxy_index": 84,
+      "transport_monomial": {
+        "monomial": "-q^7",
+        "q_exponent": 7,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 296,
+      "weight_defect_basis_vector": "e_6: ground states at every other position, v_+^* at public position 6 (geometric slot 44, strand ep:c_m_2_neg:0296:exit)",
+      "wicket": 4,
+      "word_letter": 14
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 47,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0014",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0014:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^7",
+      "public_index": 7,
+      "tensor_factor": "V",
+      "thxy_index": 85,
+      "transport_monomial": {
+        "monomial": "q^7",
+        "q_exponent": 7,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 14,
+      "weight_defect_basis_vector": "e_7: ground states at every other position, v_- at public position 7 (geometric slot 47, strand ep:c_m_2_pos:0014:entry)",
+      "wicket": 4,
+      "word_letter": 14
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 43,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0289",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0289:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^8",
+      "public_index": 8,
+      "tensor_factor": "V*",
+      "thxy_index": 82,
+      "transport_monomial": {
+        "monomial": "-q^9",
+        "q_exponent": 9,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 289,
+      "weight_defect_basis_vector": "e_8: ground states at every other position, v_+^* at public position 8 (geometric slot 43, strand ep:c_m_2_neg:0289:exit)",
+      "wicket": 5,
+      "word_letter": 21
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 48,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0021",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0021:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^9",
+      "public_index": 9,
+      "tensor_factor": "V",
+      "thxy_index": 83,
+      "transport_monomial": {
+        "monomial": "q^9",
+        "q_exponent": 9,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 21,
+      "weight_defect_basis_vector": "e_9: ground states at every other position, v_- at public position 9 (geometric slot 48, strand ep:c_m_2_pos:0021:entry)",
+      "wicket": 5,
+      "word_letter": 21
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 42,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0281",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0281:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^10",
+      "public_index": 10,
+      "tensor_factor": "V*",
+      "thxy_index": 80,
+      "transport_monomial": {
+        "monomial": "-q^11",
+        "q_exponent": 11,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 281,
+      "weight_defect_basis_vector": "e_10: ground states at every other position, v_+^* at public position 10 (geometric slot 42, strand ep:c_m_2_neg:0281:exit)",
+      "wicket": 6,
+      "word_letter": 29
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 49,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0029",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0029:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^11",
+      "public_index": 11,
+      "tensor_factor": "V",
+      "thxy_index": 81,
+      "transport_monomial": {
+        "monomial": "q^11",
+        "q_exponent": 11,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 29,
+      "weight_defect_basis_vector": "e_11: ground states at every other position, v_- at public position 11 (geometric slot 49, strand ep:c_m_2_pos:0029:entry)",
+      "wicket": 6,
+      "word_letter": 29
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 41,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0274",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0274:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^12",
+      "public_index": 12,
+      "tensor_factor": "V*",
+      "thxy_index": 78,
+      "transport_monomial": {
+        "monomial": "-q^13",
+        "q_exponent": 13,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 274,
+      "weight_defect_basis_vector": "e_12: ground states at every other position, v_+^* at public position 12 (geometric slot 41, strand ep:c_m_2_neg:0274:exit)",
+      "wicket": 7,
+      "word_letter": 36
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 50,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0036",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0036:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^13",
+      "public_index": 13,
+      "tensor_factor": "V",
+      "thxy_index": 79,
+      "transport_monomial": {
+        "monomial": "q^13",
+        "q_exponent": 13,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 36,
+      "weight_defect_basis_vector": "e_13: ground states at every other position, v_- at public position 13 (geometric slot 50, strand ep:c_m_2_pos:0036:entry)",
+      "wicket": 7,
+      "word_letter": 36
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 40,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0266",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0266:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^14",
+      "public_index": 14,
+      "tensor_factor": "V*",
+      "thxy_index": 76,
+      "transport_monomial": {
+        "monomial": "-q^15",
+        "q_exponent": 15,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 266,
+      "weight_defect_basis_vector": "e_14: ground states at every other position, v_+^* at public position 14 (geometric slot 40, strand ep:c_m_2_neg:0266:exit)",
+      "wicket": 8,
+      "word_letter": 44
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 51,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0044",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0044:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^15",
+      "public_index": 15,
+      "tensor_factor": "V",
+      "thxy_index": 77,
+      "transport_monomial": {
+        "monomial": "q^15",
+        "q_exponent": 15,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 44,
+      "weight_defect_basis_vector": "e_15: ground states at every other position, v_- at public position 15 (geometric slot 51, strand ep:c_m_2_pos:0044:entry)",
+      "wicket": 8,
+      "word_letter": 44
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 39,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0259",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0259:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^16",
+      "public_index": 16,
+      "tensor_factor": "V*",
+      "thxy_index": 74,
+      "transport_monomial": {
+        "monomial": "-q^17",
+        "q_exponent": 17,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 259,
+      "weight_defect_basis_vector": "e_16: ground states at every other position, v_+^* at public position 16 (geometric slot 39, strand ep:c_m_2_neg:0259:exit)",
+      "wicket": 9,
+      "word_letter": 51
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 52,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0051",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0051:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^17",
+      "public_index": 17,
+      "tensor_factor": "V",
+      "thxy_index": 75,
+      "transport_monomial": {
+        "monomial": "q^17",
+        "q_exponent": 17,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 51,
+      "weight_defect_basis_vector": "e_17: ground states at every other position, v_- at public position 17 (geometric slot 52, strand ep:c_m_2_pos:0051:entry)",
+      "wicket": 9,
+      "word_letter": 51
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 38,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0251",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0251:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^18",
+      "public_index": 18,
+      "tensor_factor": "V*",
+      "thxy_index": 72,
+      "transport_monomial": {
+        "monomial": "-q^19",
+        "q_exponent": 19,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 251,
+      "weight_defect_basis_vector": "e_18: ground states at every other position, v_+^* at public position 18 (geometric slot 38, strand ep:c_m_2_neg:0251:exit)",
+      "wicket": 10,
+      "word_letter": 59
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 53,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0059",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0059:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^19",
+      "public_index": 19,
+      "tensor_factor": "V",
+      "thxy_index": 73,
+      "transport_monomial": {
+        "monomial": "q^19",
+        "q_exponent": 19,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 59,
+      "weight_defect_basis_vector": "e_19: ground states at every other position, v_- at public position 19 (geometric slot 53, strand ep:c_m_2_pos:0059:entry)",
+      "wicket": 10,
+      "word_letter": 59
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 37,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0243",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0243:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^20",
+      "public_index": 20,
+      "tensor_factor": "V*",
+      "thxy_index": 70,
+      "transport_monomial": {
+        "monomial": "-q^21",
+        "q_exponent": 21,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 243,
+      "weight_defect_basis_vector": "e_20: ground states at every other position, v_+^* at public position 20 (geometric slot 37, strand ep:c_m_2_neg:0243:exit)",
+      "wicket": 11,
+      "word_letter": 67
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 54,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0067",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0067:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^21",
+      "public_index": 21,
+      "tensor_factor": "V",
+      "thxy_index": 71,
+      "transport_monomial": {
+        "monomial": "q^21",
+        "q_exponent": 21,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 67,
+      "weight_defect_basis_vector": "e_21: ground states at every other position, v_- at public position 21 (geometric slot 54, strand ep:c_m_2_pos:0067:entry)",
+      "wicket": 11,
+      "word_letter": 67
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 36,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0236",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0236:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^22",
+      "public_index": 22,
+      "tensor_factor": "V*",
+      "thxy_index": 68,
+      "transport_monomial": {
+        "monomial": "-q^23",
+        "q_exponent": 23,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 236,
+      "weight_defect_basis_vector": "e_22: ground states at every other position, v_+^* at public position 22 (geometric slot 36, strand ep:c_m_2_neg:0236:exit)",
+      "wicket": 12,
+      "word_letter": 74
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 55,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0074",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0074:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^23",
+      "public_index": 23,
+      "tensor_factor": "V",
+      "thxy_index": 69,
+      "transport_monomial": {
+        "monomial": "q^23",
+        "q_exponent": 23,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 74,
+      "weight_defect_basis_vector": "e_23: ground states at every other position, v_- at public position 23 (geometric slot 55, strand ep:c_m_2_pos:0074:entry)",
+      "wicket": 12,
+      "word_letter": 74
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 35,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0228",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0228:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^24",
+      "public_index": 24,
+      "tensor_factor": "V*",
+      "thxy_index": 66,
+      "transport_monomial": {
+        "monomial": "-q^25",
+        "q_exponent": 25,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 228,
+      "weight_defect_basis_vector": "e_24: ground states at every other position, v_+^* at public position 24 (geometric slot 35, strand ep:c_m_2_neg:0228:exit)",
+      "wicket": 13,
+      "word_letter": 82
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 56,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0082",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0082:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^25",
+      "public_index": 25,
+      "tensor_factor": "V",
+      "thxy_index": 67,
+      "transport_monomial": {
+        "monomial": "q^25",
+        "q_exponent": 25,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 82,
+      "weight_defect_basis_vector": "e_25: ground states at every other position, v_- at public position 25 (geometric slot 56, strand ep:c_m_2_pos:0082:entry)",
+      "wicket": 13,
+      "word_letter": 82
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 34,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0221",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0221:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^26",
+      "public_index": 26,
+      "tensor_factor": "V*",
+      "thxy_index": 64,
+      "transport_monomial": {
+        "monomial": "-q^27",
+        "q_exponent": 27,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 221,
+      "weight_defect_basis_vector": "e_26: ground states at every other position, v_+^* at public position 26 (geometric slot 34, strand ep:c_m_2_neg:0221:exit)",
+      "wicket": 14,
+      "word_letter": 89
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 57,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0089",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0089:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^27",
+      "public_index": 27,
+      "tensor_factor": "V",
+      "thxy_index": 65,
+      "transport_monomial": {
+        "monomial": "q^27",
+        "q_exponent": 27,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 89,
+      "weight_defect_basis_vector": "e_27: ground states at every other position, v_- at public position 27 (geometric slot 57, strand ep:c_m_2_pos:0089:entry)",
+      "wicket": 14,
+      "word_letter": 89
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 33,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0213",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0213:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^28",
+      "public_index": 28,
+      "tensor_factor": "V*",
+      "thxy_index": 62,
+      "transport_monomial": {
+        "monomial": "-q^29",
+        "q_exponent": 29,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 213,
+      "weight_defect_basis_vector": "e_28: ground states at every other position, v_+^* at public position 28 (geometric slot 33, strand ep:c_m_2_neg:0213:exit)",
+      "wicket": 15,
+      "word_letter": 97
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 58,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0097",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0097:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^29",
+      "public_index": 29,
+      "tensor_factor": "V",
+      "thxy_index": 63,
+      "transport_monomial": {
+        "monomial": "q^29",
+        "q_exponent": 29,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 97,
+      "weight_defect_basis_vector": "e_29: ground states at every other position, v_- at public position 29 (geometric slot 58, strand ep:c_m_2_pos:0097:entry)",
+      "wicket": 15,
+      "word_letter": 97
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 32,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0206",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0206:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^30",
+      "public_index": 30,
+      "tensor_factor": "V*",
+      "thxy_index": 60,
+      "transport_monomial": {
+        "monomial": "-q^31",
+        "q_exponent": 31,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 206,
+      "weight_defect_basis_vector": "e_30: ground states at every other position, v_+^* at public position 30 (geometric slot 32, strand ep:c_m_2_neg:0206:exit)",
+      "wicket": 16,
+      "word_letter": 104
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 59,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0104",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0104:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^31",
+      "public_index": 31,
+      "tensor_factor": "V",
+      "thxy_index": 61,
+      "transport_monomial": {
+        "monomial": "q^31",
+        "q_exponent": 31,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 104,
+      "weight_defect_basis_vector": "e_31: ground states at every other position, v_- at public position 31 (geometric slot 59, strand ep:c_m_2_pos:0104:entry)",
+      "wicket": 16,
+      "word_letter": 104
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 31,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0198",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0198:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^32",
+      "public_index": 32,
+      "tensor_factor": "V*",
+      "thxy_index": 58,
+      "transport_monomial": {
+        "monomial": "-q^33",
+        "q_exponent": 33,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 198,
+      "weight_defect_basis_vector": "e_32: ground states at every other position, v_+^* at public position 32 (geometric slot 31, strand ep:c_m_2_neg:0198:exit)",
+      "wicket": 17,
+      "word_letter": 112
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 60,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0112",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0112:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^33",
+      "public_index": 33,
+      "tensor_factor": "V",
+      "thxy_index": 59,
+      "transport_monomial": {
+        "monomial": "q^33",
+        "q_exponent": 33,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 112,
+      "weight_defect_basis_vector": "e_33: ground states at every other position, v_- at public position 33 (geometric slot 60, strand ep:c_m_2_pos:0112:entry)",
+      "wicket": 17,
+      "word_letter": 112
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 30,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0191",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0191:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^34",
+      "public_index": 34,
+      "tensor_factor": "V*",
+      "thxy_index": 56,
+      "transport_monomial": {
+        "monomial": "-q^35",
+        "q_exponent": 35,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 191,
+      "weight_defect_basis_vector": "e_34: ground states at every other position, v_+^* at public position 34 (geometric slot 30, strand ep:c_m_2_neg:0191:exit)",
+      "wicket": 18,
+      "word_letter": 119
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 61,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0119",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0119:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^35",
+      "public_index": 35,
+      "tensor_factor": "V",
+      "thxy_index": 57,
+      "transport_monomial": {
+        "monomial": "q^35",
+        "q_exponent": 35,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 119,
+      "weight_defect_basis_vector": "e_35: ground states at every other position, v_- at public position 35 (geometric slot 61, strand ep:c_m_2_pos:0119:entry)",
+      "wicket": 18,
+      "word_letter": 119
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 29,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0183",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0183:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^36",
+      "public_index": 36,
+      "tensor_factor": "V*",
+      "thxy_index": 54,
+      "transport_monomial": {
+        "monomial": "-q^37",
+        "q_exponent": 37,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 183,
+      "weight_defect_basis_vector": "e_36: ground states at every other position, v_+^* at public position 36 (geometric slot 29, strand ep:c_m_2_neg:0183:exit)",
+      "wicket": 19,
+      "word_letter": 127
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 62,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0127",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0127:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^37",
+      "public_index": 37,
+      "tensor_factor": "V",
+      "thxy_index": 55,
+      "transport_monomial": {
+        "monomial": "q^37",
+        "q_exponent": 37,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 127,
+      "weight_defect_basis_vector": "e_37: ground states at every other position, v_- at public position 37 (geometric slot 62, strand ep:c_m_2_pos:0127:entry)",
+      "wicket": 19,
+      "word_letter": 127
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 28,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0175",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0175:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^38",
+      "public_index": 38,
+      "tensor_factor": "V*",
+      "thxy_index": 52,
+      "transport_monomial": {
+        "monomial": "-q^39",
+        "q_exponent": 39,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 175,
+      "weight_defect_basis_vector": "e_38: ground states at every other position, v_+^* at public position 38 (geometric slot 28, strand ep:c_m_2_neg:0175:exit)",
+      "wicket": 20,
+      "word_letter": 135
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 63,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0135",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0135:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^39",
+      "public_index": 39,
+      "tensor_factor": "V",
+      "thxy_index": 53,
+      "transport_monomial": {
+        "monomial": "q^39",
+        "q_exponent": 39,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 135,
+      "weight_defect_basis_vector": "e_39: ground states at every other position, v_- at public position 39 (geometric slot 63, strand ep:c_m_2_pos:0135:entry)",
+      "wicket": 20,
+      "word_letter": 135
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 27,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0168",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0168:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^40",
+      "public_index": 40,
+      "tensor_factor": "V*",
+      "thxy_index": 50,
+      "transport_monomial": {
+        "monomial": "-q^41",
+        "q_exponent": 41,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 168,
+      "weight_defect_basis_vector": "e_40: ground states at every other position, v_+^* at public position 40 (geometric slot 27, strand ep:c_m_2_neg:0168:exit)",
+      "wicket": 21,
+      "word_letter": 142
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 64,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0142",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0142:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^41",
+      "public_index": 41,
+      "tensor_factor": "V",
+      "thxy_index": 51,
+      "transport_monomial": {
+        "monomial": "q^41",
+        "q_exponent": 41,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 142,
+      "weight_defect_basis_vector": "e_41: ground states at every other position, v_- at public position 41 (geometric slot 64, strand ep:c_m_2_pos:0142:entry)",
+      "wicket": 21,
+      "word_letter": 142
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 26,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0160",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0160:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^42",
+      "public_index": 42,
+      "tensor_factor": "V*",
+      "thxy_index": 48,
+      "transport_monomial": {
+        "monomial": "-q^43",
+        "q_exponent": 43,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 160,
+      "weight_defect_basis_vector": "e_42: ground states at every other position, v_+^* at public position 42 (geometric slot 26, strand ep:c_m_2_neg:0160:exit)",
+      "wicket": 22,
+      "word_letter": 150
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 65,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0150",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0150:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^43",
+      "public_index": 43,
+      "tensor_factor": "V",
+      "thxy_index": 49,
+      "transport_monomial": {
+        "monomial": "q^43",
+        "q_exponent": 43,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 150,
+      "weight_defect_basis_vector": "e_43: ground states at every other position, v_- at public position 43 (geometric slot 65, strand ep:c_m_2_pos:0150:entry)",
+      "wicket": 22,
+      "word_letter": 150
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 25,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0153",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0153:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^44",
+      "public_index": 44,
+      "tensor_factor": "V*",
+      "thxy_index": 46,
+      "transport_monomial": {
+        "monomial": "-q^45",
+        "q_exponent": 45,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 153,
+      "weight_defect_basis_vector": "e_44: ground states at every other position, v_+^* at public position 44 (geometric slot 25, strand ep:c_m_2_neg:0153:exit)",
+      "wicket": 23,
+      "word_letter": 157
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 66,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0157",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0157:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^45",
+      "public_index": 45,
+      "tensor_factor": "V",
+      "thxy_index": 47,
+      "transport_monomial": {
+        "monomial": "q^45",
+        "q_exponent": 45,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 157,
+      "weight_defect_basis_vector": "e_45: ground states at every other position, v_- at public position 45 (geometric slot 66, strand ep:c_m_2_pos:0157:entry)",
+      "wicket": 23,
+      "word_letter": 157
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 24,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0145",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0145:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^46",
+      "public_index": 46,
+      "tensor_factor": "V*",
+      "thxy_index": 44,
+      "transport_monomial": {
+        "monomial": "-q^47",
+        "q_exponent": 47,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 145,
+      "weight_defect_basis_vector": "e_46: ground states at every other position, v_+^* at public position 46 (geometric slot 24, strand ep:c_m_2_neg:0145:exit)",
+      "wicket": 24,
+      "word_letter": 165
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 67,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0165",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0165:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^47",
+      "public_index": 47,
+      "tensor_factor": "V",
+      "thxy_index": 45,
+      "transport_monomial": {
+        "monomial": "q^47",
+        "q_exponent": 47,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 165,
+      "weight_defect_basis_vector": "e_47: ground states at every other position, v_- at public position 47 (geometric slot 67, strand ep:c_m_2_pos:0165:entry)",
+      "wicket": 24,
+      "word_letter": 165
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 23,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0138",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0138:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^48",
+      "public_index": 48,
+      "tensor_factor": "V*",
+      "thxy_index": 42,
+      "transport_monomial": {
+        "monomial": "-q^49",
+        "q_exponent": 49,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 138,
+      "weight_defect_basis_vector": "e_48: ground states at every other position, v_+^* at public position 48 (geometric slot 23, strand ep:c_m_2_neg:0138:exit)",
+      "wicket": 25,
+      "word_letter": 172
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 68,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0172",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0172:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^49",
+      "public_index": 49,
+      "tensor_factor": "V",
+      "thxy_index": 43,
+      "transport_monomial": {
+        "monomial": "q^49",
+        "q_exponent": 49,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 172,
+      "weight_defect_basis_vector": "e_49: ground states at every other position, v_- at public position 49 (geometric slot 68, strand ep:c_m_2_pos:0172:entry)",
+      "wicket": 25,
+      "word_letter": 172
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 22,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0130",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0130:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^50",
+      "public_index": 50,
+      "tensor_factor": "V*",
+      "thxy_index": 40,
+      "transport_monomial": {
+        "monomial": "-q^51",
+        "q_exponent": 51,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 130,
+      "weight_defect_basis_vector": "e_50: ground states at every other position, v_+^* at public position 50 (geometric slot 22, strand ep:c_m_2_neg:0130:exit)",
+      "wicket": 26,
+      "word_letter": 180
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 69,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0180",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0180:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^51",
+      "public_index": 51,
+      "tensor_factor": "V",
+      "thxy_index": 41,
+      "transport_monomial": {
+        "monomial": "q^51",
+        "q_exponent": 51,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 180,
+      "weight_defect_basis_vector": "e_51: ground states at every other position, v_- at public position 51 (geometric slot 69, strand ep:c_m_2_pos:0180:entry)",
+      "wicket": 26,
+      "word_letter": 180
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 21,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0122",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0122:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^52",
+      "public_index": 52,
+      "tensor_factor": "V*",
+      "thxy_index": 38,
+      "transport_monomial": {
+        "monomial": "-q^53",
+        "q_exponent": 53,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 122,
+      "weight_defect_basis_vector": "e_52: ground states at every other position, v_+^* at public position 52 (geometric slot 21, strand ep:c_m_2_neg:0122:exit)",
+      "wicket": 27,
+      "word_letter": 188
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 70,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0188",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0188:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^53",
+      "public_index": 53,
+      "tensor_factor": "V",
+      "thxy_index": 39,
+      "transport_monomial": {
+        "monomial": "q^53",
+        "q_exponent": 53,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 188,
+      "weight_defect_basis_vector": "e_53: ground states at every other position, v_- at public position 53 (geometric slot 70, strand ep:c_m_2_pos:0188:entry)",
+      "wicket": 27,
+      "word_letter": 188
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 20,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0115",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0115:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^54",
+      "public_index": 54,
+      "tensor_factor": "V*",
+      "thxy_index": 36,
+      "transport_monomial": {
+        "monomial": "-q^55",
+        "q_exponent": 55,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 115,
+      "weight_defect_basis_vector": "e_54: ground states at every other position, v_+^* at public position 54 (geometric slot 20, strand ep:c_m_2_neg:0115:exit)",
+      "wicket": 28,
+      "word_letter": 195
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 71,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0195",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0195:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^55",
+      "public_index": 55,
+      "tensor_factor": "V",
+      "thxy_index": 37,
+      "transport_monomial": {
+        "monomial": "q^55",
+        "q_exponent": 55,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 195,
+      "weight_defect_basis_vector": "e_55: ground states at every other position, v_- at public position 55 (geometric slot 71, strand ep:c_m_2_pos:0195:entry)",
+      "wicket": 28,
+      "word_letter": 195
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 19,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0107",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0107:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^56",
+      "public_index": 56,
+      "tensor_factor": "V*",
+      "thxy_index": 34,
+      "transport_monomial": {
+        "monomial": "-q^57",
+        "q_exponent": 57,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 107,
+      "weight_defect_basis_vector": "e_56: ground states at every other position, v_+^* at public position 56 (geometric slot 19, strand ep:c_m_2_neg:0107:exit)",
+      "wicket": 29,
+      "word_letter": 203
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 72,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0203",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0203:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^57",
+      "public_index": 57,
+      "tensor_factor": "V",
+      "thxy_index": 35,
+      "transport_monomial": {
+        "monomial": "q^57",
+        "q_exponent": 57,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 203,
+      "weight_defect_basis_vector": "e_57: ground states at every other position, v_- at public position 57 (geometric slot 72, strand ep:c_m_2_pos:0203:entry)",
+      "wicket": 29,
+      "word_letter": 203
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 18,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0100",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0100:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^58",
+      "public_index": 58,
+      "tensor_factor": "V*",
+      "thxy_index": 32,
+      "transport_monomial": {
+        "monomial": "-q^59",
+        "q_exponent": 59,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 100,
+      "weight_defect_basis_vector": "e_58: ground states at every other position, v_+^* at public position 58 (geometric slot 18, strand ep:c_m_2_neg:0100:exit)",
+      "wicket": 30,
+      "word_letter": 210
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 73,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0210",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0210:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^59",
+      "public_index": 59,
+      "tensor_factor": "V",
+      "thxy_index": 33,
+      "transport_monomial": {
+        "monomial": "q^59",
+        "q_exponent": 59,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 210,
+      "weight_defect_basis_vector": "e_59: ground states at every other position, v_- at public position 59 (geometric slot 73, strand ep:c_m_2_pos:0210:entry)",
+      "wicket": 30,
+      "word_letter": 210
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 17,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0092",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0092:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^60",
+      "public_index": 60,
+      "tensor_factor": "V*",
+      "thxy_index": 30,
+      "transport_monomial": {
+        "monomial": "-q^61",
+        "q_exponent": 61,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 92,
+      "weight_defect_basis_vector": "e_60: ground states at every other position, v_+^* at public position 60 (geometric slot 17, strand ep:c_m_2_neg:0092:exit)",
+      "wicket": 31,
+      "word_letter": 218
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 74,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0218",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0218:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^61",
+      "public_index": 61,
+      "tensor_factor": "V",
+      "thxy_index": 31,
+      "transport_monomial": {
+        "monomial": "q^61",
+        "q_exponent": 61,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 218,
+      "weight_defect_basis_vector": "e_61: ground states at every other position, v_- at public position 61 (geometric slot 74, strand ep:c_m_2_pos:0218:entry)",
+      "wicket": 31,
+      "word_letter": 218
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 16,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0085",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0085:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^62",
+      "public_index": 62,
+      "tensor_factor": "V*",
+      "thxy_index": 28,
+      "transport_monomial": {
+        "monomial": "-q^63",
+        "q_exponent": 63,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 85,
+      "weight_defect_basis_vector": "e_62: ground states at every other position, v_+^* at public position 62 (geometric slot 16, strand ep:c_m_2_neg:0085:exit)",
+      "wicket": 32,
+      "word_letter": 225
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 75,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0225",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0225:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^63",
+      "public_index": 63,
+      "tensor_factor": "V",
+      "thxy_index": 29,
+      "transport_monomial": {
+        "monomial": "q^63",
+        "q_exponent": 63,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 225,
+      "weight_defect_basis_vector": "e_63: ground states at every other position, v_- at public position 63 (geometric slot 75, strand ep:c_m_2_pos:0225:entry)",
+      "wicket": 32,
+      "word_letter": 225
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 15,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0077",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0077:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^64",
+      "public_index": 64,
+      "tensor_factor": "V*",
+      "thxy_index": 26,
+      "transport_monomial": {
+        "monomial": "-q^65",
+        "q_exponent": 65,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 77,
+      "weight_defect_basis_vector": "e_64: ground states at every other position, v_+^* at public position 64 (geometric slot 15, strand ep:c_m_2_neg:0077:exit)",
+      "wicket": 33,
+      "word_letter": 233
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 76,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0233",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0233:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^65",
+      "public_index": 65,
+      "tensor_factor": "V",
+      "thxy_index": 27,
+      "transport_monomial": {
+        "monomial": "q^65",
+        "q_exponent": 65,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 233,
+      "weight_defect_basis_vector": "e_65: ground states at every other position, v_- at public position 65 (geometric slot 76, strand ep:c_m_2_pos:0233:entry)",
+      "wicket": 33,
+      "word_letter": 233
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 14,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0070",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0070:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^66",
+      "public_index": 66,
+      "tensor_factor": "V*",
+      "thxy_index": 24,
+      "transport_monomial": {
+        "monomial": "-q^67",
+        "q_exponent": 67,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 70,
+      "weight_defect_basis_vector": "e_66: ground states at every other position, v_+^* at public position 66 (geometric slot 14, strand ep:c_m_2_neg:0070:exit)",
+      "wicket": 34,
+      "word_letter": 240
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 77,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0240",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0240:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^67",
+      "public_index": 67,
+      "tensor_factor": "V",
+      "thxy_index": 25,
+      "transport_monomial": {
+        "monomial": "q^67",
+        "q_exponent": 67,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 240,
+      "weight_defect_basis_vector": "e_67: ground states at every other position, v_- at public position 67 (geometric slot 77, strand ep:c_m_2_pos:0240:entry)",
+      "wicket": 34,
+      "word_letter": 240
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 13,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0062",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0062:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^68",
+      "public_index": 68,
+      "tensor_factor": "V*",
+      "thxy_index": 22,
+      "transport_monomial": {
+        "monomial": "-q^69",
+        "q_exponent": 69,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 62,
+      "weight_defect_basis_vector": "e_68: ground states at every other position, v_+^* at public position 68 (geometric slot 13, strand ep:c_m_2_neg:0062:exit)",
+      "wicket": 35,
+      "word_letter": 248
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 78,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0248",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0248:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^69",
+      "public_index": 69,
+      "tensor_factor": "V",
+      "thxy_index": 23,
+      "transport_monomial": {
+        "monomial": "q^69",
+        "q_exponent": 69,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 248,
+      "weight_defect_basis_vector": "e_69: ground states at every other position, v_- at public position 69 (geometric slot 78, strand ep:c_m_2_pos:0248:entry)",
+      "wicket": 35,
+      "word_letter": 248
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 12,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0054",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0054:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^70",
+      "public_index": 70,
+      "tensor_factor": "V*",
+      "thxy_index": 20,
+      "transport_monomial": {
+        "monomial": "-q^71",
+        "q_exponent": 71,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 54,
+      "weight_defect_basis_vector": "e_70: ground states at every other position, v_+^* at public position 70 (geometric slot 12, strand ep:c_m_2_neg:0054:exit)",
+      "wicket": 36,
+      "word_letter": 256
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 79,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0256",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0256:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^71",
+      "public_index": 71,
+      "tensor_factor": "V",
+      "thxy_index": 21,
+      "transport_monomial": {
+        "monomial": "q^71",
+        "q_exponent": 71,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 256,
+      "weight_defect_basis_vector": "e_71: ground states at every other position, v_- at public position 71 (geometric slot 79, strand ep:c_m_2_pos:0256:entry)",
+      "wicket": 36,
+      "word_letter": 256
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 11,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0047",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0047:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^72",
+      "public_index": 72,
+      "tensor_factor": "V*",
+      "thxy_index": 18,
+      "transport_monomial": {
+        "monomial": "-q^73",
+        "q_exponent": 73,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 47,
+      "weight_defect_basis_vector": "e_72: ground states at every other position, v_+^* at public position 72 (geometric slot 11, strand ep:c_m_2_neg:0047:exit)",
+      "wicket": 37,
+      "word_letter": 263
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 80,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0263",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0263:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^73",
+      "public_index": 73,
+      "tensor_factor": "V",
+      "thxy_index": 19,
+      "transport_monomial": {
+        "monomial": "q^73",
+        "q_exponent": 73,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 263,
+      "weight_defect_basis_vector": "e_73: ground states at every other position, v_- at public position 73 (geometric slot 80, strand ep:c_m_2_pos:0263:entry)",
+      "wicket": 37,
+      "word_letter": 263
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 10,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0039",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0039:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^74",
+      "public_index": 74,
+      "tensor_factor": "V*",
+      "thxy_index": 16,
+      "transport_monomial": {
+        "monomial": "-q^75",
+        "q_exponent": 75,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 39,
+      "weight_defect_basis_vector": "e_74: ground states at every other position, v_+^* at public position 74 (geometric slot 10, strand ep:c_m_2_neg:0039:exit)",
+      "wicket": 38,
+      "word_letter": 271
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 81,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0271",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0271:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^75",
+      "public_index": 75,
+      "tensor_factor": "V",
+      "thxy_index": 17,
+      "transport_monomial": {
+        "monomial": "q^75",
+        "q_exponent": 75,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 271,
+      "weight_defect_basis_vector": "e_75: ground states at every other position, v_- at public position 75 (geometric slot 81, strand ep:c_m_2_pos:0271:entry)",
+      "wicket": 38,
+      "word_letter": 271
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 9,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0032",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0032:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^76",
+      "public_index": 76,
+      "tensor_factor": "V*",
+      "thxy_index": 14,
+      "transport_monomial": {
+        "monomial": "-q^77",
+        "q_exponent": 77,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 32,
+      "weight_defect_basis_vector": "e_76: ground states at every other position, v_+^* at public position 76 (geometric slot 9, strand ep:c_m_2_neg:0032:exit)",
+      "wicket": 39,
+      "word_letter": 278
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 82,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0278",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0278:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^77",
+      "public_index": 77,
+      "tensor_factor": "V",
+      "thxy_index": 15,
+      "transport_monomial": {
+        "monomial": "q^77",
+        "q_exponent": 77,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 278,
+      "weight_defect_basis_vector": "e_77: ground states at every other position, v_- at public position 77 (geometric slot 82, strand ep:c_m_2_pos:0278:entry)",
+      "wicket": 39,
+      "word_letter": 278
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 8,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0024",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0024:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^78",
+      "public_index": 78,
+      "tensor_factor": "V*",
+      "thxy_index": 12,
+      "transport_monomial": {
+        "monomial": "-q^79",
+        "q_exponent": 79,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 24,
+      "weight_defect_basis_vector": "e_78: ground states at every other position, v_+^* at public position 78 (geometric slot 8, strand ep:c_m_2_neg:0024:exit)",
+      "wicket": 40,
+      "word_letter": 286
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 83,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0286",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0286:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^79",
+      "public_index": 79,
+      "tensor_factor": "V",
+      "thxy_index": 13,
+      "transport_monomial": {
+        "monomial": "q^79",
+        "q_exponent": 79,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 286,
+      "weight_defect_basis_vector": "e_79: ground states at every other position, v_- at public position 79 (geometric slot 83, strand ep:c_m_2_pos:0286:entry)",
+      "wicket": 40,
+      "word_letter": 286
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 7,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0017",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0017:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^80",
+      "public_index": 80,
+      "tensor_factor": "V*",
+      "thxy_index": 10,
+      "transport_monomial": {
+        "monomial": "-q^81",
+        "q_exponent": 81,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 17,
+      "weight_defect_basis_vector": "e_80: ground states at every other position, v_+^* at public position 80 (geometric slot 7, strand ep:c_m_2_neg:0017:exit)",
+      "wicket": 41,
+      "word_letter": 293
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 84,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0293",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0293:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^81",
+      "public_index": 81,
+      "tensor_factor": "V",
+      "thxy_index": 11,
+      "transport_monomial": {
+        "monomial": "q^81",
+        "q_exponent": 81,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 293,
+      "weight_defect_basis_vector": "e_81: ground states at every other position, v_- at public position 81 (geometric slot 84, strand ep:c_m_2_pos:0293:entry)",
+      "wicket": 41,
+      "word_letter": 293
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 6,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0009",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0009:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^82",
+      "public_index": 82,
+      "tensor_factor": "V*",
+      "thxy_index": 8,
+      "transport_monomial": {
+        "monomial": "-q^83",
+        "q_exponent": 83,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 9,
+      "weight_defect_basis_vector": "e_82: ground states at every other position, v_+^* at public position 82 (geometric slot 6, strand ep:c_m_2_neg:0009:exit)",
+      "wicket": 42,
+      "word_letter": 301
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 85,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0301",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0301:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^83",
+      "public_index": 83,
+      "tensor_factor": "V",
+      "thxy_index": 9,
+      "transport_monomial": {
+        "monomial": "q^83",
+        "q_exponent": 83,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 301,
+      "weight_defect_basis_vector": "e_83: ground states at every other position, v_- at public position 83 (geometric slot 85, strand ep:c_m_2_pos:0301:entry)",
+      "wicket": 42,
+      "word_letter": 301
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_+^*",
+      "geometric_order": 5,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_neg:0002",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0002:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^84",
+      "public_index": 84,
+      "tensor_factor": "V*",
+      "thxy_index": 6,
+      "transport_monomial": {
+        "monomial": "-q^85",
+        "q_exponent": 85,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 2,
+      "weight_defect_basis_vector": "e_84: ground states at every other position, v_+^* at public position 84 (geometric slot 5, strand ep:c_m_2_neg:0002:exit)",
+      "wicket": 43,
+      "word_letter": 308
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_-",
+      "geometric_order": 86,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_pos:0308",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0308:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^85",
+      "public_index": 85,
+      "tensor_factor": "V",
+      "thxy_index": 7,
+      "transport_monomial": {
+        "monomial": "q^85",
+        "q_exponent": 85,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 308,
+      "weight_defect_basis_vector": "e_85: ground states at every other position, v_- at public position 85 (geometric slot 86, strand ep:c_m_2_pos:0308:entry)",
+      "wicket": 43,
+      "word_letter": 308
+    },
+    {
+      "cable_sign": "negative",
+      "defect_state": "v_-",
+      "geometric_order": 4,
+      "ground_state": "v_+",
+      "orientation": "entry",
+      "orientation_relative_to_owner": "reversed",
+      "orientation_sign": 1,
+      "owner": "m_2",
+      "passage_exponent": 1,
+      "passage_id": "pass:c_m_2_neg:0000",
+      "physical_component_id": "c_m_2_neg",
+      "physical_endpoint_id": "ep:c_m_2_neg:0000:entry",
+      "pivotal_coefficient": {
+        "monomial": "1",
+        "q_exponent": 0,
+        "sign": 1
+      },
+      "position_monomial": "q^86",
+      "public_index": 86,
+      "tensor_factor": "V",
+      "thxy_index": 4,
+      "transport_monomial": {
+        "monomial": "q^86",
+        "q_exponent": 86,
+        "sign": 1
+      },
+      "travel_direction": "west_to_east",
+      "traversal_index": 0,
+      "weight_defect_basis_vector": "e_86: ground states at every other position, v_- at public position 86 (geometric slot 4, strand ep:c_m_2_neg:0000:entry)",
+      "wicket": 44,
+      "word_letter": 310
+    },
+    {
+      "cable_sign": "positive",
+      "defect_state": "v_+^*",
+      "geometric_order": 87,
+      "ground_state": "v_-^*",
+      "orientation": "exit",
+      "orientation_relative_to_owner": "preserved",
+      "orientation_sign": -1,
+      "owner": "m_2",
+      "passage_exponent": -1,
+      "passage_id": "pass:c_m_2_pos:0310",
+      "physical_component_id": "c_m_2_pos",
+      "physical_endpoint_id": "ep:c_m_2_pos:0310:exit",
+      "pivotal_coefficient": {
+        "monomial": "-q^1",
+        "q_exponent": 1,
+        "sign": -1
+      },
+      "position_monomial": "q^87",
+      "public_index": 87,
+      "tensor_factor": "V*",
+      "thxy_index": 5,
+      "transport_monomial": {
+        "monomial": "-q^88",
+        "q_exponent": 88,
+        "sign": -1
+      },
+      "travel_direction": "east_to_west",
+      "traversal_index": 310,
+      "weight_defect_basis_vector": "e_87: ground states at every other position, v_+^* at public position 87 (geometric slot 87, strand ep:c_m_2_pos:0310:exit)",
+      "wicket": 44,
+      "word_letter": 310
+    }
+  ],
+  "geometric_order_source": "CUT_OBJECT gate_passages[y].boundary_endpoint_order_top_to_bottom.west (frozen MWW cut slot order, slot 0 = top)",
+  "orientation_rule": "west endpoint 'entry' = strand oriented into the cut tangle = tensor factor V (ground v_+, defect v_-); 'exit' = tensor factor V* (ground v_-^*, defect v_+^*)",
+  "oriented_model": {
+    "algebra": "U_q(sl2), Delta(E)=E(x)K+1(x)E, Delta(F)=F(x)1+K^-1(x)F, S(E)=-EK^-1, S(F)=-KF; dual action (x.f)(v)=f(S(x)v)",
+    "braiding": "c = q^{-1/2} tau o q^{H(x)H/2}(1+(q-q^-1)E(x)F); every exponent integral on V, V*",
+    "coevaluation": "u: coev_V : 1 -> V(x)V*, sum_i v_i (x) v_i^* (canonical)",
+    "evaluation": "ell: ev'_V : V(x)V* -> 1, v_i (x) v_j^* -> sigma delta_ij q^{1*weight(v_i)} with sigma=-1",
+    "loop_value": "-q^-1 + -q^1",
+    "loop_value_at_q1": -2,
+    "phi": "phi: V* -> V, phi(v_-^*)=v_+, phi(v_+^*)=-q v_- (module map, verified)",
+    "pivotal_sign_sigma": -1,
+    "pivotal_twist_derived": 1,
+    "sigma_note": "sigma=-1 is the pivotal structure of the frozen public receipt (loop value -[2] at q=1, cap row e_87^*-e_2^*); sigma=+1 gives the standard loop value [2] and negates ell, hence negates the cubic"
+  },
+  "public_model": {
+    "burau_block_columns_are_images": [
+      [
+        {
+          "-2": -1,
+          "0": 1
+        },
+        {
+          "-2": 1
+        }
+      ],
+      [
+        {
+          "0": 1
+        },
+        {}
+      ]
+    ],
+    "parameter": "t = q^-2, q = 1 + h",
+    "position_monomial": "d_p = q^{1*p} (derived: unique monomial ratio conjugating the oriented V(x)V blocks to the Burau blocks)"
+  },
+  "public_order_source": "B88_POSITION_TO_PASSAGE_TABLE.json index = 2*(wicket-1) + (0 negative copy, 1 positive copy); collar wicket order used by the cabled Artin word",
+  "schema": "t73_endpoint_convention/v1",
+  "selected_cup": {
+    "endpoints": [
+      "ep:c_r_xy_neg:0000:entry",
+      "ep:c_m_2_pos:0310:exit"
+    ],
+    "geometric_slots": [
+      0,
+      87
+    ],
+    "passages": [
+      "pass:c_r_xy_neg:0000",
+      "pass:c_m_2_pos:0310"
+    ],
+    "public_positions": [
+      2,
+      87
+    ],
+    "thxy_indices": [
+      0,
+      5
+    ]
+  },
+  "sources": {
+    "B88_POSITION_TO_PASSAGE_TABLE.json": {
+      "path": "data/B88_POSITION_TO_PASSAGE_TABLE.json",
+      "sha256": "119C7E9E74AE6C820DA72A84CDFD5D445D81E6C3AACCC209C25D37C323961508"
+    },
+    "CUT_OBJECT.json": {
+      "path": "evidence/public_geometry/CUT_OBJECT.json",
+      "sha256": "4E1C4564ED98F30EAEB0A1AEAAD95ACAB5AD7B226C79B7D5BF3F259E8B56F541"
+    }
+  },
+  "thxy_order_rule": "owner blocks (r_xy, m_2), wickets in decreasing word-letter order, copies (negative, positive) adjacent; reconstructed from the withdrawn -59072 and -2496 controls",
+  "transport_rule": "x_public[p] = transport_monomial(p) * x_geometric[geometric_order(p)], transport_monomial(p) = d_p * pivotal(tensor factor at p)"
+}

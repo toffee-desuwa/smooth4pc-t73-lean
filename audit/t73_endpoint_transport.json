@@ -1,0 +1,513 @@
+{
+  "B88_length": 45360,
+  "B88_sha256": "C13D0A3BA9B05F41A6D2C5B4AB12DDECDABEFC1883835891AD3BD2B8955B5FFB",
+  "audit_sha256": "833F2AB63EEDA33840DD285F9949616E7ED736AFD61493ACAED394D157FDFAF8",
+  "convention_sha256": "DF14B274039CADA19BB297DA6B1D2C28E71B47B911B69F492766946FAA19691C",
+  "coordinate_controls": {
+    "collar_u_collar_ell_collar_word": 2624,
+    "simultaneous_transport_invariance": "ell P^-1 (P W P^-1) (P u) = ell W u holds identically; see Smooth4PC/FilteredCubicNaturality.lean (pairingCoeff_transport)",
+    "slot_u_collar_ell_collar_word": -55104,
+    "slot_u_slot_ell_collar_word": -115456,
+    "thxy_u_collar_ell_collar_word": -59072,
+    "thxy_u_thxy_ell_collar_word": -2496
+  },
+  "delta3": {
+    "agree": true,
+    "constant_terms_pipeline": 2624,
+    "ell0_A3_u0_matrix_formula": 2624,
+    "full_transported_series_h3": 2624
+  },
+  "elapsed_seconds": 28.8,
+  "ell_geometric_slot_coordinates": {
+    "0": {
+      "-1": -1
+    },
+    "87": {
+      "1": -1
+    }
+  },
+  "ell_public": {
+    "2": {
+      "-3": -1
+    },
+    "87": {
+      "-87": 1
+    }
+  },
+  "ell_public_constant_terms": [
+    [
+      2,
+      -1
+    ],
+    [
+      87,
+      1
+    ]
+  ],
+  "endpoint_transport_pass": true,
+  "geometric_to_public_permutation": [
+    1,
+    2,
+    0,
+    3,
+    45,
+    46,
+    44,
+    47,
+    43,
+    48,
+    42,
+    49,
+    41,
+    50,
+    40,
+    51,
+    39,
+    52,
+    38,
+    53,
+    37,
+    54,
+    36,
+    55,
+    35,
+    56,
+    34,
+    57,
+    33,
+    58,
+    32,
+    59,
+    31,
+    60,
+    30,
+    61,
+    29,
+    62,
+    28,
+    63,
+    27,
+    64,
+    26,
+    65,
+    25,
+    66,
+    24,
+    67,
+    23,
+    68,
+    22,
+    69,
+    21,
+    70,
+    20,
+    71,
+    19,
+    72,
+    18,
+    73,
+    17,
+    74,
+    16,
+    75,
+    15,
+    76,
+    14,
+    77,
+    13,
+    78,
+    12,
+    79,
+    11,
+    80,
+    10,
+    81,
+    9,
+    82,
+    8,
+    83,
+    7,
+    84,
+    6,
+    85,
+    5,
+    86,
+    4,
+    87
+  ],
+  "input_sha256": "01AC834E419974D0ED7A63509B049212CFB69B3490B95F1F9875E89258B147E2",
+  "letterwise_transport": {
+    "all_letters_pass": true,
+    "final_permutation_is_identity": true,
+    "first_failures": [],
+    "letters": 45360,
+    "pattern_counts": {
+      "V*+V": 5670,
+      "V*+V*": 5670,
+      "V*-V": 5670,
+      "V*-V*": 5670,
+      "V+V": 5670,
+      "V+V*": 5670,
+      "V-V": 5670,
+      "V-V*": 5670
+    }
+  },
+  "loop_value_at_q1_public": -2,
+  "model_checks": {
+    "braid_relation": {
+      "YBE[V*,V*,V*]": true,
+      "YBE[V*,V*,V]": true,
+      "YBE[V*,V,V*]": true,
+      "YBE[V*,V,V]": true,
+      "YBE[V,V*,V*]": true,
+      "YBE[V,V*,V]": true,
+      "YBE[V,V,V*]": true,
+      "YBE[V,V,V]": true
+    },
+    "duality": {
+      "coev_left module map E": true,
+      "coev_left module map F": true,
+      "coev_left module map K": true,
+      "coev_right module map E": true,
+      "coev_right module map F": true,
+      "coev_right module map K": true,
+      "ev_left module map E": true,
+      "ev_left module map F": true,
+      "ev_left module map K": true,
+      "ev_right module map E": true,
+      "ev_right module map F": true,
+      "ev_right module map K": true,
+      "zigzag coev_left/ev_left on V": true,
+      "zigzag coev_right/ev_right on V*": true,
+      "zigzag ev_left/coev_left on V*": true,
+      "zigzag ev_right/coev_right on V": true
+    },
+    "intertwining": {
+      "c[V*,V*]": true,
+      "c[V*,V]": true,
+      "c[V,V*]": true,
+      "c[V,V]": true
+    },
+    "inverses": {
+      "c c^-1 [V*,V*]": true,
+      "c c^-1 [V*,V]": true,
+      "c c^-1 [V,V*]": true,
+      "c c^-1 [V,V]": true,
+      "c^-1 c [V*,V*]": true,
+      "c^-1 c [V*,V]": true,
+      "c^-1 c [V,V*]": true,
+      "c^-1 c [V,V]": true
+    },
+    "loop_value": "-q^-1 + -q^1",
+    "loop_value_at_q1": -2,
+    "one_defect_blocks": {
+      "V*+V": {
+        "block_columns_are_images": [
+          [
+            {
+              "-1": 1,
+              "1": -1
+            },
+            {
+              "-1": 1
+            }
+          ],
+          [
+            {
+              "-1": 1
+            },
+            {}
+          ]
+        ],
+        "ground_coefficient": "1",
+        "ground_is_one": true,
+        "no_leakage": true
+      },
+      "V*+V*": {
+        "block_columns_are_images": [
+          [
+            {
+              "-2": -1,
+              "0": 1
+            },
+            {
+              "-1": 1
+            }
+          ],
+          [
+            {
+              "-1": 1
+            },
+            {}
+          ]
+        ],
+        "ground_coefficient": "1",
+        "ground_is_one": true,
+        "no_leakage": true
+      },
+      "V*-V": {
+        "block_columns_are_images": [
+          [
+            {},
+            {
+              "1": 1
+            }
+          ],
+          [
+            {
+              "1": 1
+            },
+            {
+              "-1": -1,
+              "1": 1
+            }
+          ]
+        ],
+        "ground_coefficient": "1",
+        "ground_is_one": true,
+        "no_leakage": true
+      },
+      "V*-V*": {
+        "block_columns_are_images": [
+          [
+            {},
+            {
+              "1": 1
+            }
+          ],
+          [
+            {
+              "1": 1
+            },
+            {
+              "0": 1,
+              "2": -1
+            }
+          ]
+        ],
+        "ground_coefficient": "1",
+        "ground_is_one": true,
+        "no_leakage": true
+      },
+      "V+V": {
+        "block_columns_are_images": [
+          [
+            {
+              "-2": -1,
+              "0": 1
+            },
+            {
+              "-1": 1
+            }
+          ],
+          [
+            {
+              "-1": 1
+            },
+            {}
+          ]
+        ],
+        "ground_coefficient": "1",
+        "ground_is_one": true,
+        "no_leakage": true
+      },
+      "V+V*": {
+        "block_columns_are_images": [
+          [
+            {
+              "-1": -1,
+              "-3": 1
+            },
+            {
+              "-1": 1
+            }
+          ],
+          [
+            {
+              "-1": 1
+            },
+            {}
+          ]
+        ],
+        "ground_coefficient": "1",
+        "ground_is_one": true,
+        "no_leakage": true
+      },
+      "V-V": {
+        "block_columns_are_images": [
+          [
+            {},
+            {
+              "1": 1
+            }
+          ],
+          [
+            {
+              "1": 1
+            },
+            {
+              "0": 1,
+              "2": -1
+            }
+          ]
+        ],
+        "ground_coefficient": "1",
+        "ground_is_one": true,
+        "no_leakage": true
+      },
+      "V-V*": {
+        "block_columns_are_images": [
+          [
+            {},
+            {
+              "1": 1
+            }
+          ],
+          [
+            {
+              "1": 1
+            },
+            {
+              "1": -1,
+              "3": 1
+            }
+          ]
+        ],
+        "ground_coefficient": "1",
+        "ground_is_one": true,
+        "no_leakage": true
+      }
+    },
+    "phi": {
+      "c[V,V](id x phi) = (phi x id)c[V,V*]": true,
+      "c[V,V](phi x id) = (id x phi)c[V*,V]": true,
+      "c[V,V](phi x phi) = (phi x phi)c[V*,V*]": true,
+      "phi intertwines E": true,
+      "phi intertwines F": true,
+      "phi intertwines K": true
+    },
+    "pivotal_twist_derived": 1,
+    "position_ratio_d(p+1)/d(p)": "q^1"
+  },
+  "model_checks_pass": true,
+  "no_unresolved_signs": true,
+  "rho_W_minus_I_in_h3_End": true,
+  "rho_W_minus_I_min_eps_order": 3,
+  "schema": "t73_endpoint_transport/v1",
+  "thxy_of_public": [
+    2,
+    3,
+    0,
+    1,
+    86,
+    87,
+    84,
+    85,
+    82,
+    83,
+    80,
+    81,
+    78,
+    79,
+    76,
+    77,
+    74,
+    75,
+    72,
+    73,
+    70,
+    71,
+    68,
+    69,
+    66,
+    67,
+    64,
+    65,
+    62,
+    63,
+    60,
+    61,
+    58,
+    59,
+    56,
+    57,
+    54,
+    55,
+    52,
+    53,
+    50,
+    51,
+    48,
+    49,
+    46,
+    47,
+    44,
+    45,
+    42,
+    43,
+    40,
+    41,
+    38,
+    39,
+    36,
+    37,
+    34,
+    35,
+    32,
+    33,
+    30,
+    31,
+    28,
+    29,
+    26,
+    27,
+    24,
+    25,
+    22,
+    23,
+    20,
+    21,
+    18,
+    19,
+    16,
+    17,
+    14,
+    15,
+    12,
+    13,
+    10,
+    11,
+    8,
+    9,
+    6,
+    7,
+    4,
+    5
+  ],
+  "u_geometric_slot_coordinates": {
+    "0": {
+      "0": 1
+    },
+    "87": {
+      "0": 1
+    }
+  },
+  "u_public": {
+    "2": {
+      "2": 1
+    },
+    "87": {
+      "88": -1
+    }
+  },
+  "u_public_constant_terms": [
+    [
+      2,
+      1
+    ],
+    [
+      87,
+      -1
+    ]
+  ]
+}
