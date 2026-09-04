@@ -3,11 +3,20 @@
 
 Geometric items are Open until the named acceptance tests pass.  This program
 does not hardcode proved: true.
+
+Two layers are reported for every item.  ``state`` is the certificate-internal
+verdict: the committed finite models (control strands, local model movies,
+model spheres) replay and their generators report PASS.  ``paper_status`` is
+the claim boundary of the controlling paper, read from the status table via
+``check_t73_claim_boundary.EXPECTED_STATUS``: an input is OPEN there until the
+actual Cappell--Shaneson geometry is constructed, whatever the finite model
+certificates say.
 """
 
 from __future__ import annotations
 
 import argparse
+import importlib.util
 import json
 from pathlib import Path
 from typing import Any
@@ -15,6 +24,36 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 COMMITTED = ROOT / "audit" / "t73_premise_audit.json"
+
+# Which status-table rows of the paper decide the paper status of each item.
+PAPER_ROWS = {
+    "P0": ("P0a (handlebody bridge)", "P0b (two framed cancellations)", "P0c (MWW cabling framing)", "P0d (finite word)"),
+    "C": ("C1 (coefficient bimodule)", "C2 (statewise cocone)"),
+    "S": ("S (sphere system, hemisphere maps)",),
+    "P3_E11": ("P3/E11",),
+    "P3_E12": ("P3/E12",),
+    "P3_E13": ("P3/E13",),
+}
+
+
+def paper_statuses() -> dict[str, dict[str, Any]]:
+    """Paper status per item from the claim-boundary checker (which reads the paper)."""
+    path = ROOT / "scripts" / "check_t73_claim_boundary.py"
+    spec = importlib.util.spec_from_file_location("check_t73_claim_boundary", path)
+    if spec is None or spec.loader is None:
+        raise RuntimeError("cannot load check_t73_claim_boundary.py")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    module.check()  # the paper must actually carry the expected rows
+    expected = module.EXPECTED_STATUS
+    result: dict[str, dict[str, Any]] = {}
+    for item, rows in PAPER_ROWS.items():
+        row_status = {row: expected[row].lstrip("\\") for row in rows}
+        result[item] = {
+            "paper_status": "PROVED" if all(v == "Discharged" for v in row_status.values()) else "OPEN",
+            "paper_rows": row_status,
+        }
+    return result
 
 
 def require(text: str, needle: str, source: Path) -> None:
@@ -275,18 +314,29 @@ def generate() -> dict[str, Any]:
             "certificate_sha256": e13_close.get("certificate_sha256"),
         },
     }
+    paper = paper_statuses()
+    for name, entry in items.items():
+        entry["paper_status"] = paper[name]["paper_status"]
+        entry["paper_rows"] = paper[name]["paper_rows"]
+        entry["state_meaning"] = (
+            "certificate-internal replay of the committed finite model; "
+            "not a statement about the actual Cappell--Shaneson geometry"
+        )
     return {
-        "schema": "t73_premise_audit/v1",
+        "schema": "t73_premise_audit/v2",
         "overall": "OPEN",
         "counterexample_claim_proved": False,
         "counterexample_claim_falsified": False,
         "items": items,
         "interpretation": (
-            "P0, C, S, the MWW four-handle layer and the E13 CS handle picture "
-            "are discharged for the explicit Johnson replacement. Lean "
-            "ExternalGeometry remains uninhabited. The empty-link control "
-            "S4ReductionData is inhabited in T73S4Inhabitant.lean. The "
-            "counterexample claim is not proved."
+            "The committed finite-model certificates for P0, C, S, the MWW "
+            "four-handle layer and the E13 CS handle picture replay and report "
+            "PASS internally. The controlling paper records P0, C, S, P3/E11 "
+            "and P3/E13 as OPEN (actual geometry not constructed) and P0a, P0d, "
+            "P3/E12 and the finite detector as discharged. Lean ExternalGeometry "
+            "remains uninhabited. The empty-link control S4ReductionData is "
+            "inhabited in T73S4Inhabitant.lean. The counterexample claim is not "
+            "proved."
         ),
     }
 
@@ -314,6 +364,10 @@ def main() -> None:
         print(f"P3_E11={generated['items']['P3_E11']['state']}")
         print(f"P3_E12={generated['items']['P3_E12']['state']}")
         print(f"P3_E13={generated['items']['P3_E13']['state']}")
+        print(
+            "PAPER_STATUS="
+            + ",".join(f"{name}:{entry['paper_status']}" for name, entry in generated["items"].items())
+        )
         print(f"COUNTEREXAMPLE={generated['counterexample_claim_proved']}")
         return
     if not args.write:

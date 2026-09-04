@@ -38,8 +38,11 @@ def check() -> None:
     load_script("check_t73_claim_boundary").check()
 
     paper_text = paper.read_text(encoding="utf-8")
-    require(paper_text, r"P2/E10/S & \Discharged", paper)
-    require(paper_text, r"P3/E13 & \Discharged", paper)
+    # The status table is the claim boundary; its rows are enforced by
+    # check_t73_claim_boundary (called above).  Here only its presence, the
+    # computed P3/E12 row and the conditional top-level theorem are required.
+    require(paper_text, r"\label{sec:status-table}", paper)
+    require(paper_text, r"P3/E12 & \Discharged", paper)
     require(paper_text, r"\begin{theorem}[Conditional trace-73 theorem]\label{thm:joined}", paper)
 
     conditional_text = conditional.read_text(encoding="utf-8")

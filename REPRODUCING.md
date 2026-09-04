@@ -126,7 +126,7 @@ Expected highlights:
   (identification is completed by the `e13_*` scripts)
 - E12: `S4_DEGREE_494_ZERO=True`, `ABOUT_STANDARD_S4=True`
 - E13: `IDENTIFIED_WITH_SIGMA=True`
-- audit: `P0/C/S/P3=PASS`, `OVERALL=OPEN`, `COUNTEREXAMPLE=False`
+- audit: `P0/C/S/P3=PASS` (certificate-internal finite models), `PAPER_STATUS=P0:OPEN,C:OPEN,S:OPEN,P3_E11:OPEN,P3_E12:PROVED,P3_E13:OPEN` (paper claim boundary), `OVERALL=OPEN`, `COUNTEREXAMPLE=False`
 - claim boundary: `T73_CLAIM_BOUNDARY=OPEN_GEOMETRY`
 
 A short copy of this checklist also appears in the root `README.md` /

@@ -1,7 +1,7 @@
 {
   "counterexample_claim_falsified": false,
   "counterexample_claim_proved": false,
-  "interpretation": "P0, C, S, the MWW four-handle layer and the E13 CS handle picture are discharged for the explicit Johnson replacement. Lean ExternalGeometry remains uninhabited. The empty-link control S4ReductionData is inhabited in T73S4Inhabitant.lean. The counterexample claim is not proved.",
+  "interpretation": "The committed finite-model certificates for P0, C, S, the MWW four-handle layer and the E13 CS handle picture replay and report PASS internally. The controlling paper records P0, C, S, P3/E11 and P3/E13 as OPEN (actual geometry not constructed) and P0a, P0d, P3/E12 and the finite detector as discharged. Lean ExternalGeometry remains uninhabited. The empty-link control S4ReductionData is inhabited in T73S4Inhabitant.lean. The counterexample claim is not proved.",
   "items": {
     "C": {
       "adjudication": "Johnson replacement: C1 product isotopy of P0 reconstruction strands and C2 action cubes plus RepresentableCoefficient.lean.",
@@ -18,8 +18,14 @@
       ],
       "falsified": false,
       "generator_internal_status": "PASS",
+      "paper_rows": {
+        "C1 (coefficient bimodule)": "Open",
+        "C2 (statewise cocone)": "Open"
+      },
+      "paper_status": "OPEN",
       "proved": true,
-      "state": "PASS"
+      "state": "PASS",
+      "state_meaning": "certificate-internal replay of the committed finite model; not a statement about the actual Cappell--Shaneson geometry"
     },
     "P0": {
       "blocker": "none",
@@ -46,10 +52,18 @@
       "p0b_status": "PASS",
       "p0c_status": "PASS",
       "p0d_finite_word_match": true,
+      "paper_rows": {
+        "P0a (handlebody bridge)": "Discharged",
+        "P0b (two framed cancellations)": "Open",
+        "P0c (MWW cabling framing)": "Open",
+        "P0d (finite word)": "Discharged"
+      },
+      "paper_status": "OPEN",
       "proved": true,
       "replacement_adjudication": "The x^-1 correction is simultaneous inner conjugation, hence only a basepoint change in Out(F3); its two extra word passages are not an embedded 44-channel witness.",
       "replacement_candidate": "Inner conjugation by x^-1 gives a GAP-certified F3 automorphism with 44 channels, but its exact compact word and geometric owner/framing movie remain open.",
-      "state": "PASS"
+      "state": "PASS",
+      "state_meaning": "certificate-internal replay of the committed finite model; not a statement about the actual Cappell--Shaneson geometry"
     },
     "P3_E11": {
       "adjudication": "Johnson replacement 1-3 cancellations and a PL 4-ball; MWW 3.4 on X_J, not Sigma_A^0.",
@@ -61,8 +75,13 @@
         "MWW Proposition 3.4"
       ],
       "falsified": false,
+      "paper_rows": {
+        "P3/E11": "Open"
+      },
+      "paper_status": "OPEN",
       "proved": true,
-      "state": "PASS"
+      "state": "PASS",
+      "state_meaning": "certificate-internal replay of the committed finite model; not a statement about the actual Cappell--Shaneson geometry"
     },
     "P3_E12": {
       "blocker": "none",
@@ -76,8 +95,13 @@
         "MWW Corollary 3.5 unpacked as empty Khovanov and two I^4 glued along S^3"
       ],
       "falsified": false,
+      "paper_rows": {
+        "P3/E12": "Discharged"
+      },
+      "paper_status": "PROVED",
       "proved": true,
-      "state": "PASS"
+      "state": "PASS",
+      "state_meaning": "certificate-internal replay of the committed finite model; not a statement about the actual Cappell--Shaneson geometry"
     },
     "P3_E13": {
       "blocker": "none",
@@ -95,8 +119,13 @@
         "audit/t73_e13_identification.json"
       ],
       "falsified": false,
+      "paper_rows": {
+        "P3/E13": "Open"
+      },
+      "paper_status": "OPEN",
       "proved": true,
-      "state": "PASS"
+      "state": "PASS",
+      "state_meaning": "certificate-internal replay of the committed finite model; not a statement about the actual Cappell--Shaneson geometry"
     },
     "S": {
       "adjudication": "Johnson replacement reversed 3-handle picture: belt spheres miss the P0 cube and the C1 leftover link; HJ Theorem 5.3 is used only for kernel invariance, not to fix B.",
@@ -110,11 +139,16 @@
       ],
       "falsified": false,
       "generator_internal_status": "PASS",
+      "paper_rows": {
+        "S (sphere system, hemisphere maps)": "Open"
+      },
+      "paper_status": "OPEN",
       "proved": true,
       "relative_geometry_proved": true,
-      "state": "PASS"
+      "state": "PASS",
+      "state_meaning": "certificate-internal replay of the committed finite model; not a statement about the actual Cappell--Shaneson geometry"
     }
   },
   "overall": "OPEN",
-  "schema": "t73_premise_audit/v1"
+  "schema": "t73_premise_audit/v2"
 }
