@@ -107,6 +107,16 @@ Reynolds 平均代数（置换放置下的 beta 不变性、按纤维计数的�
 python -B scripts/verify_elementary_collapse.py --check
 python -B scripts/verify_t73_handlebody_bridge_regina.py --check   # 需要 regina 模块
 
+# P0b（部分）：显式 Johnson PL 生成元、复合 psi_A、截面拉直
+python -B scripts/build_t73_johnson_pl_generators.py --check
+python -B scripts/build_t73_section_straightening.py --check
+python -B scripts/verify_t73_pl_homeomorphism.py --all
+python -B scripts/verify_t73_pl_homeomorphism.py --theta
+python -B scripts/compose_t73_psi_A.py --check --crosscheck   # 约 1 分钟
+# 预期 PL_HOMEOMORPHISM_ALL=PASS、INDUCED_MATRIX_EQUALS_A=PASS、
+# PSI_FIXES_SECTION_BALL=PASS，以及如实的否定结论
+# HEEGAARD_PAIR_EXACT_PRESERVATION=OPEN、COMPOSITE_SPINE_IMAGE_IN_H0=FAIL
+
 # P0（约 1–2 分钟）：AR 桥、消去、几何辫
 python -B scripts/certify_t73_p0_johnson.py --check
 

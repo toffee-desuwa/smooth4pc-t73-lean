@@ -344,7 +344,7 @@ this paper; the claim-boundary checker in the repository reads it.
 Input & Status & Established / remaining \\
 \midrule
 P0a (handlebody bridge) & \Discharged & Dual-block regular neighbourhoods of the four spines in the barycentric subdivision, explicit elementary-collapse sequences onto the spines, common boundary of genus three, union equal to $T^3$, transport of the complete pair by $S$, and Regina handlebody recognition (Lemma~\ref{lem:P0a}). \\
-P0b (two framed cancellations) & \Open & The certificate contains local model cancellation movies in $\mathbb R^3$; the actual Johnson PL homeomorphism $\psi_A$, the actual Aitchison--Rubinstein framed link, and its actual Kirby cancellations with belt spheres, band slides and transported normal fields are not constructed. \\
+P0b (two framed cancellations) & \Open & Explicit PL homeomorphisms for the $93$ Johnson unit moves, composite with induced map $A$, and a section straightening are certified; this square-push representative does not preserve the handlebody pair and its composite spine images grow geometrically, so the actual Aitchison--Rubinstein framed link and its actual Kirby cancellations with belt spheres, band slides and transported normal fields are not constructed. \\
 P0c (MWW cabling framing) & \Open & The $44$ collar strands are a control realization of the public word, not strands cut from the actual cancelled attaching link. \\
 P0d (finite word) & \Discharged & The six-sweep Johnson factors reproduce the public $11340$-letter word letter-for-letter, and $\operatorname{lk}(m_2,r_{yz})=0$ in the railroad diagram. \\
 C1 (coefficient bimodule) & \Open & The product-ribbon isotopy of the actual cut tangle and the chain-level action squares are not constructed; the certificate checks $44$ model rectangles and $227$ model circles. \\
@@ -720,16 +720,47 @@ section framing class \(\varepsilon=0\).
 \end{lemma}
 
 \begin{remark}[Status of Lemma~\ref{lem:P0b}]
-\Open.  Established: for the selected Johnson lift, $\psi_A(x)=z$ at the
-level of free-group words, so $m_1=zx^{-1}$ after the first cancellation,
-and the certificate contains two standard local cancellation movies in
-$\mathbb R^3$ with geometric intersection $1$.  Not established: the actual
-PL homeomorphism $\psi_A$ composed from the $93$ Johnson generators, the
-actual framed attaching link \eqref{eq:ARcore}--\eqref{eq:ARannulus} built
-from it, and the cancellations of $(t,h_{CS})$ and $(x,m_1)$ performed on
-that link with triangulated belt spheres, band slides, transported
-components and transported normal fields.  Word-level identities do not
-substitute for these embedded objects.
+\Open.  Established.  (1) For each of the $93$ unit moves the repository
+records an explicit PL homeomorphism $\psi_k=\Pi_k\circ E_k$ of $T^3$:
+$E_k$ is the linear transvection and $\Pi_k$ the square push that moves one
+vertex of a $24$-tetrahedron prism cell decomposition of the slab
+$Q_k\times[-1/8,1/8]$ to the bent position dictated by the side bit; every
+cell carries its affine map and inverse, every image cell has strictly
+positive orientation, the support is at sup-distance at least $1/8$ from
+the three axis circles and the vertex, and the induced maps on $H_1$
+compose to $A$ (\texttt{geometry/t73\_johnson\_generators/},
+\texttt{scripts/verify\_t73\_pl\_homeomorphism.py}).  (2) The composite
+$\psi_A=\psi_{93}\circ\cdots\circ\psi_1$ is the linear map $A$ on the cube
+of radius $1/196104$ about the vertex, because the push factors fix that
+cube but the linear factors do not; an explicit section straightening
+$\theta$ ($186$ nested cube shells, $13{,}416$ cells, all positively
+oriented) makes $\Psi=\psi_A\circ\theta$ the identity on the cube of
+radius $1/(196104\cdot3^{186})$, the single-shell radial join being
+impossible for this $A$ because $A_{11}=0$ forces a sign-fixed negative
+determinant at every radius.  (3) At the level of free-group words
+$\psi_A(x)=z$, so $m_1=zx^{-1}$ after the first cancellation, and the
+certificate contains two standard local cancellation movies in
+$\mathbb R^3$ with geometric intersection $1$.
+Not established, with the obstructions now explicit.  (a) This
+representative does not preserve the handlebody pair: the bent spine
+image of every single generator leaves the dual-block handlebody $H_J^0$
+of Lemma~\ref{lem:P0a} at sup-distance $1/4$ (witness
+$(0,0,1/4)\mapsto(0,1/4,1/4)\notin H_J^0$), so the Aitchison--Rubinstein
+attaching curves $\psi_A(C_i^+)$ on the Heegaard surface are not defined
+for it; an exactly pair-preserving representative, namely a slide map
+supported near the boundary of the prefix tube, is required and is not
+constructed.  (b) The exact images of the spine loops under the
+$93$-fold composite are not storable polygons: the vertex count grows
+geometrically, by a factor of about $1.21$--$1.25$ per generator
+($366{,}822$ vertices for $C_2$ after $55$ generators, extrapolating to
+about $5\cdot10^8$ at $93$), while the homology classes are bounded by
+the entries of the partial products, so the actual attaching link cannot
+be obtained by pushing the spine loops through this composite.  (c) Hence
+the actual framed attaching link \eqref{eq:ARcore}--\eqref{eq:ARannulus}
+and the cancellations of $(t,h_{CS})$ and $(x,m_1)$ on it with triangulated
+belt spheres, band slides, transported components and transported normal
+fields remain unconstructed.  Word-level identities do not substitute for
+these embedded objects.
 \end{remark}
 
 \begin{lemma}[Compatibility with MWW cabling]\label{lem:P0c}
@@ -758,13 +789,18 @@ $\operatorname{lk}(m_2,r_{yz})=0$ (Lemma~\ref{lem:P0d-link}); (iii) the
 six-sweep word equal to the public $11340$-letter word; (iv) the
 handlebody bridge of Lemma~\ref{lem:P0a}: dual-block regular
 neighbourhoods of the Johnson and AR spines with explicit collapse
-sequences, carried onto each other by $S$.  The
+sequences, carried onto each other by $S$; (v) explicit PL homeomorphisms
+for the $93$ Johnson unit moves, their composite with induced map $A$, and
+the section straightening $\theta$ of Lemma~\ref{lem:P0b}.  The
 following obligations of Hypothesis~\ref{hyp:P0} are \Open:
 (a) the identification of the mapping-torus handlebodies with this pair,
 which the Aitchison--Rubinstein construction requires but the certificate
-does not use; (b) the actual PL homeomorphism $\psi_A$ composed
-from the $93$ Johnson generators and the actual Aitchison--Rubinstein framed
-link \eqref{eq:ARcore}--\eqref{eq:ARannulus}; (c) the actual Kirby
+does not use; (b) an exactly pair-preserving representative of $\psi_A$
+(the square-push representative of item (v) moves the spine out of
+$H_J^0$ at every step) and the actual Aitchison--Rubinstein framed
+link \eqref{eq:ARcore}--\eqref{eq:ARannulus} built from it, whose spine
+images cannot be produced by pushing polygons through the composite
+(geometric vertex growth, Lemma~\ref{lem:P0b}); (c) the actual Kirby
 cancellations of $(t,h_{CS})$ and $(x,m_1)$ with belt spheres, band slides
 and transported normal fields (Lemma~\ref{lem:P0b}); (d) the collar strands
 cut from the actual cancelled link and the framing identity with the MWW
@@ -773,9 +809,10 @@ with $\Sigma_A^0$.  Hypothesis~\ref{hyp:P0} is therefore \Open.
 \end{proposition}
 
 \begin{proof}
-Items (i)--(iv) are the replayed certificates listed in
+Items (i)--(v) are the replayed certificates listed in
 Appendix~\ref{sec:reproducibility-extended}; item (iv) is the proof of
-Lemma~\ref{lem:P0a}.  Items (a)--(e) are not established by them: the
+Lemma~\ref{lem:P0a} and item (v) is the established part of
+Lemma~\ref{lem:P0b}.  Items (a)--(e) are not established by them: the
 committed collar strands are generated from the public word by a control
 construction, and the cancellation movies are local models in
 $\mathbb R^3$ rather than moves on the actual attaching link.

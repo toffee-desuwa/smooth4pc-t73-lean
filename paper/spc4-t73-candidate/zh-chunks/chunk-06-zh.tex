@@ -179,7 +179,8 @@ genus-three Heegaard 对映到 Aitchison--Rubinstein 所用的坐标脊对。
 \end{lemma}
 
 \begin{remark}[引理~\ref{lem:P0b} 的状态]
-\Open。已确立：对所选 Johnson 提升，在自由群词层面 $\psi_A(x)=z$，故第一次消去后 $m_1=zx^{-1}$；证书含两个 $\mathbb R^3$ 中几何交数为 $1$ 的标准局部消去 movie。未确立：由 93 个 Johnson 生成元复合出的实际 PL 同胚 $\psi_A$、由它构造的实际带框附着 link \eqref{eq:ARcore}--\eqref{eq:ARannulus}，以及在该 link 上以三角化 belt 球面、band slide、分量运输与法向场运输实施的 $(t,h_{CS})$ 与 $(x,m_1)$ 消去。词层面恒等式不能替代这些嵌入对象。
+\Open。已确立。(1) 对 93 个单位移动中的每一个，仓库记录了 $T^3$ 的显式 PL 同胚 $\psi_k=\Pi_k\circ E_k$：$E_k$ 为线性 transvection，$\Pi_k$ 为方形推动，它把厚板 $Q_k\times[-1/8,1/8]$ 的 24 四面体棱柱胞分解中的一个顶点移到侧位所指定的弯折位置；每个胞带有仿射映射与逆，每个像胞严格正定向，支撑与三条坐标轴圆及顶点的 sup 距离至少 $1/8$，且在 $H_1$ 上诱导的映射复合为 $A$（\texttt{geometry/t73\_johnson\_generators/}、\texttt{scripts/verify\_t73\_pl\_homeomorphism.py}）。(2) 复合 $\psi_A=\psi_{93}\circ\cdots\circ\psi_1$ 在关于顶点半径 $1/196104$ 的立方体上是线性映射 $A$，因为推动因子固定该立方体而线性因子不固定；显式截面拉直 $\theta$（186 层嵌套立方壳、$13{,}416$ 个胞、全部正定向）使 $\Psi=\psi_A\circ\theta$ 在半径 $1/(196104\cdot3^{186})$ 的立方体上为恒等，而单壳径向拉直对本 $A$ 不可能，因为 $A_{11}=0$ 迫使某胞行列式在任何半径下符号为负。(3) 在自由群词层面 $\psi_A(x)=z$，故第一次消去后 $m_1=zx^{-1}$；证书含两个 $\mathbb R^3$ 中几何交数为 $1$ 的标准局部消去 movie。
+未确立，且阻碍已明确。(a) 该代表元不保持 handlebody 对：每个生成元的弯折脊像都以 sup 距离 $1/4$ 离开引理~\ref{lem:P0a} 的对偶块 handlebody $H_J^0$（见证 $(0,0,1/4)\mapsto(0,1/4,1/4)\notin H_J^0$），故 Aitchison--Rubinstein 在 Heegaard 曲面上的附着曲线 $\psi_A(C_i^+)$ 对它没有定义；所需的是精确保持该对的代表元，即支撑在 prefix 管边界附近的 slide 映射，尚未构造。(b) 脊圈在 93 重复合下的精确像不是可存储的多边形：顶点数按每个生成元约 $1.21$--$1.25$ 倍几何增长（$C_2$ 经 55 个生成元后有 $366{,}822$ 个顶点，外推到 93 约 $5\cdot10^8$），而同调类受部分积的元素界定，故实际附着 link 不能通过把脊圈推过该复合得到。(c) 因此实际带框附着 link \eqref{eq:ARcore}--\eqref{eq:ARannulus} 及其上带三角化 belt 球面、band slide、分量运输与法向场运输的 $(t,h_{CS})$ 与 $(x,m_1)$ 消去仍未构造。词层面恒等式不能替代这些嵌入对象。
 \end{remark}
 
 \begin{lemma}[与 MWW cabling 的相容性]\label{lem:P0c}
@@ -194,9 +195,9 @@ genus-three Heegaard 对映到 Aitchison--Rubinstein 所用的坐标脊对。
 \subsection{P0 结论}\label{sec:p0-conclusion}
 
 \begin{proposition}[Johnson 替换的 P0 状态]\label{thm:P0discharge}
-已重放的有限证书确立：(i) $A$ 的 93 个 transvection 分解与具 GAP 自由基的 93 位侧模式；(ii) 含 42 个 $y$ 通道的精确紧凑 $m_2$ 词与 $\operatorname{lk}(m_2,r_{yz})=0$（引理~\ref{lem:P0d-link}）；(iii) 等于公开 $11340$ 字母词的六扫掠词；(iv) 引理~\ref{lem:P0a} 的 handlebody 桥梁：Johnson 脊与 AR 脊的对偶块正则邻域及显式坍缩序列，由 $S$ 互相运输。假设~\ref{hyp:P0} 的下列义务为 \Open：(a) 将 mapping-torus handlebody 与该对等同，这是 Aitchison--Rubinstein 构造所需而证书未使用的；(b) 由 93 个 Johnson 生成元复合的实际 PL 同胚 $\psi_A$ 与实际 Aitchison--Rubinstein 带框 link \eqref{eq:ARcore}--\eqref{eq:ARannulus}；(c) 带 belt 球面、band slide 与法向场运输的 $(t,h_{CS})$ 与 $(x,m_1)$ 实际 Kirby 消去（引理~\ref{lem:P0b}）；(d) 从实际消去后 link 切出的领圈股及其与 MWW 缆 framing 的同一性（引理~\ref{lem:P0c}）；(e) 闭图景与 $\Sigma_A^0$ 的识别。故假设~\ref{hyp:P0} 为 \Open。
+已重放的有限证书确立：(i) $A$ 的 93 个 transvection 分解与具 GAP 自由基的 93 位侧模式；(ii) 含 42 个 $y$ 通道的精确紧凑 $m_2$ 词与 $\operatorname{lk}(m_2,r_{yz})=0$（引理~\ref{lem:P0d-link}）；(iii) 等于公开 $11340$ 字母词的六扫掠词；(iv) 引理~\ref{lem:P0a} 的 handlebody 桥梁：Johnson 脊与 AR 脊的对偶块正则邻域及显式坍缩序列，由 $S$ 互相运输；(v) 93 个 Johnson 单位移动的显式 PL 同胚、诱导映射为 $A$ 的复合，以及引理~\ref{lem:P0b} 的截面拉直 $\theta$。假设~\ref{hyp:P0} 的下列义务为 \Open：(a) 将 mapping-torus handlebody 与该对等同，这是 Aitchison--Rubinstein 构造所需而证书未使用的；(b) 精确保持该对的 $\psi_A$ 代表元（(v) 的方形推动代表元每一步都把脊推出 $H_J^0$）及由它构造的实际 Aitchison--Rubinstein 带框 link \eqref{eq:ARcore}--\eqref{eq:ARannulus}，其脊像不能通过把多边形推过该复合得到（顶点几何增长，引理~\ref{lem:P0b}）；(c) 带 belt 球面、band slide 与法向场运输的 $(t,h_{CS})$ 与 $(x,m_1)$ 实际 Kirby 消去（引理~\ref{lem:P0b}）；(d) 从实际消去后 link 切出的领圈股及其与 MWW 缆 framing 的同一性（引理~\ref{lem:P0c}）；(e) 闭图景与 $\Sigma_A^0$ 的识别。故假设~\ref{hyp:P0} 为 \Open。
 \end{proposition}
 
 \begin{proof}
-(i)--(iv) 是附录~\ref{sec:reproducibility-extended} 所列可重放证书；(iv) 即引理~\ref{lem:P0a} 的证明。(a)--(e) 未由其确立：已提交的领圈股由公开词经控制构造生成，消去 movie 是 $\mathbb R^3$ 中的局部模型而非实际附着 link 上的移动。
+(i)--(v) 是附录~\ref{sec:reproducibility-extended} 所列可重放证书；(iv) 即引理~\ref{lem:P0a} 的证明，(v) 是引理~\ref{lem:P0b} 已确立的部分。(a)--(e) 未由其确立：已提交的领圈股由公开词经控制构造生成，消去 movie 是 $\mathbb R^3$ 中的局部模型而非实际附着 link 上的移动。
 \end{proof}

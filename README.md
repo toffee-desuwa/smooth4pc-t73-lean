@@ -125,6 +125,16 @@ are hypotheses there and belong to the open input C.
 python -B scripts/verify_elementary_collapse.py --check
 python -B scripts/verify_t73_handlebody_bridge_regina.py --check   # needs the regina module
 
+# P0b (partial): explicit Johnson PL generators, composite psi_A, section straightening
+python -B scripts/build_t73_johnson_pl_generators.py --check
+python -B scripts/build_t73_section_straightening.py --check
+python -B scripts/verify_t73_pl_homeomorphism.py --all
+python -B scripts/verify_t73_pl_homeomorphism.py --theta
+python -B scripts/compose_t73_psi_A.py --check --crosscheck   # ~1 min
+# expect PL_HOMEOMORPHISM_ALL=PASS, INDUCED_MATRIX_EQUALS_A=PASS,
+# PSI_FIXES_SECTION_BALL=PASS, and the honest negatives
+# HEEGAARD_PAIR_EXACT_PRESERVATION=OPEN, COMPOSITE_SPINE_IMAGE_IN_H0=FAIL
+
 # P0 (~1–2 min): AR bridge, cancellations, geometric braid
 python -B scripts/certify_t73_p0_johnson.py --check
 
