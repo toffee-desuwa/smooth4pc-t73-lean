@@ -93,7 +93,12 @@ python -B scripts/verify_t73_endpoint_transport.py
 对照 `-59072` / `-2496` 重现为非法的部分传输。其背后的滤过三次引理
 （`A` 从三阶开始时 `[h^3] ell A u = ell_0 A_3 u_0`，以及同步共轭不变性）在
 `Smooth4PC/FilteredCubicNaturality.lean` 中形式化
-（`python -B tests/test_t73_filtered_cubic_naturality.py -v`）。
+（`python -B tests/test_t73_filtered_cubic_naturality.py -v`）。二柄余锥的逐态
+Reynolds 平均代数（置换放置下的 beta 不变性、按纤维计数的添加对关系、沿迭代一点
+添加向所选态以下全部缆态的延拓、与公共上界无关）对每个态在
+`Smooth4PC/ReynoldsCableCocone.lean` 中形式化
+（`python -B tests/test_t73_reynolds_cable_cocone.py -v`）；其几何输入在其中是假设，
+属于开放输入 C。
 
 ### Johnson P0 → C → S → P3（推荐顺序）
 

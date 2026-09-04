@@ -109,7 +109,14 @@ and the coordinate controls `-59072` / `-2496` reproduced as illegal partial
 transports. The filtered cubic lemma behind this (`[h^3] ell A u = ell_0 A_3 u_0`
 when `A` starts in order three, and simultaneous-conjugation invariance) is
 formalized in `Smooth4PC/FilteredCubicNaturality.lean`
-(`python -B tests/test_t73_filtered_cubic_naturality.py -v`).
+(`python -B tests/test_t73_filtered_cubic_naturality.py -v`). The statewise
+Reynolds-average algebra of the two-handle cocone (beta invariance by placement
+transport, pair-addition relations by fibre counting, extension to all cable
+states below the selected one along iterated once-dotted additions,
+independence of the common upper bound) is formalized for every state in
+`Smooth4PC/ReynoldsCableCocone.lean`
+(`python -B tests/test_t73_reynolds_cable_cocone.py -v`); its geometric inputs
+are hypotheses there and belong to the open input C.
 
 ### Johnson P0 → C → S → P3 (recommended order)
 

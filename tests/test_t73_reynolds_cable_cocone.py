@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import json
 import os
 import re
 import shutil
@@ -11,13 +10,22 @@ from pathlib import Path
 
 
 AXIOM_THEOREMS = (
-    "Smooth4PC.pairingCoeff_lt_three_eq_zero",
-    "Smooth4PC.pairingCoeff_three_of_startsAtThree",
-    "Smooth4PC.pairingCoeff_transport",
-    "Smooth4PC.startsAtThree_transport",
-    "Smooth4PC.cubic_invariant_under_simultaneous_transport",
-    "Smooth4PC.transportVectorSeries_zero_of_id",
-    "Smooth4PC.pairingCoeff_three_transportVectorSeries",
+    "Smooth4PC.le_add_single",
+    "Smooth4PC.reynolds_apply",
+    "Smooth4PC.reynolds_comp_of_row_perm",
+    "Smooth4PC.card_placement_of_uniform_fibres",
+    "Smooth4PC.reynolds_comp_dotted",
+    "Smooth4PC.reynolds_comp_undotted",
+    "Smooth4PC.CableCocone.Psi_step",
+    "Smooth4PC.CableCocone.Psi_comp_of_eq",
+    "Smooth4PC.CableCocone.Psi_comp_aux",
+    "Smooth4PC.CableCocone.Psi_comp",
+    "Smooth4PC.CableCocone.Psi_two_steps",
+    "Smooth4PC.row_comp_Psi_of_eq",
+    "Smooth4PC.row_descent_along_path",
+    "Smooth4PC.extendedRow_eq_comp_of_le",
+    "Smooth4PC.extendedRow_eq_of_threshold",
+    "Smooth4PC.extendedRow_comp_psi",
 )
 FOUNDATIONAL_AXIOMS = {"propext", "Quot.sound", "Classical.choice"}
 FORBIDDEN_TOKENS = (
@@ -57,37 +65,6 @@ def resolve_lake() -> Path:
         if candidate.is_file():
             return candidate
     raise FileNotFoundError("lake was not found via T73_LAKE, PATH, or ~/.elan")
-
-
-def resolve_mathlib(repo: Path) -> Path:
-    configured = os.environ.get("T73_MATHLIB")
-    if configured:
-        candidate = Path(configured).expanduser()
-    else:
-        manifest = json.loads(
-            (repo / "lake-manifest.json").read_text(encoding="utf-8")
-        )
-        entry = next(
-            package for package in manifest["packages"] if package["name"] == "mathlib"
-        )
-        if entry["type"] == "path":
-            candidate = repo / entry["dir"]
-        elif entry["type"] == "git":
-            candidate = (
-                repo
-                / manifest.get("packagesDir", ".lake/packages")
-                / entry["name"]
-            )
-            if entry.get("subDir"):
-                candidate /= entry["subDir"]
-        else:
-            raise RuntimeError(f"unsupported mathlib source: {entry['type']}")
-
-    if not candidate.is_dir():
-        raise FileNotFoundError(
-            f"mathlib is not materialized at {candidate}; run `lake update`"
-        )
-    return candidate.resolve()
 
 
 def lake_printenv(lake: Path, repo: Path, name: str) -> str:
@@ -150,20 +127,19 @@ def resolve_scratch() -> Path:
     scratch = (
         Path(configured).expanduser()
         if configured
-        else Path.home() / "ws" / "tmp-t73" / "lean"
+        else Path.home() / "ws" / "tmp-t73" / "lean2"
     )
     scratch.mkdir(parents=True, exist_ok=True)
     return scratch
 
 
-class FilteredCubicNaturalityTests(unittest.TestCase):
+class ReynoldsCableCoconeTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         cls.repo = Path(__file__).resolve().parents[1]
-        cls.module = cls.repo / "Smooth4PC" / "FilteredCubicNaturality.lean"
-        cls.audit = cls.repo / "T73FilteredCubicAudit.lean"
+        cls.module = cls.repo / "Smooth4PC" / "ReynoldsCableCocone.lean"
+        cls.audit = cls.repo / "T73ReynoldsAudit.lean"
         cls.lake = resolve_lake()
-        cls.mathlib = resolve_mathlib(cls.repo)
         cls.lean = resolve_lean(cls.lake, cls.repo)
         cls.package_lean_path = lake_printenv(cls.lake, cls.repo, "LEAN_PATH")
 
@@ -217,12 +193,20 @@ class FilteredCubicNaturalityTests(unittest.TestCase):
         with self.assertRaisesRegex(AssertionError, "missing axiom report"):
             self.assert_axiom_reports(missing)
 
+    def test_axiom_report_gate_rejects_a_nonfoundational_axiom(self) -> None:
+        polluted = "\n".join(
+            f"'{name}' depends on axioms: [propext, sorryAx]"
+            for name in AXIOM_THEOREMS
+        )
+        with self.assertRaisesRegex(AssertionError, "unexpected axioms"):
+            self.assert_axiom_reports(polluted)
+
     def test_no_hidden_declarations(self) -> None:
         self.assertTrue(
             self.module.is_file(),
-            "missing Smooth4PC/FilteredCubicNaturality.lean",
+            "missing Smooth4PC/ReynoldsCableCocone.lean",
         )
-        self.assertTrue(self.audit.is_file(), "missing T73FilteredCubicAudit.lean")
+        self.assertTrue(self.audit.is_file(), "missing T73ReynoldsAudit.lean")
         source = self.module.read_text(encoding="utf-8") + self.audit.read_text(
             encoding="utf-8"
         )
@@ -233,14 +217,25 @@ class FilteredCubicNaturalityTests(unittest.TestCase):
                 f"forbidden Lean token: {token}",
             )
 
+    def test_audit_covers_every_theorem_of_the_module(self) -> None:
+        declared = set(
+            re.findall(
+                r"(?m)^theorem\s+([A-Za-z_][A-Za-z0-9_'.]*)",
+                self.module.read_text(encoding="utf-8"),
+            )
+        )
+        self.assertEqual(
+            {name.removeprefix("Smooth4PC.") for name in AXIOM_THEOREMS},
+            declared,
+            "the audit must report on exactly the theorems of the module",
+        )
+
     def test_module_builds_and_audit_is_foundational(self) -> None:
         with tempfile.TemporaryDirectory(
-            prefix="filtered-cubic-", dir=resolve_scratch()
+            prefix="reynolds-cable-", dir=resolve_scratch()
         ) as tmp:
             olean_root = Path(tmp) / "olean"
-            module_olean = (
-                olean_root / "Smooth4PC" / "FilteredCubicNaturality.olean"
-            )
+            module_olean = olean_root / "Smooth4PC" / "ReynoldsCableCocone.olean"
             build = self.run_lean(self.module, olean_root, module_olean)
             self.assertEqual(build.returncode, 0, build.stdout + build.stderr)
             audit = self.run_lean(self.audit, olean_root)

@@ -337,7 +337,18 @@ D_{r+e_i}\psi_i^{[1]}=D_r.
 \]
 Below $s_0$ the second equality is the definition; the Frobenius identities
 and disjoint-support interchange prove the first equality and the commutation
-of all owner squares.
+of all owner squares.  The algebra of this statewise construction is
+formalized in \texttt{Smooth4PC/ReynoldsCableCocone.lean}: for every state
+$r\in\mathbb N^n$, the Reynolds average is invariant under a braid action
+that permutes placements, the two pair-addition relations follow from
+placement-wise relations with constant fibres, and the extension of $D_r$
+to the states below $s_0$ along iterated once-dotted additions is
+independent of the common upper bound and satisfies the $\psi^{[1]}$
+relation at every state.  Every geometric input of that file (that the
+actual MWW beta action permutes placements, that the actual pair additions
+forget a distinguished pair with constant fibres and commute, and the
+descent above $s_0$) is a hypothesis there, and for the actual cabled
+source these hypotheses are part of the \Open\ Hypothesis~\ref{hyp:P1}.
 
 Once (26)--(27) are established on the actual cabled source, together with
 the coefficient trace relation of (17), they prove on the whole cabled
